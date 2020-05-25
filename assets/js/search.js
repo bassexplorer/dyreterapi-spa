@@ -1,32 +1,64 @@
 let searchTerm = '';
-let pagesContent =[];
+let pagesContent = [];
+
 
 function doSearch() {
+    window.location.hash = 'searchResults'
+    const mainTag = document.getElementById('mainTag');
+    mainTag.innerHTML = '';
+
     const searchBar = document.querySelector('#searchBar');
     searchTerm = searchBar.value;
-    console.log(searchTerm);
+    let searchOnce = true;
+    
+    pages.map((page, i) => {
+
+        fetch(`${viewUrl}${page.name}.html`)
+            .then((response) => {
+                return response.text();
+            })
+            .then((html) => {
+
+                pagesContent[i] = {
+                    name: page.name,
+                    content: html
+                };
+
+                if (pagesContent.length == pages.length && searchOnce) {
+                    findSearchTerm(searchTerm, pagesContent);
+                    searchOnce = false;
+                }
+
+
+            });
+    });
 }
 
-
-pages.map((page,i) => {
+function findSearchTerm(searchTerm, pagesContent) {
+    let matcher = new RegExp(`${searchTerm}`, "i");
+    let noMatch = 0;
     
-    fetch(`${viewUrl}${page.name}.html`)
-    .then((response) => {
-        return response.text();
-    })
-    .then((html) => {
 
-        pagesContent[i] = { page: page.name, content: html};
+    pagesContent.map((term) => {
 
-        if(pagesContent.length == pages.length){
+        if (matcher.test(term.content)) {
+           
+
+            if(term.name == '404' || term.name == 'searchResults'){return};
+
+            mainTag.innerHTML += ` <li> <a href="#${term.name}"> ${term.name}</a> </li> ` 
             
-           // console.log(pagesContent);
-        }
+        } else {
+
+            noMatch++;
+            if (noMatch == pagesContent.length) {
+                mainTag.innerHTML = `Sorry, there is no such a thing like ${searchTerm}`;
+            }
+
+        };
+
         
-
     });
-});
+    
 
-
-
-
+};

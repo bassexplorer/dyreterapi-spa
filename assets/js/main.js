@@ -42,13 +42,12 @@ const pages = [{
 //Partials loading function that builds the site and run the main render function.
 function partialRender() {
 
-    if(firstLoad){
+    if (firstLoad) {
         rootDiv.innerHTML = '';
         firstLoad = false;
     }
     // Name all the partials we want to display from html files
     const partialNames = ['nav', 'header', 'main', 'footer'];
-    const pageHash = window.location.hash.substr(1);
     // Collect all the partials in one promise to keep the fetching and the loading consistent.
     Promise.all(partialNames.map(partial => {
 
@@ -63,8 +62,9 @@ function partialRender() {
                 });
         } else {
             //start the render for the active page.
+            const pageHash = window.location.hash.substr(1)
             renderActivePage(pageHash);
-            
+
         }
 
     }));
@@ -85,42 +85,47 @@ function renderActivePage(partial) {
     if (!pages.find(page => page.name === partial)) {
         partial = '404';
     }
+
     // change the page title.
     document.title = pages.find(page => page.name === partial).title
 
     renderMetaData(partial);
+
+
     // with the valid partial name it fetches the correct site html.
     fetch(`${viewUrl}${partial}.html`)
-    
-    .then((response) => {
-        return response.text();
-    })
-    .then((html) => {
-    // if it is the first time loading it creates a main tag with an ID, so it can be modified later.
-        let mainTag = document.getElementById('mainTag');
 
-        if (mainTag == null) {
-            mainTag = document.createElement('main');
-            mainTag.id = 'mainTag';
-            rootDiv.appendChild(mainTag);
-        }
-        // if the main tag is existing render the page.
-        mainTag.innerHTML = html;
-    });
+        .then((response) => {
+            return response.text();
+        })
+        .then((html) => {
+            // if it is the first time loading it creates a main tag with an ID, so it can be modified later.
+            let mainTag = document.getElementById('mainTag');
+
+            if (mainTag == null) {
+                mainTag = document.createElement('main');
+                mainTag.id = 'mainTag';
+                rootDiv.appendChild(mainTag);
+            }
+            // if the main tag is existing render the page.
+            mainTag.innerHTML = html;
+        });
+
 
 };
 
 // A function that checks the URL change and lanch the render page function.
 window.addEventListener('hashchange', function (event) {
-    hasChanged();
+    const pageHash = window.location.hash.substr(1);
+
+    if(pageHash !== 'searchResults'){
+        renderActivePage(pageHash);
+    }
 });
 
-function hasChanged() {
-    const page = window.location.hash.substr(1);
-    renderActivePage(page);
-};
 
-function renderMetaData(partial){
+
+function renderMetaData(partial) {
 
     const head = document.getElementsByTagName('head')[0];
     const currentMeta = pages.find(page => page.name === partial);
@@ -130,7 +135,7 @@ function renderMetaData(partial){
     const metaAuthor = head.querySelector('[name="author"]');
 
     metaDesc.content = currentMeta.description;
-    metaKeywords.content = currentMeta.keywords;    
-    metaAuthor.content = currentMeta.author;    
+    metaKeywords.content = currentMeta.keywords;
+    metaAuthor.content = currentMeta.author;
 
 };
