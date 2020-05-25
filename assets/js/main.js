@@ -133,9 +133,31 @@ function renderMetaData(partial) {
     const metaDesc = document.querySelector('[name="description"]');
     const metaKeywords = head.querySelector('[name="keywords"]');
     const metaAuthor = head.querySelector('[name="author"]');
+    
 
     metaDesc.content = currentMeta.description;
     metaKeywords.content = currentMeta.keywords;
     metaAuthor.content = currentMeta.author;
+   
 
+    loadScript(partial,head);
 };
+
+
+function loadScript(url,location){
+
+    const scriptSrc = location.querySelector('[data-type="script"]');
+    
+    if (scriptSrc !== null) {
+        scriptSrc.remove();
+    }
+    
+    let scriptTag = document.createElement('script');
+    scriptTag.dataset.type ='script';
+    scriptTag.type = 'text/javascript';
+    scriptTag.src = `assets/js/${url}.js`;
+    location.appendChild(scriptTag);
+    
+};
+
+

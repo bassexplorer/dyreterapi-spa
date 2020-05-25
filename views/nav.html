@@ -1,5 +1,7 @@
+
+
 <nav class="nav">
-    <ul>
+    <ul id="papa">
         <li>
             <a href="#home"> HOME</a>
         </li>
@@ -12,8 +14,9 @@
     </ul>
 
     <div>
-        <input id="searchBar" type="text" placeholder="Search..">
-        <button type="button" onclick="doSearch()"> Search</button>
+        <input id="searchBar" type="text" placeholder="Search.." onclick="attachListener()">
+        <button id="searchBtn" type="button" onclick="doSearch()"> <i class="fas fa-search"></i> </button>
     </div>
-    
+
 </nav>
+
