@@ -118,40 +118,48 @@ function renderActivePage(partial) {
 window.addEventListener('hashchange', function (event) {
     const pageHash = window.location.hash.substr(1);
 
+    // With this we ignore the not existing SearchResults has so the page will not be redirected to it.
     if(pageHash !== 'searchResults'){
         renderActivePage(pageHash);
     }
 });
 
 
-
+// this function fills the head with metadata 
+// this function just stimulate how the website code would look like if it would be server side rendered.
 function renderMetaData(partial) {
 
+    // find the head where it renders all the meta data.
     const head = document.getElementsByTagName('head')[0];
+    // fint the current page metadata belonging to it. 
     const currentMeta = pages.find(page => page.name === partial);
 
-    const metaDesc = document.querySelector('[name="description"]');
+    // find the tags in the head
+    const metaDesc = head.querySelector('[name="description"]');
     const metaKeywords = head.querySelector('[name="keywords"]');
     const metaAuthor = head.querySelector('[name="author"]');
     
-
+   // write the data insite the tags
     metaDesc.content = currentMeta.description;
     metaKeywords.content = currentMeta.keywords;
     metaAuthor.content = currentMeta.author;
    
-
+    // start the function that handels the javascript files and render the tags inside the head.
     loadScript(partial,head);
 };
 
 
 function loadScript(url,location){
 
+    // find the tag that contains tha previous javascript file url.
     const scriptSrc = location.querySelector('[data-type="script"]');
     
+    // if it is exist then remove it from the head
     if (scriptSrc !== null) {
         scriptSrc.remove();
     }
     
+    // then create it again. in this way the browser will dinamically compile the JS file.
     let scriptTag = document.createElement('script');
     scriptTag.dataset.type ='script';
     scriptTag.type = 'text/javascript';
