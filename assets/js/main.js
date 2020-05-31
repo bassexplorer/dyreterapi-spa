@@ -93,7 +93,7 @@ function renderActivePage(partial) {
 
 
     // with the valid partial name it fetches the correct site html.
-    fetch(`${viewUrl}${partial}.html`)
+        fetch(`${viewUrl}${partial}.html`)
 
         .then((response) => {
             return response.text();
@@ -109,8 +109,10 @@ function renderActivePage(partial) {
             }
             // if the main tag is existing render the page.
             mainTag.innerHTML = html;
+        })
+        .catch(err => {
+            console.error('The partial is not found.')
         });
-
 
 };
 
@@ -119,7 +121,7 @@ window.addEventListener('hashchange', function (event) {
     const pageHash = window.location.hash.substr(1);
 
     // With this we ignore the not existing SearchResults has so the page will not be redirected to it.
-    if(pageHash !== 'searchResults'){
+    if (pageHash !== 'searchResults') {
         renderActivePage(pageHash);
     }
 });
@@ -138,34 +140,29 @@ function renderMetaData(partial) {
     const metaDesc = head.querySelector('[name="description"]');
     const metaKeywords = head.querySelector('[name="keywords"]');
     const metaAuthor = head.querySelector('[name="author"]');
-    
-   // write the data insite the tags
+
+    // write the data insite the tags
     metaDesc.content = currentMeta.description;
     metaKeywords.content = currentMeta.keywords;
     metaAuthor.content = currentMeta.author;
-   
+
     // start the function that handels the javascript files and render the tags inside the head.
-    loadScript(partial,head);
+    loadScript(partial, head);
 };
 
 
-function loadScript(url,location){
-
+function loadScript(url, location) {
     // find the tag that contains tha previous javascript file url.
     const scriptSrc = location.querySelector('[data-type="script"]');
-    
+    const fileSrc = `assets/js/${url}.js`;
     // if it is exist then remove it from the head
     if (scriptSrc !== null) {
         scriptSrc.remove();
-    }
-    
+    };
     // then create it again. in this way the browser will dinamically compile the JS file.
     let scriptTag = document.createElement('script');
-    scriptTag.dataset.type ='script';
+    scriptTag.dataset.type = 'script';
     scriptTag.type = 'text/javascript';
-    scriptTag.src = `assets/js/${url}.js`;
+    scriptTag.src = fileSrc;
     location.appendChild(scriptTag);
-    
-};
-
-
+}

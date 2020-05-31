@@ -43,7 +43,10 @@ function doSearch() {
                 }
 
 
-            });
+            })
+            .catch(err => {
+                console.error('The page is not found, sorry.')
+              });
     });
 }
 

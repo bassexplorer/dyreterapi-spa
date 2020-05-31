@@ -1,3 +1,8 @@
+@import url(nav.css);
+@import url(footer.css);
+
+
+
 .tooltip {
     position: relative;
     display: inline-block;
