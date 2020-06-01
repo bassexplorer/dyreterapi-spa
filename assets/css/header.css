@@ -1,0 +1,6 @@
+header{
+    background-color: aqua;
+    height: 50vh;
+    z-index: -5;
+    margin-top: -5rem;
+}
