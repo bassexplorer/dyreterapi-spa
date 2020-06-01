@@ -10,6 +10,7 @@ const pages = [{
         title: 'Home page',
         description: 'This is the home page.',
         keywords: 'home page,landing page,firts look',
+        image: 'assets/img/some.jpg',
         author: 'Ben - 0',
         rootPage: true
     },
@@ -18,6 +19,7 @@ const pages = [{
         title: 'About us',
         description: 'This is where you find information about us.',
         keywords: 'story,hi,nice,to,meet,you.',
+        image: 'assets/img/some.jpg',
         author: 'Ben - 1',
         rootPage: false
     },
@@ -26,6 +28,7 @@ const pages = [{
         title: 'Contact Us',
         description: 'This is where you can contact us in case you have any question',
         keywords: 'Contact page,form,question,',
+        image: 'assets/img/some.jpg',
         author: 'Ben - 2',
         rootPage: false
     },
@@ -34,6 +37,7 @@ const pages = [{
         title: '404 ERROR',
         description: 'This page is not found,please try again later.',
         keywords: 'error,missing page,deleted page, 404,',
+        image: 'assets/img/some.jpg',
         author: 'None',
         rootPage: false
     }
@@ -140,11 +144,31 @@ function renderMetaData(partial) {
     const metaDesc = head.querySelector('[name="description"]');
     const metaKeywords = head.querySelector('[name="keywords"]');
     const metaAuthor = head.querySelector('[name="author"]');
-
     // write the data insite the tags
     metaDesc.content = currentMeta.description;
     metaKeywords.content = currentMeta.keywords;
     metaAuthor.content = currentMeta.author;
+
+    // open graph meta.
+    const metaOgTitle = head.querySelector('[property="og:title"]');
+    const metaOgDesc = head.querySelector('[property="og:description"]');
+    const metaOgUrl = head.querySelector('[property="og:url"]');
+    const metaOgImage = head.querySelector('[property="og:image"]');
+
+    metaOgTitle.content = document.title;
+    metaOgDesc.content = currentMeta.description;
+    metaOgUrl.content = window.location.href;
+    metaOgImage.content = currentMeta.image;
+
+    // twitter card meta
+    const metaTwitterTitle = head.querySelector('[property="og:title"]');
+    const metaTwitterDesc = head.querySelector('[property="og:description"]');
+    const metaTwitterImage = head.querySelector('[property="og:image"]');
+
+    metaTwitterTitle.content = document.title;
+    metaTwitterDesc.content = currentMeta.description;
+    metaTwitterImage.content = currentMeta.image;
+
 
     // start the function that handels the javascript files and render the tags inside the head.
     loadScript(partial, head);
