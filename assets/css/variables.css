@@ -8,7 +8,7 @@
     /* Font styleing */
     --heading-color: #C22333;
     --text-on-bg: #272020;
-    --text-on-red: white;
+    --text-on-dark: white;
     --text-gray:#8D8484;
     --text-bold: bold;
     --text-normal: normal;
@@ -16,12 +16,20 @@
 
     /* Opacity boxes */
     --dark-opacity-box: rgba(0, 0, 0, 0.40);
-    --light-opacity-box: rgba(255, 255, 255, 0.80);
+    --light-opacity-box: rgba(255, 255, 255, 0.70);
 
     /* Gaps,Spaces,Margins */
     --small-gap:.2rem;
     --medium-gap: .5rem;
     --big-gap:1rem;
+
+    --margin-h-small:1vh;
+    --margin-h-medium:2vh;
+    --margin-h-big:5vh;
+
+    --margin-w-small:1vh;
+    --margin-w-medium:2vh;
+    --margin-w-big:5vh;
 
     /* Appointment, Trainers-Teachers */
     --sidebar-box-bg: rgba(117, 115, 45, 0.20);
