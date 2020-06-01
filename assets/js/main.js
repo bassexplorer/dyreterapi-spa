@@ -161,9 +161,9 @@ function renderMetaData(partial) {
     metaOgImage.content = currentMeta.image;
 
     // twitter card meta
-    const metaTwitterTitle = head.querySelector('[property="og:title"]');
-    const metaTwitterDesc = head.querySelector('[property="og:description"]');
-    const metaTwitterImage = head.querySelector('[property="og:image"]');
+    const metaTwitterTitle = head.querySelector('[name="twitter:title"]');
+    const metaTwitterDesc = head.querySelector('[name="twitter:description"]');
+    const metaTwitterImage = head.querySelector('[name="twitter:image"]');
 
     metaTwitterTitle.content = document.title;
     metaTwitterDesc.content = currentMeta.description;
