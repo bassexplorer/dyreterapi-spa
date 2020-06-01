@@ -2,6 +2,7 @@ nav{
     height: 3rem;
     background-color: rgba(214, 214, 214, 0.438);
     z-index: 5;
+    position: relative;
 }
 ul {
   list-style-type: none;

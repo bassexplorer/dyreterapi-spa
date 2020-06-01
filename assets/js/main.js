@@ -55,23 +55,38 @@ function partialRender() {
     // Collect all the partials in one promise to keep the fetching and the loading consistent.
     Promise.all(partialNames.map(partial => {
 
-        if (partial !== 'main') {
+            if (partial !== 'main') {
 
-            fetch(`${viewUrl}${partial}.html`)
-                .then((response) => {
-                    return response.text();
-                })
-                .then((html) => {
-                    rootDiv.innerHTML = rootDiv.innerHTML + html;
-                });
-        } else {
-            //start the render for the active page.
-            const pageHash = window.location.hash.substr(1)
-            renderActivePage(pageHash);
+                fetch(`${viewUrl}${partial}.html`)
+                    .then((response) => {
+                        return response.text();
+                    })
+                    .then((html) => {
+                        rootDiv.innerHTML = rootDiv.innerHTML + html;
+                    })
+                    .catch(err => {
+                        console.error('The partial is not found.');
+                    });
+            } else {
+                //start the render for the active page.
+                const pageHash = window.location.hash.substr(1)
+                renderActivePage(pageHash);
+            }
 
-        }
+        }))
+        .then(
+            // after we renderd everything we add the Script tags 
+            // in this way the scripts run after the html elements are in place.
+            // so it can modify the DOM
 
-    }));
+            //loop through the partials end leave out the main because we are already in the main JS 
+            //and the footer because usually there is no scripts in the footer.
+            partialNames.map(partial => {
+
+                if (partial !== 'main' && partial !== 'footer') {
+                    loadScript(partial);
+                }
+            }));
 
 };
 
@@ -95,9 +110,8 @@ function renderActivePage(partial) {
 
     renderMetaData(partial);
 
-
     // with the valid partial name it fetches the correct site html.
-        fetch(`${viewUrl}${partial}.html`)
+    fetch(`${viewUrl}${partial}.html`)
 
         .then((response) => {
             return response.text();
@@ -114,8 +128,14 @@ function renderActivePage(partial) {
             // if the main tag is existing render the page.
             mainTag.innerHTML = html;
         })
+        .then(() => {
+            // start the function that handels the javascript files and render the tags inside the head.
+            // for the current page loaded in
+            loadScript(partial);
+        })
+        // if something happen and something can be loaded inside.
         .catch(err => {
-            console.error('The partial is not found.')
+            console.error('The page is not found.')
         });
 
 };
@@ -144,7 +164,7 @@ function renderMetaData(partial) {
     const metaDesc = head.querySelector('[name="description"]');
     const metaKeywords = head.querySelector('[name="keywords"]');
     const metaAuthor = head.querySelector('[name="author"]');
-    // write the data insite the tags
+    // write the data insite the tags and render in the HTML
     metaDesc.content = currentMeta.description;
     metaKeywords.content = currentMeta.keywords;
     metaAuthor.content = currentMeta.author;
@@ -169,16 +189,14 @@ function renderMetaData(partial) {
     metaTwitterDesc.content = currentMeta.description;
     metaTwitterImage.content = currentMeta.image;
 
-
-    // start the function that handels the javascript files and render the tags inside the head.
-    loadScript(partial, head);
 };
 
+function loadScript(partial) {
+    const head = document.getElementsByTagName('head')[0];
+    const fileSrc = `assets/js/${partial}.js`;
 
-function loadScript(url, location) {
     // find the tag that contains tha previous javascript file url.
-    const scriptSrc = location.querySelector('[data-type="script"]');
-    const fileSrc = `assets/js/${url}.js`;
+    const scriptSrc = head.querySelector('[data-type="script"]');
     // if it is exist then remove it from the head
     if (scriptSrc !== null) {
         scriptSrc.remove();
@@ -188,5 +206,5 @@ function loadScript(url, location) {
     scriptTag.dataset.type = 'script';
     scriptTag.type = 'text/javascript';
     scriptTag.src = fileSrc;
-    location.appendChild(scriptTag);
-}
+    head.appendChild(scriptTag);
+};
