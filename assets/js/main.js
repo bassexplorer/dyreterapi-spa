@@ -88,8 +88,6 @@ function partialRender() {
                 }
             }));
 
-
-
 };
 
 partialRender();
@@ -192,7 +190,6 @@ function renderMetaData(partial) {
     metaTwitterImage.content = currentMeta.image;
 
 };
-
 
 function loadScript(partial) {
     const head = document.getElementsByTagName('head')[0];
