@@ -1,0 +1,26 @@
+header{
+    background-color: aqua;
+    height: 45vh;
+    z-index: -5;
+    background-image: url(../img/indi-dog-training/puppy-on-grass-field-1322182.jpg);
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: calc(2 * var(--margin-h-big));
+}
+
+.title-box{
+    background-color: var(--dark-opacity-box);
+    color: var(--text-on-dark);
+    padding: 0 var(--margin-h-big);
+}
+
+.title-box h1{
+    font-size: 3vw;
+}
+
+.title-box h6{
+    font-size: 1vw;
+    padding-bottom: var(--margin-w-small);
+}
