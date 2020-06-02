@@ -1,15 +1,15 @@
-// This file is the main engine of the SPA site that handels the page changes.
+// This file is the main engine of the SPA site that handles the page changes.
 
 const viewUrl = 'views/'; // source where the html files are located
 const rootDiv = document.getElementById('appRoot'); // Main div that containts the site
 let firstLoad = true;
 
-// Array of pages that the SPA could use with meta informations.
+// Array of pages that the SPA could use with meta information.
 const pages = [{
         name: 'home',
         title: 'Home page',
         description: 'This is the home page.',
-        keywords: 'home page,landing page,firts look',
+        keywords: 'home page,landing page,first look',
         author: 'Ben - 0',
         rootPage: true
     },
@@ -17,8 +17,8 @@ const pages = [{
         name: 'about',
         title: 'About us',
         description: 'This is where you find information about us.',
-        keywords: 'story,hi,nice,to,meet,you.',
-        author: 'Ben - 1',
+        keywords: 'story,team,nice,to,meet,you.',
+        author: 'Zsofia',
         rootPage: false
     },
     {
