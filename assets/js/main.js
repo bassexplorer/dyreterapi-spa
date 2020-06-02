@@ -19,8 +19,8 @@ const pages = [{
         title: 'About us',
         description: 'This is where you find information about us.',
         keywords: 'story,hi,nice,to,meet,you.',
-        image: 'assets/img/some.jpg',
-        author: 'Ben - 1',
+        image: 'assets/img/about/team.jpg',
+        author: 'Zsofia',
         rootPage: false
     },
     {
