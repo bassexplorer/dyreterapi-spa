@@ -7,7 +7,7 @@ let firstLoad = true;
 // Array of pages that the SPA could use with meta informations.
 const pages = [{
         name: 'home',
-        title: 'Home page',
+        title: 'Home page | Center for Dyreterapi',
         description: 'This is the home page.',
         keywords: 'home page,landing page,firts look',
         image: 'assets/img/some.jpg',
@@ -16,16 +16,16 @@ const pages = [{
     },
     {
         name: 'about',
-        title: 'About us',
+        title: 'About us | Center for Dyreterapi',
         description: 'This is where you find information about us.',
         keywords: 'story,hi,nice,to,meet,you.',
-        image: 'assets/img/some.jpg',
-        author: 'Ben - 1',
+        image: 'assets/img/small/about/team.png',
+        author: 'Zsofia',
         rootPage: false
     },
     {
         name: 'contact',
-        title: 'Contact Us',
+        title: 'Contact Us | Center for Dyreterapi',
         description: 'This is where you can contact us in case you have any question',
         keywords: 'Contact page,form,question,',
         image: 'assets/img/some.jpg',
@@ -75,7 +75,7 @@ function partialRender() {
 
         }))
         .then(
-            // after we renderd everything we add the Script tags 
+            // after we rendered everything we add the Script tags 
             // in this way the scripts run after the html elements are in place.
             // so it can modify the DOM
 
@@ -95,7 +95,7 @@ partialRender();
 // this function runs when a hash change detected in the URL and render the page according to the pages array.
 function renderActivePage(partial) {
 
-    // if no imput then it will bring the SPA to the rootpage which is the landing page.
+    // if no input then it will bring the SPA to the rootpage which is the landing page.
     if (!partial) {
         partial = pages.find(page => page.rootPage).name;
     }
