@@ -1,9 +1,116 @@
+:root {
+    /* Main colors */
+    --main-bg-color: #ffffff;
+    --section-bg-color: #F6F6F6;
+    --section-darker-bg-color:#EAEAEA;
+    --footer-bg-color:#752129;
+    
+    /* Font styling */
+    --text-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --text-secondary: 'Lato', sans-serif;
+    --heading-color: #C22333;
+    --text-on-bg: #272020;
+    --text-on-dark: white;
+    --text-gray:#8D8484;
+    --text-bold: bold;
+    --text-normal: normal;
+    --text-thin: lighter;
+    --h1: 3vw;
+    --h2: 2vw;
+    --h3: 1.5vw;
+    
 
-.about-h1{
-    font-size: 50px;
+    /* Opacity boxes */
+    --dark-opacity-box: rgba(0, 0, 0, 0.40);
+    --light-opacity-box: rgba(255, 255, 255, 0.70);
+
+    /* Gaps,Spaces,Margins */
+    --small-gap:.2rem;
+    --medium-gap: .5rem;
+    --big-gap:1rem;
+
+    --margin-h-small:1vh;
+    --margin-h-medium:2vh;
+    --margin-h-big:5vh;
+
+    --margin-w-small:1vh;
+    --margin-w-medium:2vh;
+    --margin-w-big:5vh;
+
+    /* Appointment, Trainers-Teachers */
+    --sidebar-box-bg: rgba(117, 115, 45, 0.20);
+    
+    /* Buttons, call to actions, links */
+    --button-gold: #BEA166;
+    --button-red: #752129;
+    --link-underline:#752129;
+  }
+
+.top {
+    width: 65vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.kacsa{
-    height: 50vh;
-    background-color: blue;
+.summary {
+    width: 50%;
+    text-align: center;
+    color: #8D8484;
+    font-family: var(--text-secondary);
+    font-size: 1.25vw;
+    margin-top: var(--margin-h-big);
+    margin-bottom: var(--margin-h-big);
+    line-height: 4vh;
 }
+
+.right{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: var(--section-bg-color);
+    align-items: center;
+}
+
+.left{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-img{
+    width: 33.333%;
+}
+
+.about-txt{
+    width: 25%;
+}
+
+.left .about-txt{
+    margin-right: var(--margin-w-big);
+}
+
+.about-name h2 {
+    font-size: 4vh;
+    font-family: var(--text-secondary);
+    color: var(--heading-color);
+    margin-top: var(--margin-h-big);
+    margin-bottom: var(--margin-h-big);
+}
+.about-txt p{
+font-family: var(--text-secondary);
+color: var(--text-gray);
+line-height: 4vh;
+}
+
+.read_more_inner_link {
+color: var(--button-gold);
+text-transform: uppercase;
+}
+
+   
+
