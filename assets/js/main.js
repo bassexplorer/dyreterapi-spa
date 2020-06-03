@@ -24,6 +24,16 @@ const pages = [{
         rootPage: false
     },
     {
+        name: 'practical',
+        title: 'Practical Info | Center for Dyreterapi',
+        description: 'Find practical guidance',
+        keywords: 'payment,cancellation,accommodation,travel',
+        image: 'assets/img/small/practical_info/practical_hero(s).png',
+        author: 'Zsofia',
+        rootPage: false
+    },
+    
+    {
         name: 'contact',
         title: 'Contact Us | Center for Dyreterapi',
         description: 'This is where you can contact us in case you have any question',
