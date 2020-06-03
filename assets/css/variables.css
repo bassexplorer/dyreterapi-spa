@@ -5,7 +5,9 @@
     --section-darker-bg-color:#EAEAEA;
     --footer-bg-color:#752129;
     
-    /* Font styleing */
+    /* Font styling */
+    --text-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --text-secondary: 'Lato', sans-serif;
     --heading-color: #C22333;
     --text-on-bg: #272020;
     --text-on-dark: white;
