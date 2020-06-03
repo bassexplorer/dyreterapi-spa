@@ -39,7 +39,6 @@
 
     /* Appointment, Trainers-Teachers */
     --sidebar-box-bg: rgba(117, 115, 45, 0.20);
-
     
     /* Buttons, call to actions, links */
     --button-gold: #BEA166;
@@ -47,57 +46,12 @@
     --link-underline:#752129;
   }
 
-.title-box {
-    background-color: var(--dark-opacity-box);
-    color: var(--text-on-dark);
-    padding: 0 var(--margin-h-big);
-}
-
-.title-box h1 {
-    margin-top: var(--margin-h-medium);
-    font-family: var(--text-primary);
-}
-
-.title-box h3 {
-    font-family: var(--text-primary);
-    margin-bottom: var(--margin-h-medium);
-    font-size: 1.75vw;
-}
-
 .top {
     width: 65vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
-.breadcrumbs {
-    padding: 10px 16px;
-    list-style: none;
-    text-decoration: none;
-    font-family: var(--text-secondary);
-    justify-content: flex-start;
-    color: var(--text-gray);
-}
-.breadcrumbs li {
-    display: inline;
-}
-
-ul.breadcrumbs li+li:before {
-    padding: 8px;
-    color: var(--text-gray);
-    content: "/\00a0";
-  }
-
-  ul.breadcrumbs li a {
-    color: var(--text-gray);
-    text-decoration: none;
-  }
-
-  ul.breadcrumbs li a:hover {
-    color: var(--link-underline);
-    text-decoration: underline;
-  }
 
 .summary {
     width: 50%;

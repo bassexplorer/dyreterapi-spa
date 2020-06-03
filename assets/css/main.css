@@ -8,9 +8,32 @@
 
 
 .breadcrumbs {
-    color: var(--text-gray:#8D8484);
+    padding: 10px 40px;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--text-secondary);
+    justify-content: flex-start;
+    color: var(--text-gray);
+}
+.breadcrumbs li {
+    display: inline;
 }
 
+ul.breadcrumbs li+li:before {
+    padding: 8px;
+    color: var(--text-gray);
+    content: "/\00a0";
+  }
+
+  ul.breadcrumbs li a {
+    color: var(--text-gray);
+    text-decoration: none;
+  }
+
+  ul.breadcrumbs li a:hover {
+    color: var(--link-underline);
+    text-decoration: underline;
+  }
 
 .tooltip {
     position: relative;
