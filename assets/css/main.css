@@ -7,7 +7,9 @@
 @import url(about.css);
 
 
-
+.breadcrumbs {
+    color: var(--text-gray:#8D8484);
+}
 
 
 .tooltip {
