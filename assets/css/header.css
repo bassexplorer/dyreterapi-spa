@@ -8,6 +8,10 @@ header{
     padding-bottom: calc(2 * var(--margin-h-big));
 }
 
+header span{
+    color: var(--heading-color);
+}
+
 .header-about-us{
     background-image: url(/assets/img/big/about/team.jpg);
 }
