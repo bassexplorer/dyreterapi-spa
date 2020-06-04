@@ -11,6 +11,10 @@ header span {
     color: var( --heading-color);
 }
 
+header span{
+    color: var(--heading-color);
+}
+
 .header-about-us{
     background-image: url(/assets/img/big/about/team.jpg);
 }
@@ -26,6 +30,10 @@ header span {
     background-image: url(/assets/img/big/education-courses/horse-behavior-and-teaching-phycology.jpg);
 }
 
+.header-training{
+    background-image: url(/assets/img/big/about/team.jpg);
+}
+
 .title-box {
     background-color: var(--dark-opacity-box);
     color: var(--text-on-dark);
@@ -36,6 +44,7 @@ header span {
     margin-top: var(--margin-h-medium);
     font-family: var(--text-primary);
     font-size: 3vw;
+    font-weight: var(--text-bold);
 }
 
 .title-box h3 {

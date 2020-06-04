@@ -5,10 +5,42 @@
 @import url(footer.css);
 
 @import url(about.css);
+
 @import url(education-courses.css);
 @import url(horse-behavior.css);
 
 
+@import url(practical-info.css);
+@import url(privacy-policy.css);
+
+
+@import url(training-vra.css);
+@import url(training.css);
+
+@import url(practical-info.css);
+@import url(privacy-policy.css);
+
+
+
+h1 {
+    font-size: var(--h1);
+    color: var(--section-bg-color);
+}
+
+h2 {
+    font-size: var(--h2);
+    color: var(--heading-color);
+}
+
+h3 {
+    font-size: var(--h3);
+    color: var(--heading-color);
+}
+
+h4 {
+    font-size: var(--h4);
+    color: var(--heading-color);
+}
 
 .breadcrumbs {
     padding: 10px 40px;
@@ -18,6 +50,7 @@
     justify-content: flex-start;
     color: var(--text-gray);
 }
+
 .breadcrumbs li {
     display: inline;
 }
@@ -26,17 +59,17 @@ ul.breadcrumbs li+li:before {
     padding: 8px;
     color: var(--text-gray);
     content: "/\00a0";
-  }
+}
 
-  ul.breadcrumbs li a {
+ul.breadcrumbs li a {
     color: var(--text-gray);
     text-decoration: none;
-  }
+}
 
-  ul.breadcrumbs li a:hover {
+ul.breadcrumbs li a:hover {
     color: var(--link-underline);
     text-decoration: underline;
-  }
+}
 
 .tooltip {
     position: relative;
@@ -72,4 +105,9 @@ ul.breadcrumbs li+li:before {
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+
+.animation-allow{
+    transition: all .3s ease-in-out;
 }
