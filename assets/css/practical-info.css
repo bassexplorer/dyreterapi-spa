@@ -45,3 +45,21 @@
     --button-red: #752129;
     --link-underline:#752129;
   }
+
+  .title-box {
+    background-color: var(--dark-opacity-box);
+    color: var(--text-on-dark);
+    padding: 0 var(--margin-h-big);
+}
+
+.title-box h1 {
+    margin-top: var(--margin-h-medium);
+    font-family: var(--text-primary);
+    font-size: 3vw;
+}
+
+.title-box h3 {
+    font-family: var(--text-primary);
+    margin-bottom: var(--margin-h-medium);
+    font-size: 1.75vw;
+}
