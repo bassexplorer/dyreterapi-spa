@@ -80,6 +80,7 @@ nav.nav-top {
     justify-content: flex-end;
     font-size: 1rem;
     font-family: var(--text-primary);
+    color: var(--text-on-bg);
 }
 
 
@@ -92,6 +93,7 @@ nav.nav-top {
     justify-content: flex-end;
     font-size: 1.2rem;
     font-family: var(--text-primary);
+    color: var(--text-on-bg);
 }
 
 

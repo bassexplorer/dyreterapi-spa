@@ -27,6 +27,10 @@ header span{
     background-image: url(/assets/img/big/about/team.jpg);
 }
 
+.header-privacy-policy{
+    background-image: url(/assets/img/big/privacy_policy/privacy-policy.png);
+}
+
 .title-box {
     background-color: var(--dark-opacity-box);
     color: var(--text-on-dark);

@@ -1,40 +1,3 @@
-:root {
-  /* Main colors */
-  --main-bg-color: #ffffff;
-  --section-bg-color: #F6F6F6;
-  --section-darker-bg-color: #EAEAEA;
-  --footer-bg-color: #752129;
-  /* Font styling */
-  --text-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --text-secondary: 'Lato', sans-serif;
-  --heading-color: #C22333;
-  --text-on-bg: #272020;
-  --text-on-dark: #F6F6F6;
-  --text-gray: #8D8484;
-  --text-bold: bold;
-  --text-normal: normal;
-  --text-thin: lighter;
-  /* Opacity boxes */
-  --dark-opacity-box: rgba(0, 0, 0, 0.40);
-  --light-opacity-box: rgba(255, 255, 255, 0.70);
-  /* Gaps,Spaces,Margins */
-  --small-gap: .2rem;
-  --medium-gap: .5rem;
-  --big-gap: 1rem;
-  --margin-h-small: 1vh;
-  --margin-h-medium: 2vh;
-  --margin-h-big: 5vh;
-  --margin-w-small: 1vh;
-  --margin-w-medium: 2vh;
-  --margin-w-big: 5vh;
-  /* Appointment, Trainers-Teachers */
-  --sidebar-box-bg: rgba(117, 115, 45, 0.20);
-  /* Buttons, call to actions, links */
-  --button-gold: #BEA166;
-  --button-red: #752129;
-  --link-underline: #752129;
-}
-
 .top {
   width: 100vw;
   display: flex;
@@ -135,6 +98,7 @@ iframe {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: var(--margin-h-big);
 }
 
 .practicalities-wrapper h2{

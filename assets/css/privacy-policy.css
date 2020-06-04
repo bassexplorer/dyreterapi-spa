@@ -42,3 +42,32 @@
     --button-red: #752129;
     --link-underline:#752129;
   }
+
+  .top {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .sub-title-left {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    margin-bottom: var(--margin-h-big);
+  }
+  
+  .sub-title-txt {
+    font-family: var(--text-primary);
+    color: var(--heading-color);
+    font-size: 4vh;
+  }
+
+.privacy-txt{
+  width:70%;
+  align-items: center;
+}
+
+  .cookies{
+    color: var(--text-on-bg);
+    font-style: var(--text-bold);
+  }
