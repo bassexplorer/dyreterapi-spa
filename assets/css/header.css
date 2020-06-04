@@ -16,6 +16,10 @@ header{
     background-image: url(/assets/img/big/about/team.jpg);
 }
 
+.header-training{
+    background-image: url(/assets/img/big/about/team.jpg);
+}
+
 .title-box {
     background-color: var(--dark-opacity-box);
     color: var(--text-on-dark);
@@ -26,6 +30,7 @@ header{
     margin-top: var(--margin-h-medium);
     font-family: var(--text-primary);
     font-size: 3vw;
+    font-weight: var(--text-bold);
 }
 
 .title-box h3 {

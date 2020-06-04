@@ -33,6 +33,42 @@ const pages = [{
         rootPage: false
     },
     {
+        name: 'training-vra',
+        title: 'Training in Vrå | Center for Dyreterapi',
+        description: 'Training in Vrå for you and your beloved dog.',
+        keywords: 'Contact page,form,question,',
+        image: 'assets/img/some.jpg',
+        author: 'Ben',
+        rootPage: false
+    },
+    {
+        name: 'training',
+        title: 'Training | Center for Dyreterapi',
+        description: 'Here you can find a lot of information about our training activities and other services',
+        keywords: 'training,activities,services,categories,information,dog,horses,nutrition',
+        image: 'assets/img/some.jpg',
+        author: 'Ben',
+        rootPage: false
+    },
+    {
+        name: 'practical-info',
+        title: 'Practical Info| Center for Dyreterapi',
+        description: 'Here you can find a lot of information about our training activities and other services',
+        keywords: 'training,activities,services,categories,information,dog,horses,nutrition',
+        image: 'assets/img/some.jpg',
+        author: 'Zsofia',
+        rootPage: false
+    },
+    {
+        name: 'privacy-policy',
+        title: 'Privacy Policy| Center for Dyreterapi',
+        description: 'Here you can find a lot of information about our training activities and other services',
+        keywords: 'training,activities,services,categories,information,dog,horses,nutrition',
+        image: 'assets/img/some.jpg',
+        author: 'Zsofia',
+        rootPage: false
+    },
+    {
         name: '404',
         title: '404 ERROR',
         description: 'This page is not found,please try again later.',

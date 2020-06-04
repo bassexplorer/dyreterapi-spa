@@ -6,6 +6,15 @@
 
 @import url(about.css);
 
+@import url(training-vra.css);
+@import url(training.css);
+
+@import url(practical-info.css);
+@import url(privacy-policy.css);
+
+
+
+
 
 .breadcrumbs {
     padding: 10px 40px;
