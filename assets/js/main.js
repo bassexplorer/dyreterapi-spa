@@ -42,6 +42,28 @@ const pages = [{
         author: 'Ben - 2',
         rootPage: false
     },
+
+    {
+        name: 'horse-behavior-and-teaching-psychology',
+        title: 'Horse Behavior and Teaching Psychology',
+        description: 'This is where you find out about our horse behavior',
+        keywords: 'horses, behavior, teaching',
+        image: 'assets/img/some.jpg', 
+        author: 'Subeh',
+        rootPage: false
+    },
+    
+    {
+        name: 'education-courses',
+        title: 'Education & Courses',
+        description: 'This is where you find out about our courses and education',
+        keywords: 'courses, education, dogs, cats, horses',
+        image: 'assets/img/some.jpg', 
+        author: 'Subeh',
+        rootPage: false
+    },
+
+
     {
         name: 'training-vra',
         title: 'Training in Vrå | Center for Dyreterapi',

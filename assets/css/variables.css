@@ -20,6 +20,7 @@
   --h2: 2vw;
   --h3: 1.5vw;
   --h4: 1.2vw;
+
   
 
   /* Opacity boxes */
@@ -46,4 +47,6 @@
   --button-gold: #BEA166;
   --button-red: #752129;
   --link-underline:#752129;
+
 }
+
