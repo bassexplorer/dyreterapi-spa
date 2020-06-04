@@ -38,7 +38,7 @@
 }
 
 .about-txt{
-    width: 25%;
+    width: 27%;
     display: flex;
     flex-direction: column;
     margin-top: var(--margin-h-big);
