@@ -49,27 +49,40 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  .sub-title-left {
-    width: 100%;
-    display: flex;
-    justify-content: left;
-    margin-bottom: var(--margin-h-big);
-  }
   
   .sub-title-txt {
     font-family: var(--text-primary);
     color: var(--heading-color);
     font-size: 4vh;
+    margin-top: var(--margin-h-medium);
+    margin-bottom: var(--margin-h-medium);
   }
 
+
+.privacy-wrap{
+  width:100%;
+  display: flex;
+  margin-bottom: var(--margin-h-big);
+  justify-content: center;
+}
+
 .privacy-txt{
-  width:70%;
-  align-items: center;
+  width: 70%;
+  flex-direction: column;
+}
+
+.privacy-txt h3{
+  font-family: var(--text-secondary);
+  color: var(--heading-color);
+  text-transform: capitalize;
+  margin-bottom: var(--margin-h-medium);
+  font-size: 1.25vw;
 }
 
 .privacy-txt p{
   font-family: var(--text-secondary);
   color: var(--text-gray);
+  margin-top:var(--margin-h-medium);
   margin-bottom: var(--margin-h-big);
   line-height: 4vh;
 }
