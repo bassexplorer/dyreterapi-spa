@@ -67,6 +67,13 @@
   align-items: center;
 }
 
+.privacy-txt p{
+  font-family: var(--text-secondary);
+  color: var(--text-gray);
+  margin-bottom: var(--margin-h-big);
+  line-height: 4vh;
+}
+
   .cookies{
     color: var(--text-on-bg);
     font-style: var(--text-bold);
