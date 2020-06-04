@@ -24,10 +24,10 @@ const pages = [{
         rootPage: false
     },
     {
-        name: 'practical',
+        name: 'practical-info',
         title: 'Practical Info | Center for Dyreterapi',
         description: 'Find practical guidance',
-        keywords: 'payment,cancellation,accommodation,travel',
+        keywords: 'payment,cancellation,accommodation,travel,',
         image: 'assets/img/small/practical_info/practical_hero(s).png',
         author: 'Zsofia',
         rootPage: false
@@ -40,6 +40,15 @@ const pages = [{
         keywords: 'Contact page,form,question,',
         image: 'assets/img/some.jpg',
         author: 'Ben - 2',
+        rootPage: false
+    },
+    {
+        name: 'privacy-policy',
+        title: 'Privacy policy| Center for Dyreterapi',
+        description: 'We are an open book',
+        keywords: 'cookies,personal information,complaints,',
+        image: 'assets/img/small/privacy_policy/privacy_policy(s).png',
+        author: 'Zsofia',
         rootPage: false
     },
     {
