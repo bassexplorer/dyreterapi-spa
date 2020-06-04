@@ -1,13 +1,23 @@
 header{
-    background-color: aqua;
-    height: 45vh;
+    height: 60vh;
     z-index: -5;
-    background-image: url(../img/indi-dog-training/puppy-on-grass-field-1322182.jpg);
     background-position: top center;
     background-size: cover;
-    display: flex;
+    display: none;
     align-items: flex-end;
     padding-bottom: calc(2 * var(--margin-h-big));
+}
+
+.header-about-us{
+    background-image: url(/assets/img/big/about/team.jpg);
+}
+
+.header-training-vra{
+    background-image: url(/assets/img/big/about/team.jpg);
+}
+
+.header-training{
+    background-image: url(/assets/img/big/about/team.jpg);
 }
 
 .title-box {
@@ -20,6 +30,7 @@ header{
     margin-top: var(--margin-h-medium);
     font-family: var(--text-primary);
     font-size: 3vw;
+    font-weight: var(--text-bold);
 }
 
 .title-box h3 {
@@ -27,3 +38,15 @@ header{
     margin-bottom: var(--margin-h-medium);
     font-size: 1.75vw;
 }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) { }
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { }
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {  }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {  }
