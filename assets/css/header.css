@@ -17,11 +17,15 @@ header span{
 }
 
 .header-training-vra{
-    background-image: url(/assets/img/big/about/team.jpg);
+    background-image: url(/assets/img/big/training-vra/training-vra-header.jpg);
 }
 
 .header-training{
-    background-image: url(/assets/img/big/about/team.jpg);
+    background-image: url(/assets/img/big/training/training-header.jpg);
+}
+
+.header-404-page {
+    height: 5rem;
 }
 
 .title-box {
@@ -41,6 +45,7 @@ header span{
     font-family: var(--text-primary);
     margin-bottom: var(--margin-h-medium);
     font-size: 1.75vw;
+    font-weight: var(--text-thin);
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
