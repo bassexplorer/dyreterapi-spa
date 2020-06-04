@@ -13,12 +13,16 @@
 }
 
 .summary-txt{
-    width: 30%;
+    width: 45%;
     text-align: center;
     color: #8D8484;
     font-family: var(--text-secondary);
     font-size: 1.25vw;
     line-height: 4vh;
+}
+
+.summary-txt h3{
+    color: var(--text-gray);
 }
 
 .right{
