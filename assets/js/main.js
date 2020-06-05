@@ -24,6 +24,16 @@ const pages = [{
         rootPage: false
     },
     {
+        name: 'practical-info',
+        title: 'Practical Info | Center for Dyreterapi',
+        description: 'Find practical guidance',
+        keywords: 'payment,cancellation,accommodation,travel,',
+        image: 'assets/img/small/practical_info/practical_hero(s).png',
+        author: 'Zsofia',
+        rootPage: false
+    },
+    
+    {
         name: 'contact',
         title: 'Contact Us | Center for Dyreterapi',
         description: 'This is where you can contact us in case you have any question',
@@ -32,6 +42,28 @@ const pages = [{
         author: 'Ben - 2',
         rootPage: false
     },
+
+    {
+        name: 'horse-behavior-and-teaching-psychology',
+        title: 'Horse Behavior and Teaching Psychology',
+        description: 'This is where you find out about our horse behavior',
+        keywords: 'horses, behavior, teaching',
+        image: 'assets/img/some.jpg', 
+        author: 'Subeh',
+        rootPage: false
+    },
+    
+    {
+        name: 'education-courses',
+        title: 'Education & Courses',
+        description: 'This is where you find out about our courses and education',
+        keywords: 'courses, education, dogs, cats, horses',
+        image: 'assets/img/some.jpg', 
+        author: 'Subeh',
+        rootPage: false
+    },
+
+
     {
         name: 'training-vra',
         title: 'Training in Vrå | Center for Dyreterapi',
@@ -51,20 +83,11 @@ const pages = [{
         rootPage: false
     },
     {
-        name: 'practical-info',
-        title: 'Practical Info| Center for Dyreterapi',
-        description: 'Here you can find a lot of information about our training activities and other services',
-        keywords: 'training,activities,services,categories,information,dog,horses,nutrition',
-        image: 'assets/img/some.jpg',
-        author: 'Zsofia',
-        rootPage: false
-    },
-    {
         name: 'privacy-policy',
-        title: 'Privacy Policy| Center for Dyreterapi',
-        description: 'Here you can find a lot of information about our training activities and other services',
-        keywords: 'training,activities,services,categories,information,dog,horses,nutrition',
-        image: 'assets/img/some.jpg',
+        title: 'Privacy policy | Center for Dyreterapi',
+        description: 'We are an open book',
+        keywords: 'cookies,personal information,complaints,',
+        image: 'assets/img/small/privacy_policy/privacy_policy(s).png',
         author: 'Zsofia',
         rootPage: false
     },
