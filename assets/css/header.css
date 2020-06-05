@@ -3,7 +3,7 @@ header{
     z-index: -5;
     background-position: top center;
     background-size: cover;
-    display: none;
+    display: flex;
     align-items: flex-end;
     padding-bottom: calc(2 * var(--margin-h-big));
 }
@@ -13,6 +13,7 @@ header span {
 
 header span{
     color: var(--heading-color);
+    font-weight: var(--text-bold);
 }
 
 .header-about-us{
@@ -23,7 +24,7 @@ header span{
 }
 
 .header-training-vra{
-    background-image: url(/assets/img/big/about/team.jpg);
+    background-image: url(/assets/img/big/training-vra/training-vra-header.jpg);
 }
 .header-education-courses{
     background-image: url(/assets/img/big/education-courses/hero-education.jpg);
@@ -34,7 +35,11 @@ header span{
 }
 
 .header-training{
-    background-image: url(/assets/img/big/about/team.jpg);
+    background-image: url(/assets/img/big/training/training-header.jpg);
+}
+
+.header-404-page {
+    height: 5rem;
 }
 
 .header-privacy-policy{
@@ -58,7 +63,9 @@ header span{
     font-family: var(--text-primary);
     margin-bottom: var(--margin-h-medium);
     font-size: 1.75vw;
+    font-weight: var(--text-thin);
     color: var(--text-on-dark);
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
