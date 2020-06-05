@@ -126,6 +126,7 @@ nav.nav-top {
 
 .main-nav .dropdown-li:nth-child(1) .dropdown-content-div::after {
     right: 42rem;
+    
 }
 
 .main-nav .dropdown-li:nth-child(2) .dropdown-content-div::after {
@@ -138,6 +139,7 @@ nav.nav-top {
 
 .main-nav .dropdown-li:nth-child(4) .dropdown-content-div::after {
     right: 8.5rem;
+    
 }
 
 
@@ -156,21 +158,26 @@ nav.nav-top {
 
 .main-nav .dropdown-li:nth-child(1) .dropdown-content-div::before {
     /* width: 42.5rem; */
-    width: 76.75rem;
+    /* width: 76.75rem; */
+    width: calc(100% - 43.3rem);
+    
 }
 
 .main-nav .dropdown-li:nth-child(2) .dropdown-content-div::before {
     /* width: 28.5rem; */
-    width: 90.65rem;
+    /* width: 90.65rem; */
+    width: calc(100% - 29.3rem);
 }
 
 .main-nav .dropdown-li:nth-child(3) .dropdown-content-div::before {
     /* width: 18rem; */
-    width: 101.25rem;
+    /* width: 101.25rem; */
+    width: calc(100% - 18.9rem);
 }
 
 .main-nav .dropdown-li:nth-child(4) .dropdown-content-div::before {
-    width: 110.1rem;
+    /* width: 110.1rem; */
+    width: calc(100% - 9.8rem);
 }
 
 /* Till this point */
@@ -232,8 +239,26 @@ nav.nav-top {
 }
 
 
+ /* ARROW TO THE TOP */
+
+#backToTop{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 4rem;
+    margin: var(--margin-h-big) var(--margin-w-big);
+    animation: jump 1s infinite;
+    visibility: hidden;
+}
+
+@keyframes jump {
+    0% { bottom: 0; } 
+    50% { bottom: 5px; } 
+    100% { bottom: 0; }
+  } 
+
 /* Open dropdown - this style is for just development purposes */
-/* .main-nav .open {
+.main-nav .open {
     visibility: visible;
     transform: scaleY(1);
-} */
+}

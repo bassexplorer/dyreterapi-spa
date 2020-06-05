@@ -3,13 +3,14 @@ header{
     z-index: -5;
     background-position: top center;
     background-size: cover;
-    display: none;
+    display: flex;
     align-items: flex-end;
     padding-bottom: calc(2 * var(--margin-h-big));
 }
 
 header span{
     color: var(--heading-color);
+    font-weight: var(--text-bold);
 }
 
 .header-about-us{

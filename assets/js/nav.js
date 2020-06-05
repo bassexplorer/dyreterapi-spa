@@ -12,14 +12,30 @@ window.addEventListener('hashchange', ()=>{
 
 window.addEventListener('scroll', ()=>{
     let distanceFromTop = window.pageYOffset
-    let navigation = document.getElementsByClassName('nav-top')[0];
+    const navigation = document.getElementsByClassName('nav-top')[0];
+    const backArrow = document.getElementById('backToTop');
 
     if(distanceFromTop > 100){
         navigation.style.backgroundColor = 'white';
         navigation.style.boxShadow = '0px 1px 5px 0px #0000004d';
+        backArrow.style.visibility = 'visible';
     }else{
         navigation.style.backgroundColor = 'rgba(255, 255, 255, 0.70)';
         navigation.style.boxShadow = 'none';
+        backArrow.style.visibility = 'hidden';
     }
 
-})
+});
+
+
+// Scroll into view function that scroll an element into view
+function srollToElement(element){
+    
+    if(!element){
+        element = 'HEADER';
+    }
+
+    let elementToScroll = document.querySelector(element);
+    console.log(elementToScroll)
+    elementToScroll.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+}

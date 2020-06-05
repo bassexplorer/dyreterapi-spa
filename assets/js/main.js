@@ -87,7 +87,7 @@ function partialRender() {
         firstLoad = false;
     }
     // Name all the partials we want to display from html files
-    const partialNames = ['nav', 'header', 'main', 'footer'];
+    const partialNames = ['nav', 'main', 'footer'];
     // Collect all the partials in one promise to keep the fetching and the loading consistent.
     Promise.all(partialNames.map(partial => {
 
