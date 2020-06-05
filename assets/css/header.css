@@ -7,6 +7,9 @@ header{
     align-items: flex-end;
     padding-bottom: calc(2 * var(--margin-h-big));
 }
+header span {
+    color: var( --heading-color);
+}
 
 header span{
     color: var(--heading-color);
@@ -21,6 +24,13 @@ header span{
 
 .header-training-vra{
     background-image: url(/assets/img/big/about/team.jpg);
+}
+.header-education-courses{
+    background-image: url(/assets/img/big/education-courses/hero-education.jpg);
+}
+
+.header-horse-behavior-and-teaching-psychology{
+    background-image: url(/assets/img/big/education-courses/horse-behavior-and-teaching-phycology.jpg);
 }
 
 .header-training{

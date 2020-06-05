@@ -19,7 +19,6 @@
     --h2: 2vw;
     --h3: 1.5vw;
 
-
     /* Opacity boxes */
     --dark-opacity-box: rgba(0, 0, 0, 0.40);
     --light-opacity-box: rgba(255, 255, 255, 0.70);
@@ -62,7 +61,7 @@ nav.nav-top {
 }
 
 .nav-top .logo {
-    height: 5rem;
+    height: 4.5rem;
     width: auto;
 }
 
@@ -109,17 +108,15 @@ nav.nav-top {
 }
 
 
-.basic-nav li a::after,
-.main-nav li a::after {
-    content: '';
-    display: block;
-    width: 1rem;
-    height: 2px;
-    background-color: #752129;
-    transition: ease-in-out .5s;
+/* Now applied hover */
+.basic-nav li a:hover,
+.main-nav li a:hover {
+    color: #752129;
+    transition: ease-in-out .1s;
 }
 
-.basic-nav li a:hover::after,
+/* The underline hover style */
+/* .basic-nav li a:hover::after,
 .main-nav li a:hover::after {
     content: '';
     display: block;
@@ -128,6 +125,15 @@ nav.nav-top {
     background-color: var(--link-underline);
     transition: ease-in-out .5s;
 }
+.basic-nav li a::after,
+.main-nav li a::after {
+    content: '';
+    display: block;
+    width: 1rem;
+    height: 2px;
+    background-color: #752129; 
+    transition: ease-in-out .5s;
+} */
 
 .basic-nav li a.active,
 .main-nav li a.active {
@@ -153,6 +159,71 @@ nav.nav-top {
     transform: scaleY(0);
 }
 
+
+/*  The dropdown arrow style */
+.main-nav .dropdown-content-div::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent transparent #eaeaea transparent;
+    transform: translate(0%, -100%);
+    transform-origin: bottom;
+
+}
+
+.main-nav .dropdown-li:nth-child(1) .dropdown-content-div::after {
+    right: 42rem;
+}
+
+.main-nav .dropdown-li:nth-child(2) .dropdown-content-div::after {
+    right: 28rem;
+}
+
+.main-nav .dropdown-li:nth-child(3) .dropdown-content-div::after {
+    right: 17.5rem;
+}
+
+.main-nav .dropdown-li:nth-child(4) .dropdown-content-div::after {
+    right: 8.5rem;
+}
+
+
+/*  The red line in the dropdown */
+.main-nav .dropdown-content-div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    border-top-width: 12px;
+    border-style: solid;
+    border-color: var(--link-underline);
+    transform: translate(0%, -100%);
+    transform-origin: bottom;
+}
+
+.main-nav .dropdown-li:nth-child(1) .dropdown-content-div::before {
+    /* width: 42.5rem; */
+    width: 76.75rem;
+}
+
+.main-nav .dropdown-li:nth-child(2) .dropdown-content-div::before {
+    /* width: 28.5rem; */
+    width: 90.65rem;
+}
+
+.main-nav .dropdown-li:nth-child(3) .dropdown-content-div::before {
+    /* width: 18rem; */
+    width: 101.25rem;
+}
+
+.main-nav .dropdown-li:nth-child(4) .dropdown-content-div::before {
+    width: 110.1rem;
+}
+
+/* Till this point */
+
 .main-nav .dropdown-content-div .category-continer {
     flex-direction: row;
     display: flex;
@@ -166,19 +237,26 @@ nav.nav-top {
     text-align: left;
 }
 
-.main-nav .dropdown-content-div h3 {
+.main-nav .dropdown-title {
     writing-mode: vertical-rl;
     transform: scale(-1, -1);
     width: fit-content;
     font-weight: var(--text-thin);
     user-select: none;
     text-align: center;
-    margin: 0 var(--margin-w-medium);
+    margin: var(--margin-w-medium);
+    color: var(--text-on-bg);
+    text-transform: uppercase;
 }
 
 .main-nav .dropdown-category {
     padding: var(--margin-h-medium);
     margin: 0 var(--margin-w-medium);
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .main-nav .category-title {
@@ -189,7 +267,7 @@ nav.nav-top {
 .main-nav .category-title::after,
 .main-nav .category-title:hover::after {
     display: none;
-} 
+}
 
 .main-nav .dropdown-category a {
     padding: 0;
@@ -201,7 +279,9 @@ nav.nav-top {
     transform: scaleY(1);
 }
 
+
+/* Open dropdown - this style is for just development purposes */
 /* .main-nav .open {
-    display: flex;
+    visibility: visible;
     transform: scaleY(1);
 } */
