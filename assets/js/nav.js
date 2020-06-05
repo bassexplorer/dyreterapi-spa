@@ -29,7 +29,7 @@ window.addEventListener('scroll', ()=>{
 
 
 // Scroll into view function that scroll an element into view
-function srollToElement(element){
+function srcollToElement(element){
     
     if(!element){
         element = 'HEADER';
