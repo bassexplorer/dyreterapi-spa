@@ -84,7 +84,7 @@ const pages = [{
     },
     {
         name: 'privacy-policy',
-        title: 'Privacy policy| Center for Dyreterapi',
+        title: 'Privacy policy | Center for Dyreterapi',
         description: 'We are an open book',
         keywords: 'cookies,personal information,complaints,',
         image: 'assets/img/small/privacy_policy/privacy_policy(s).png',

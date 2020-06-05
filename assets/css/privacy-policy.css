@@ -1,44 +1,48 @@
-:root {
-    /* Main colors */
-    --main-bg-color: #ffffff;
-    --section-bg-color: #F6F6F6;
-    --section-darker-bg-color:#EAEAEA;
-    --footer-bg-color:#752129;
-    
-    /* Font styling */
-    --text-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --text-secondary: 'Lato', sans-serif;
-    --heading-color: #C22333;
-    --text-on-bg: #272020;
-    --text-on-dark: white;
-    --text-gray:#8D8484;
-    --text-bold: bold;
-    --text-normal: normal;
-    --text-thin: lighter;
-    
+  .top-privacy {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .sub-title-txt {
+    font-family: var(--text-primary);
+    color: var(--heading-color);
+    font-size: 4vh;
+    margin-top: var(--margin-h-medium);
+    margin-bottom: var(--margin-h-medium);
+  }
 
-    /* Opacity boxes */
-    --dark-opacity-box: rgba(0, 0, 0, 0.40);
-    --light-opacity-box: rgba(255, 255, 255, 0.70);
 
-    /* Gaps,Spaces,Margins */
-    --small-gap:.2rem;
-    --medium-gap: .5rem;
-    --big-gap:1rem;
+.privacy-wrap{
+  width:100%;
+  display: flex;
+  margin-bottom: var(--margin-h-big);
+  justify-content: center;
+}
 
-    --margin-h-small:1vh;
-    --margin-h-medium:2vh;
-    --margin-h-big:5vh;
+.privacy-txt{
+  width: 70%;
+  flex-direction: column;
+}
 
-    --margin-w-small:1vh;
-    --margin-w-medium:2vh;
-    --margin-w-big:5vh;
+.privacy-txt h3{
+  font-family: var(--text-secondary);
+  color: var(--heading-color);
+  text-transform: capitalize;
+  margin-bottom: var(--margin-h-medium);
+  font-size: 1.25vw;
+}
 
-    /* Appointment, Trainers-Teachers */
-    --sidebar-box-bg: rgba(117, 115, 45, 0.20);
-    
-    /* Buttons, call to actions, links */
-    --button-gold: #BEA166;
-    --button-red: #752129;
-    --link-underline:#752129;
+.privacy-txt p{
+  font-family: var(--text-secondary);
+  color: var(--text-gray);
+  margin-top:var(--margin-h-medium);
+  margin-bottom: var(--margin-h-big);
+  line-height: 4vh;
+}
+
+  .cookies{
+    color: var(--text-on-bg);
+    font-style: var(--text-bold);
   }
