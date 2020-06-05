@@ -50,9 +50,90 @@
 
 footer{
     background-color: var(--footer-bg-color);
-    height: 30vh;
-    font-style: var(--text-primary)
+    height: 80vh;
     color: var(--section-bg-color);
+    display: flex;
+    flex-direction: column;
 }
 
-Ther will be a scroll to -------- -> <span onclick="srollToElement()">TOP</span>
+There will be a scroll to -------- -> <span onclick="srollToElement()">TOP</span>
+
+.vertical-txt{
+  width: 100%;
+  display: flex;
+  margin-top: var(--margin-h-big);
+}
+.vertical-txt h3{
+  color: var(--section-bg-color);
+  font-family: var(--text-secondary);
+  margin-top: var(--margin-h-medium);
+  margin-bottom: var(--margin-h-medium);
+}
+.vertical-txt h4{
+  color: var(--section-bg-color);
+  font-family: var(--text-secondary);
+  margin-top: var(--margin-h-small);
+  margin-bottom: var(--margin-h-small);
+}
+.vertical-txt p{
+  color: var(--section-bg-color);
+  font-family: var(--text-secondary);
+  margin-bottom: var(--margin-h-medium);
+  line-height: 4vh;
+}
+
+.quick-nav{
+  display: flex;
+  flex-direction: row;
+  width: 33.333%;
+}
+.middle-section{
+  display: flex;
+  flex-direction: column;
+  width: 33.333%;
+}
+.footer-contact{
+  display: flex;
+  flex-direction: column;
+  width: 33.333%;
+}
+
+.quick-nav ul{
+  list-style: none;
+  line-height: 4vh;
+}
+
+.quick-nav li a{
+  color: var(--section-bg-color);
+  font-family: var(--text-secondary);
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.quick-nav a:hover{
+  text-decoration: underline;
+}
+
+.social a{
+  color: var(--section-bg-color);
+}
+
+.social a:hover{
+  color: var(--button-gold);
+}
+
+.vertical-container{
+  width: 100%;
+  background-color: var(--main-bg-color);
+}
+
+.vertical-container img{
+  height: 15vh;
+}
+
+.approvals h3{
+  color: var(--section-bg-color);
+  font-family: var(--text-secondary);
+  margin-top: var(--margin-h-medium);
+  margin-bottom: var(--margin-h-medium);
+}
