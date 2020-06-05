@@ -56,8 +56,6 @@ footer{
     flex-direction: column;
 }
 
-There will be a scroll to -------- -> <span onclick="srollToElement()">TOP</span>
-
 .vertical-txt{
   width: 100%;
   display: flex;
@@ -84,9 +82,14 @@ There will be a scroll to -------- -> <span onclick="srollToElement()">TOP</span
 
 .quick-nav{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 33.333%;
 }
+.quick-nav-items{
+  display: flex;
+  flex-direction: row;
+}
+
 .middle-section{
   display: flex;
   flex-direction: column;
