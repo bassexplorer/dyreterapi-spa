@@ -32,7 +32,6 @@ const pages = [{
         author: 'Zsofia',
         rootPage: false
     },
-    
     {
         name: 'contact',
         title: 'Contact Us | Center for Dyreterapi',
@@ -51,8 +50,7 @@ const pages = [{
         image: 'assets/img/some.jpg', 
         author: 'Subeh',
         rootPage: false
-    },
-    
+    },    
     {
         name: 'education-courses',
         title: 'Education & Courses',
@@ -60,6 +58,24 @@ const pages = [{
         keywords: 'courses, education, dogs, cats, horses',
         image: 'assets/img/some.jpg', 
         author: 'Subeh',
+        rootPage: false
+    },
+    {
+        name: 'feed-consulting',
+        title: 'Feed Consulting | Center for Dyreterapi',
+        description: 'Here you can find information about animal feeding and our consultation',
+        keywords: 'training, feeding, animal, consultation, dog, healthy, nutrition, food',
+        image: 'assets/img/some.jpg',
+        author: 'Ben',
+        rootPage: false
+    },
+    {
+        name: 'nutrition-therapy',
+        title: 'Nutrition Therapy | Center for Dyreterapi',
+        description: 'Here you can find information about proper nutrition and our therapy offer',
+        keywords: 'training, feeding, animal, consultation, dog, healthy, nutrition, food',
+        image: 'assets/img/some.jpg',
+        author: 'Ben',
         rootPage: false
     },
     {

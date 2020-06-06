@@ -50,8 +50,12 @@ header span{
     height: 20rem;
 }
 
-.header-privacy-policy{
-    background-image: url(/assets/img/big/privacy_policy/privacy-policy.png);
+.header-feed-consulting{
+    background-image: url(/assets/img/big/feed-consulting/feed-consulting-header.jpg);
+}
+
+.header-nutrition-therapy{
+    background-image: url(/assets/img/big/nutrition-therapy/nutrition-therapy-header.png);
 }
 
 .title-box {
@@ -121,5 +125,13 @@ header span{
     .header-treatment-and-therapy{
         background-image: url(/assets/img/small/treatment-and-therapy/treatment-and-therapy-header.jpg);
         
+    }
+
+    .header-feed-consulting{
+        background-image: url(/assets/img/small/feed-consulting/feed-consulting-header.jpg);
+    }
+    
+    .header-nutrition-therapy{
+        background-image: url(/assets/img/small/nutrition-therapy/nutrition-therapy-header.png);
     }
  }

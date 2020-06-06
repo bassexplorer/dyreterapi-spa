@@ -22,6 +22,10 @@
 @import url(practical-info.css);
 @import url(privacy-policy.css);
 
+@import url(feed-consulting.css);
+
+
+
 #appRoot{
     display: flex;
     flex-direction: column;
