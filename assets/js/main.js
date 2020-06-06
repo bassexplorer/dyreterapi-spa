@@ -60,6 +60,24 @@ const pages = [{
         rootPage: false
     },
     {
+        name: 'treatment-and-therapy',
+        title: 'Treatment & Therapy| Center for Dyreterapi',
+        description: 'Here you can find information about our Treatments and Therapy possibilities',
+        keywords: 'treatmend,therapy,categories,information,dog,horses',
+        image: 'assets/img/some.jpg',
+        author: 'Ben',
+        rootPage: false
+    },
+    {
+        name: 'therapy-information',
+        title: 'Physiurgical Therapy Information| Center for Dyreterapi',
+        description: 'Here you can find information about Physiurgical Therapy',
+        keywords: 'treatment,therapy,information,dog,horses,cranio sacral,massage,laser,termography,joint mobilization',
+        image: 'assets/img/some.jpg',
+        author: 'Ben',
+        rootPage: false
+    },
+    {
         name: 'privacy-policy',
         title: 'Privacy Policy| Center for Dyreterapi',
         description: 'Here you can find a lot of information about our training activities and other services',
@@ -74,7 +92,7 @@ const pages = [{
         description: 'This page is not found,please try again later.',
         keywords: 'error,missing page,deleted page, 404,',
         image: 'assets/img/some.jpg',
-        author: 'None',
+        author: 'Ben',
         rootPage: false
     }
 ];
