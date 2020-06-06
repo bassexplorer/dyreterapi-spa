@@ -124,6 +124,51 @@ const pages = [{
         rootPage: false
     },
     {
+        name: 'therapy-for-dogs',
+        title: 'Therapy for dogs | Center for Dyreterapi',
+        description: 'Here you can find information about our therapies for dogs',
+        keywords: 'treatment,therapy,information,dog,behavior problems,consultation',
+        image: 'assets/img/some.jpg',
+        author: 'Ben',
+        rootPage: false
+    },
+    {
+        name: 'therapy-for-horses',
+        title: 'Therapy for horses | Center for Dyreterapi',
+        description: 'Here you can find information about our therapies for horses',
+        keywords: 'treatment,therapy,information,horse,behavior problems,consultation,domestic',
+        image: 'assets/img/some.jpg',
+        author: 'Ben',
+        rootPage: false
+    },
+    {
+        name: 'water-treadmills-for-dogs',
+        title: 'Water treadmills for dogs | Center for Dyreterapi',
+        description: 'Here you can find information about our water treadmill method for dogs',
+        keywords: 'treatment,therapy,information,dog,training,water,treadmill,rehabilitation,fitness,strength',
+        image: 'assets/img/some.jpg',
+        author: 'Ben',
+        rootPage: false
+    },
+    {
+        name: 'physiotherapeutic-training-for-horses',
+        title: 'Physiotherapeutic training for horses | Center for Dyreterapi',
+        description: 'Here you can find information about our physiotherapeutic training for horses',
+        keywords: 'treatment,therapy,information,horse,training,physiotherapy',
+        image: 'assets/img/some.jpg',
+        author: 'Ben',
+        rootPage: false
+    },
+    {
+        name: 'physiotherapeutic-training-for-dogs',
+        title: 'Physiotherapeutic training for dogs | Center for Dyreterapi',
+        description: 'Here you can find information about our physiotherapeutic training for dogs',
+        keywords: 'treatment,therapy,information,dogs,training,physiotherapy',
+        image: 'assets/img/some.jpg',
+        author: 'Ben',
+        rootPage: false
+    },
+    {
 
         name: 'privacy-policy',
         title: 'Privacy policy | Center for Dyreterapi',

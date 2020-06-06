@@ -1,4 +1,4 @@
-header{
+header {
     height: 60vh;
     z-index: -5;
     background-position: top center;
@@ -7,55 +7,78 @@ header{
     align-items: flex-end;
     padding-bottom: calc(2 * var(--margin-h-big));
 }
+
 header span {
-    color: var( --heading-color);
+    color: var(--heading-color);
 }
 
-header span{
+header span {
     color: var(--heading-color);
     font-weight: var(--text-bold);
 }
 
-.header-about-us{
+.header-about-us {
     background-image: url(/assets/img/big/about/team.jpg);
 }
-.header-practical-info{
+
+.header-practical-info {
     background-image: url(/assets/img/big/practical_info/practical_hero.png);
 }
 
-.header-training-vra{
+.header-training-vra {
     background-image: url(/assets/img/big/training-vra/training-vra-header.jpg);
 }
-.header-education-courses{
+
+.header-education-courses {
     background-image: url(/assets/img/big/education-courses/hero-education.jpg);
 }
 
-.header-horse-behavior-and-teaching-psychology{
+.header-horse-behavior-and-teaching-psychology {
     background-image: url(/assets/img/big/education-courses/horse-behavior-and-teaching-phycology.jpg);
 }
 
-.header-training{
+.header-training {
     background-image: url(/assets/img/big/training/training-header.jpg);
 }
 
-.header-contact{
+.header-contact {
     background-image: url(/assets/img/big/contact/contact-us-header.jpg);
 }
 
-.header-treatment-and-therapy{
+.header-treatment-and-therapy {
     background-image: url(/assets/img/big/treatment-and-therapy/treatment-and-therapy-header.jpg);
+}
+
+.header-therapy-for-dogs {
+    background-image: url(/assets/img/big/therapy-for-dogs/therapy-for-dogs-header.jpg);
+}
+
+.header-therapy-for-horses {
+    background-image: url(/assets/img/big/therapy-for-horses/therapy-for-horses-header.jpg);
+}
+
+.header-water-treadmills-for-dogs {
+    background-image: url(/assets/img/big/water-treadmills-for-dogs/water-treadmil-for-dogs-header.jpg);
+}
+
+.header-physiotherapeutic-training-for-horses {
+    background-image: url(/assets/img/big/physiotherapeutic-training-horses/physiotherapeutic-training-horses-header.jpg);
+}
+
+.header-physiotherapeutic-training-for-dogs {
+    background-image: url(/assets/img/big/physiotherapeutic-training-dogs/physiotherapeutic-training-dogs-header.jpg);
+}
+
+.header-feed-consulting {
+    background-image: url(/assets/img/big/feed-consulting/feed-consulting-header.jpg);
+}
+
+.header-nutrition-therapy {
+    background-image: url(/assets/img/big/nutrition-therapy/nutrition-therapy-header.png);
 }
 
 .header-404-page {
     height: 20rem;
-}
-
-.header-feed-consulting{
-    background-image: url(/assets/img/big/feed-consulting/feed-consulting-header.jpg);
-}
-
-.header-nutrition-therapy{
-    background-image: url(/assets/img/big/nutrition-therapy/nutrition-therapy-header.png);
 }
 
 .title-box {
@@ -81,57 +104,79 @@ header span{
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (max-width: 1200px) { }
+@media (max-width: 1200px) {}
 
 /* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) { }
+@media (max-width: 992px) {}
 
 /* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) { 
-    header{
+@media (max-width: 768px) {
+    header {
         padding-bottom: 0;
     }
+
     .title-box {
         width: 100%;
     }
 
 
- }
+}
 
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) { 
+@media (max-width: 576px) {
 
-    header{
+    header {
         height: 60vh;
         padding-bottom: 0;
     }
-    
-    .header-about-us{
+
+    .header-about-us {
         background-image: url(/assets/img/small/about/team.png);
     }
-    
-    .header-training-vra{
+
+    .header-training-vra {
         background-image: url(/assets/img/small/training-vra/training-vra-header.jpg);
     }
-    
-    .header-training{
+
+    .header-training {
         background-image: url(/assets/img/small/training/training-header.jpg);
     }
-    
-    .header-contact{
+
+    .header-contact {
         background-image: url(/assets/img/small/contact/contact-us-header.jpg);
-        
-    }
-    .header-treatment-and-therapy{
-        background-image: url(/assets/img/small/treatment-and-therapy/treatment-and-therapy-header.jpg);
-        
+
     }
 
-    .header-feed-consulting{
+    .header-treatment-and-therapy {
+        background-image: url(/assets/img/small/treatment-and-therapy/treatment-and-therapy-header.jpg);
+
+    }
+
+    .header-therapy-for-dogs {
+        background-image: url(/assets/img/small/therapy-for-dogs/therapy-for-dogs-header.jpg);
+    }
+
+    .header-therapy-for-horses {
+        background-image: url(/assets/img/small/therapy-for-horses/therapy-for-horses-header.jpg);
+    }
+
+    .header-water-treadmills-for-dogs {
+        background-image: url(/assets/img/small/water-treadmil-for-dogs/water-treadmil-for-dogs-header.jpg);
+    }
+
+    .header-physiotherapeutic-training-for-horses {
+        background-image: url(/assets/img/small/physiotherapeutic-training-horses/physiotherapeutic-training-horses-header.jpg);
+    }
+
+    .header-physiotherapeutic-training-for-dogs {
+        background-image: url(/assets/img/small/physiotherapeutic-training-dogs/physiotherapeutic-training-dogs-header.jpg);
+    }
+
+    .header-feed-consulting {
         background-image: url(/assets/img/small/feed-consulting/feed-consulting-header.jpg);
     }
-    
-    .header-nutrition-therapy{
+
+    .header-nutrition-therapy {
         background-image: url(/assets/img/small/nutrition-therapy/nutrition-therapy-header.png);
     }
- }
+}
