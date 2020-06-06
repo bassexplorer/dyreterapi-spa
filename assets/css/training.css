@@ -20,7 +20,7 @@
 }
 
 .cards-container .card {
-    min-width: calc(25% - 2rem);
+    max-width: calc(25% - 2rem);
     position: relative;
     margin: 1rem;
     display: flex;
