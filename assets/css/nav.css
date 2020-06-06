@@ -217,6 +217,9 @@ nav.nav-top {
     flex-direction: column;
     align-items: flex-start;
 }
+.main-nav .dropdown-category li a {
+   text-align: left;
+}
 
 .main-nav .category-title {
     color: var(--heading-color2);
@@ -243,6 +246,7 @@ nav.nav-top {
 
 #backToTop{
     position: fixed;
+    z-index: 999;
     bottom: 0;
     right: 0;
     font-size: 4rem;
@@ -262,3 +266,17 @@ nav.nav-top {
     visibility: visible;
     transform: scaleY(1);
 }
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { }
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+
+    nav .nav-container{
+        display: none;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {  }
