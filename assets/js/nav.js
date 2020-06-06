@@ -10,6 +10,7 @@ window.addEventListener('hashchange', () => {
     activeNavItem.classList.toggle("active");
 });
 
+
 window.addEventListener('scroll', () => {
     let distanceFromTop = window.pageYOffset
     const navigation = document.getElementsByClassName('nav-top')[0];
@@ -32,16 +33,37 @@ window.addEventListener('scroll', () => {
 function scrollToElement(element) {
     setTimeout(() => {
 
-            if (!element) {
-                element = 'HEADER';
-            }
+        if (!element) {
+            element = 'HEADER';
+        }
 
-            let elementToScroll = document.querySelector(element);
-            console.log(elementToScroll)
-            elementToScroll.scrollIntoView({
-                behavior: "smooth",
-                block: "center",
-                inline: "nearest"
-            });
-         }, 100);
+        let elementToScroll = document.querySelector(element);
+        console.log(elementToScroll)
+        elementToScroll.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+            inline: "nearest"
+        });
+    }, 100);
+}
+
+function openBurgerMenu(closeit) {
+
+    const burgerScreen = document.getElementById('burgerScreen');
+    const burgerOverlay = document.getElementsByClassName('overlay')[0];
+
+    
+    burgerOverlay.style.display = 'block';
+    burgerScreen.classList.toggle('active');
+    
+    burgerOverlay.addEventListener('click', closeCanvas = function(){
+        burgerScreen.classList.remove('active');
+        burgerOverlay.style.display = 'none';
+    });
+    
+    
+    if(closeit){
+        burgerOverlay.style.display = 'none';
+        burgerScreen.classList.remove('active');
     }
+}

@@ -29,7 +29,7 @@
                             <li><a href="#therapy-4-dogs">Therapy For Dogs</a></li>
                             <li><a href="#therapy-4-horses">Therapy For Horses</a></li>
                         </ul>
-                        
+
                         <ul class="dropdown-category">
                             <li><a href="#treatment-and-therapy" class="category-title">Physiurgical Therapy</a></li>
                             <li><a href="#therapy-information">Information</a></li>
@@ -74,7 +74,8 @@
 
                         <ul class="dropdown-category">
                             <li><a href="#education-and-courses" class="category-title">Courses - For Dogs</a></li>
-                            <li><a href="#dog-behaviour-and-teaching-pshycology">Behavior & Teaching Pshycology </a></li>
+                            <li><a href="#dog-behaviour-and-teaching-pshycology">Behavior & Teaching Pshycology </a>
+                            </li>
                             <li><a href="#dog-massage-for-house-needs">Massage For House Needs</a></li>
                             <li><a href="#dog-massage-for-house-needs-online">Massage For House Need (Online)</a></li>
                             <li><a href="#dog-carnio-sacral-therapy">Carnio Sacral Therapy</a></li>
@@ -82,21 +83,26 @@
                         </ul>
 
                         <ul class="dropdown-category">
-                            <li><a href="#courses-for-dogs" class="category-title category-title">Courses - For Horses</li>
-                            <li><a href="#horse-muscular-and-neuromotor-info-day">Info day & workshop on Muscular & Neuromotor</a></li>
-                            <li><a href="#horse-anatomy-biomechanics-gymnastization">Anatomy ,Biomechanics & Gymnastization</a></li>
-                            <li><a href="#horse-massage-for-house-needs-evening">Massage For House Need (Evening)</a></li>
+                            <li><a href="#courses-for-dogs" class="category-title">Courses - For Horses</a>
+                            </li>
+                            <li><a href="#horse-muscular-and-neuromotor-info-day">Info day & workshop on Muscular &
+                                    Neuromotor</a></li>
+                            <li><a href="#horse-anatomy-biomechanics-gymnastization">Anatomy ,Biomechanics &
+                                    Gymnastization</a></li>
+                            <li><a href="#horse-massage-for-house-needs-evening">Massage For House Need (Evening)</a>
+                            </li>
                             <li><a href="#horse-massage-for-house-needs">Massage For House Need (Day)</a></li>
                             <li><a href="#horse-massage-for-house-needs-online">Massage For House Need (Online)</a></li>
                             <li><a href="#horse-kinesiotaping">Kinesiotaping</a></li>
                         </ul>
 
                         <ul class="dropdown-category">
-                            <li><a class="category-title category-title"> - </li>
+                            <li><a class="category-title"> - </a></li>
                             <li><a href="#horse-soft-tissue-mobilization">Soft Tissue Mobilization</a></li>
                             <li><a href="#horse-behavior-&-beaching-pshycology">Behavior & Beaching Pshycology</a></li>
                             <li><a href="#horse-carnio-sacral-therapy">Carnio Sacral Therapy</a></li>
-                            <li><a href="#horse-carnio-sacral-therapy-leve-info">Carnio Sacral Therapy - Level info</a></li>
+                            <li><a href="#horse-carnio-sacral-therapy-leve-info">Carnio Sacral Therapy - Level info</a>
+                            </li>
                             <li><a href="#horse-riding-training">Riding training</a></li>
                         </ul>
 
@@ -170,6 +176,63 @@
 
     </div>
 
+    <div class="burger-icon">
+        <span class="center-line" onclick="openBurgerMenu()"></span>
+    </div>
+
+    <div class="burger-nav-container" id="burgerScreen">
+        <div class="burger-main-wrapper">
+            <div class="burger-icon">
+                <span class="center-line active" onclick="openBurgerMenu(true)"></span>
+            </div>
+
+            <h2>MENU</h2>
+
+            <ul class="burger-main">
+                <li onclick="openCategory('first')"><a>Treatment & Therapy </a><i class="fas fa-angle-down"></i></li>
+                <li class="first list-lover-lvl">
+                    <ul>
+                        <li><a href="#treatment-and-therapy">Behavior Therapy</a></li>
+                        <li><a href="#treatment-and-therapy">Physiurgical Therapy</a></li>
+                        <li><a href="#treatment-and-therapy">Bach's Flower Remedies</a></li>
+                    </ul>
+                </li>
+                <li onclick="openCategory('second')"><a>Education & Courses</a><i class="fas fa-angle-down"></i></li>
+                <li class="second list-lover-lvl">
+                    <ul>
+                        <li><a href="#education-and-courses">Education</a></li>
+                        <li><a href="#courses-for-horses">Courses - For Dogs</a></li>
+                        <li><a href="#courses-for-dogs">Courses - For Horses</a></li>
+                    </ul>
+                </li>
+                <li onclick="openCategory('third')"><a>Training</a><i class="fas fa-angle-down"></i></li>
+                <li class="third list-lover-lvl">
+                    <ul>
+                        <li><a href="#training" class="category-title">Dogs</a></li>
+                        <li><a href="#training" class="category-title">Horses</a></li>
+                        <li><a href="#training" class="category-title">Nutrition</a></li>
+                    </ul>
+                </li>
+                <li onclick="openCategory('fourth')"><a>Books & Sales</a><i class="fas fa-angle-down"></i></li>
+                <li class="fourth list-lover-lvl">
+                    <ul>
+                        <li><a href="#shop-books">Books</a></li>
+                        <li><a href="#shop-training-articles">Training Articles</a></li>
+                        <li><a href="#shop-activity-toys">Activity Toys</a></li>
+                        <li><a href="#shop-anatomy-models-and-posters">Anatomy Models & Posters</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="burger-basic">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#practical-info">Practical Info</a></li>
+        </ul>
+    </div>
 </nav>
+<div class="overlay"></div>
 
 <i class="fas fa-angle-up" id="backToTop" onclick="scrollToElement()"></i>

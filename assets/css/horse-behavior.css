@@ -46,27 +46,5 @@
     --button-red: #752129;
     --link-underline:#752129;
   }
-  
 
-  .address {
-    color: var(--heading-color);
-    text-transform: uppercase;
-    }
-
-.main-title {
-        font-size: 3vh;
-        font-family: var(--text-secondary);
-        color: var(--heading-color);
-        margin-top: var(--margin-h-big);
-        margin-bottom: var(--margin-h-big);
-    }
-
-    .container{
-        width: 100%;
-        height: 60vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
 
