@@ -1,12 +1,19 @@
-.top {
-    width: 65vw;
+.top-about {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .summary {
-    width: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--margin-h-big);
+}
+
+.summary-txt {
+    width: 45%;
     text-align: center;
     color: #8D8484;
     font-family: var(--text-secondary);
@@ -16,7 +23,14 @@
     line-height: 4vh;
 }
 
+
+.summary-txt h3 {
+    color: var(--text-gray);
+}
+
 .right {
+    width: 100%;
+    height: 60vh;
     display: flex;
     flex-wrap: wrap;
     width: 100%;

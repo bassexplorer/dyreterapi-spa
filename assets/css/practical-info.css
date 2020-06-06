@@ -1,0 +1,125 @@
+.top-practical {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sub-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--margin-h-big);
+}
+
+.sub-title-txt {
+  font-family: var(--text-primary);
+  color: var(--heading-color);
+  font-size: 4vh;
+}
+
+.grey {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--section-bg-color);
+}
+
+.grey-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.grey h3 {
+  font-family: var(--text-secondary);
+  color: var(--heading-color);
+  text-transform: capitalize;
+  margin-bottom: var(--margin-h-medium);
+  font-size: 1.25vw;
+}
+
+.grey-wrapper p {
+  font-family: var(--text-secondary);
+  color: var(--text-gray);
+  margin-bottom: var(--margin-h-big);
+  line-height: 4vh;
+}
+
+iframe {
+  height: 50vh;
+}
+
+.white {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: var(--margin-h-big);
+}
+
+.facilities-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.facilities-img img {
+  margin-top: var(--margin-h-big);
+  height: 30vh;
+}
+
+.white-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  justify-content: center;
+}
+
+.white h3 {
+  font-family: var(--text-secondary);
+  color: var(--heading-color);
+  text-transform: capitalize;
+  margin-bottom: var(--margin-h-medium);
+  font-size: 1.25vw;
+}
+
+.white-wrapper p {
+  font-family: var(--text-secondary);
+  color: var(--text-gray);
+  margin-bottom: var(--margin-h-big);
+  line-height: 4vh;
+}
+
+.practicalities-wrapper {
+  background-color: var(--section-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: var(--margin-h-big);
+}
+
+.practicalities-wrapper h2{
+  margin-top: var(--margin-h-big);
+}
+
+.practicalities-txt {
+  width: 70%;
+}
+
+.practicalities-txt h3{
+  font-family: var(--text-secondary);
+  color: var(--heading-color);
+  text-transform: capitalize;
+  margin-bottom: var(--margin-h-medium);
+  font-size: 1.25vw;
+}
+
+.practicalities-txt p {
+  font-family: var(--text-secondary);
+  color: var(--text-gray);
+  margin-bottom: var(--margin-h-big);
+  line-height: 4vh;
+}
