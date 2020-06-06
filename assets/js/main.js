@@ -32,7 +32,6 @@ const pages = [{
         author: 'Zsofia',
         rootPage: false
     },
-    
     {
         name: 'contact',
         title: 'Contact Us | Center for Dyreterapi',
@@ -51,8 +50,7 @@ const pages = [{
         image: 'assets/img/some.jpg', 
         author: 'Subeh',
         rootPage: false
-    },
-    
+    },    
     {
         name: 'education-courses',
         title: 'Education & Courses',
@@ -62,8 +60,24 @@ const pages = [{
         author: 'Subeh',
         rootPage: false
     },
-
-
+    {
+        name: 'feed-consulting',
+        title: 'Feed Consulting | Center for Dyreterapi',
+        description: 'Here you can find information about animal feeding and our consultation',
+        keywords: 'training, feeding, animal, consultation, dog, healthy, nutrition, food',
+        image: 'assets/img/some.jpg',
+        author: 'Ben',
+        rootPage: false
+    },
+    {
+        name: 'nutrition-therapy',
+        title: 'Nutrition Therapy | Center for Dyreterapi',
+        description: 'Here you can find information about proper nutrition and our therapy offer',
+        keywords: 'training, feeding, animal, consultation, dog, healthy, nutrition, food',
+        image: 'assets/img/some.jpg',
+        author: 'Ben',
+        rootPage: false
+    },
     {
         name: 'training-vra',
         title: 'Training in Vrå | Center for Dyreterapi',
@@ -83,6 +97,34 @@ const pages = [{
         rootPage: false
     },
     {
+        name: 'practical-info',
+        title: 'Practical Info| Center for Dyreterapi',
+        description: 'Here you can find a lot of information about our training activities and other services',
+        keywords: 'training,activities,services,categories,information,dog,horses,nutrition',
+        image: 'assets/img/some.jpg',
+        author: 'Zsofia',
+        rootPage: false
+    },
+    {
+        name: 'treatment-and-therapy',
+        title: 'Treatment & Therapy| Center for Dyreterapi',
+        description: 'Here you can find information about our Treatments and Therapy possibilities',
+        keywords: 'treatmend,therapy,categories,information,dog,horses',
+        image: 'assets/img/some.jpg',
+        author: 'Ben',
+        rootPage: false
+    },
+    {
+        name: 'therapy-information',
+        title: 'Physiurgical Therapy Information| Center for Dyreterapi',
+        description: 'Here you can find information about Physiurgical Therapy',
+        keywords: 'treatment,therapy,information,dog,horses,cranio sacral,massage,laser,termography,joint mobilization',
+        image: 'assets/img/some.jpg',
+        author: 'Ben',
+        rootPage: false
+    },
+    {
+
         name: 'privacy-policy',
         title: 'Privacy policy | Center for Dyreterapi',
         description: 'We are an open book',
@@ -97,7 +139,7 @@ const pages = [{
         description: 'This page is not found,please try again later.',
         keywords: 'error,missing page,deleted page, 404,',
         image: 'assets/img/some.jpg',
-        author: 'None',
+        author: 'Ben',
         rootPage: false
     }
 ];

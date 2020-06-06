@@ -16,9 +16,9 @@
     --text-bold: bold;
     --text-normal: normal;
     --text-thin: lighter;
-    --h1: 3vw;
-    --h2: 2vw;
-    --h3: 1.5vw;
+    --h1: 3rem;
+    --h2: 2rem;
+    --h3: 1.5rem;
     
   
     /* Opacity boxes */

@@ -38,12 +38,24 @@ header span{
     background-image: url(/assets/img/big/training/training-header.jpg);
 }
 
-.header-404-page {
-    height: 5rem;
+.header-contact{
+    background-image: url(/assets/img/big/contact/contact-us-header.jpg);
 }
 
-.header-privacy-policy{
-    background-image: url(/assets/img/big/privacy_policy/privacy-policy.png);
+.header-treatment-and-therapy{
+    background-image: url(/assets/img/big/treatment-and-therapy/treatment-and-therapy-header.jpg);
+}
+
+.header-404-page {
+    height: 20rem;
+}
+
+.header-feed-consulting{
+    background-image: url(/assets/img/big/feed-consulting/feed-consulting-header.jpg);
+}
+
+.header-nutrition-therapy{
+    background-image: url(/assets/img/big/nutrition-therapy/nutrition-therapy-header.png);
 }
 
 .title-box {
@@ -55,14 +67,14 @@ header span{
 .title-box h1 {
     margin-top: var(--margin-h-medium);
     font-family: var(--text-primary);
-    font-size: 3vw;
+    font-size: var(--h1);
     font-weight: var(--text-bold);
 }
 
 .title-box h3 {
     font-family: var(--text-primary);
     margin-bottom: var(--margin-h-medium);
-    font-size: 1.75vw;
+    font-size: var(--h3);
     font-weight: var(--text-thin);
     color: var(--text-on-dark);
 
@@ -75,7 +87,51 @@ header span{
 @media (max-width: 992px) { }
 
 /* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {  }
+@media (max-width: 768px) { 
+    header{
+        padding-bottom: 0;
+    }
+    .title-box {
+        width: 100%;
+    }
+
+
+ }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {  }
+@media (max-width: 576px) { 
+
+    header{
+        height: 60vh;
+        padding-bottom: 0;
+    }
+    
+    .header-about-us{
+        background-image: url(/assets/img/small/about/team.png);
+    }
+    
+    .header-training-vra{
+        background-image: url(/assets/img/small/training-vra/training-vra-header.jpg);
+    }
+    
+    .header-training{
+        background-image: url(/assets/img/small/training/training-header.jpg);
+    }
+    
+    .header-contact{
+        background-image: url(/assets/img/small/contact/contact-us-header.jpg);
+        
+    }
+    .header-treatment-and-therapy{
+        background-image: url(/assets/img/small/treatment-and-therapy/treatment-and-therapy-header.jpg);
+        
+    }
+
+    .header-feed-consulting{
+        background-image: url(/assets/img/small/feed-consulting/feed-consulting-header.jpg);
+    }
+    
+    .header-nutrition-therapy{
+        background-image: url(/assets/img/small/nutrition-therapy/nutrition-therapy-header.png);
+    }
+ }

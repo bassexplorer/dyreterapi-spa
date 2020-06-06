@@ -5,6 +5,8 @@
 @import url(footer.css);
 
 @import url(about.css);
+@import url(contact.css);
+
 
 @import url(education-courses.css);
 @import url(horse-behavior.css);
@@ -19,6 +21,10 @@
 
 @import url(practical-info.css);
 @import url(privacy-policy.css);
+
+@import url(feed-consulting.css);
+
+
 
 #appRoot{
     display: flex;
@@ -44,12 +50,20 @@ h4 {
 }
 
 html, body{
-    
+    background-color: var(---section-bg-color);
     font-family:'Lato', sans-serif;
 }
 
 h1,h2,h3,h4{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.red{
+    color:var(--heading-color);
+}
+
+.bold{
+    font-weight: var(--text-bold);
 }
 
 .breadcrumbs {
@@ -121,4 +135,3 @@ ul.breadcrumbs li a:hover {
 .animation-allow{
     transition: all .3s ease-in-out;
 }
-
