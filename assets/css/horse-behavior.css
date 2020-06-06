@@ -88,16 +88,25 @@
 }
 
 .course {
-    margin-right: 20vh;
-    margin-top: 14vh;
+    margin-right: 0vh;
+    margin-left: 15vh;
+    margin-top: 12vh;
+    text-align: left;
 }
 
 
-.box-image {
+.course p {
     font-size: var(--h3);
-    color: var(--heading-color);
-
 }
+
+
+.box-image h1 {
+    font-size: var(--h1);
+    text-align: left;
+   
+  
+}
+
 
 .practicalities-txt {
     width: 70%;
@@ -173,7 +182,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-100%, -50%);
     background-color: var(--dark-opacity-box);
     color: var(--text-on-dark);
     padding: 0 var(--margin-h-big);
@@ -183,5 +192,32 @@
 .ipad {
 
     max-width: 95%;
-    max-height: 100%;
+    max-height: 99.5%;
 }
+
+.practicalities-txt .list {
+    list-style-type: none;
+    line-height: 2;
+    font-family: var(--text-secondary);
+    color: var(--text-gray);
+    margin-bottom: var(--margin-h-big);
+    line-height: 4vh;
+
+}
+
+
+.practicalities-txt li:before {
+    background-color: var(--footer-bg-color);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 15px;
+}
+
+.practicalities-txt li:before {
+    right: 0.5em;
+    margin-left: -15px;
+}
+
