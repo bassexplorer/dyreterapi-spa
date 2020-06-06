@@ -155,9 +155,33 @@
     font-size: 1.25vw;
 }
 
+
 .grey-wrapper p {
     font-family: var(--text-secondary);
     color: var(--text-gray);
     margin-bottom: var(--margin-h-big);
     line-height: 4vh;
+}
+
+.price {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.title-box1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--dark-opacity-box);
+    color: var(--text-on-dark);
+    padding: 0 var(--margin-h-big);
+}
+
+
+.ipad {
+
+    max-width: 95%;
+    max-height: 100%;
 }
