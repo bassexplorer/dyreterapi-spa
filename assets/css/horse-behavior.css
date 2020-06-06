@@ -103,8 +103,8 @@
 .box-image h1 {
     font-size: var(--h1);
     text-align: left;
-   
-  
+
+
 }
 
 
@@ -221,3 +221,15 @@
     margin-left: -15px;
 }
 
+button {
+    background-color: var(--button-red);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: var(--h3);
+    margin: 4px 2px;
+    cursor: pointer;
+}
