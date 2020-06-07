@@ -264,6 +264,7 @@ button {
     font-size: var(--h1);
     color: var(--heading-color);
 }
+
 .about-txt h2 {
     color: var(--text-on-bg);
 }
@@ -272,9 +273,6 @@ button {
     font-size: var(--h4);
 }
 
-.about-img  img{
-    border-radius: 150%;
-}
 
 .staff-flex-container {
     display: flex;
@@ -289,4 +287,25 @@ button {
     height: 300px;
     border-radius: 50%;
     margin: 0 var(--margin-h-big);
+}
+
+
+
+.bold {
+    font-weight: var(--text-bold);
+}
+
+.staff-desc p {
+    font-size: 1.4rem;
+}
+
+
+.staff-desc>* {
+    margin: var(--margin-h-medium) 0;
+}
+
+
+.staff-contact-flex a {
+    color: black;
+    font-size: 1.4rem;
 }
