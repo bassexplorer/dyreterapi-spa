@@ -331,3 +331,9 @@ button {
     display: flex;
     padding: 5vh 3vw;
 }
+
+.staff-contact-flex {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
