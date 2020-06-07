@@ -8,12 +8,9 @@ header {
     padding-bottom: calc(2 * var(--margin-h-big));
 }
 
-header span {
-    color: var(--heading-color);
-}
 
 header span {
-    color: var(--heading-color);
+    color: #FA061A;
     font-weight: var(--text-bold);
 }
 
