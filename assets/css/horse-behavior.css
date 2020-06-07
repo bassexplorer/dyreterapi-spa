@@ -275,3 +275,18 @@ button {
 .about-img  img{
     border-radius: 150%;
 }
+
+.staff-flex-container {
+    display: flex;
+    padding: 5vh 3vw;
+}
+
+
+
+.round-img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 0 var(--margin-h-big);
+}
