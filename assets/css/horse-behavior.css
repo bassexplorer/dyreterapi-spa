@@ -297,6 +297,7 @@ button {
 
 .staff-desc p {
     font-size: 1.4rem;
+    
 }
 
 
@@ -308,4 +309,25 @@ button {
 .staff-contact-flex a {
     color: black;
     font-size: 1.4rem;
+}
+
+
+.staff-desc {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.staff-section {
+    background-color: var(--section-darker-bg-color);
+    margin: var(--margin-h-big) 0;
+}
+
+.staff-flex-container {
+    display: flex;
+    padding: 5vh 3vw;
 }
