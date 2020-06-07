@@ -62,7 +62,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-100%, -50.4%);
+    transform: translate(-100%, -50%);
     background-color: var(--dark-opacity-box);
     color: var(--text-on-dark);
     padding: 0 var(--margin-h-big);
@@ -84,7 +84,7 @@
 
 .title-box1 {
     width: 50%;
-    height: 99.5%;
+    height: 99%;
 }
 
 .course {
@@ -205,6 +205,16 @@
 
 }
 
+.price li:before {
+    background-color: var(--footer-bg-color);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 15px;
+
+}
 
 .practicalities-txt li:before {
     background-color: var(--footer-bg-color);
@@ -232,4 +242,36 @@ button {
     font-size: var(--h3);
     margin: 4px 2px;
     cursor: pointer;
+}
+
+.right {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: var(--section-bg-color);
+    align-items: center;
+}
+
+.about-txt {
+    text-align: left;
+    margin-right: 64vh;
+}
+
+.about-txt h1 {
+
+    font-size: var(--h1);
+    color: var(--heading-color);
+}
+.about-txt h2 {
+    color: var(--text-on-bg);
+}
+
+.about-txt p {
+    font-size: var(--h4);
+}
+
+.about-img  img{
+    border-radius: 150%;
 }
