@@ -150,6 +150,8 @@
     height: 60vh;
     background-image: url(../img/big/about/team.jpg);
     background-size: cover;
+    background-position: center;
+
 }
 
 .about-section {
@@ -278,17 +280,16 @@
     margin: 1rem 0;
     font-size: .8rem;
 }
-
+.newsletter .accept-wrapper label {
+    font-weight: var(--text-bold);
+    font-size: .9rem;
+}
 .newsletter input {
     margin: 1rem 0;
     width: 100%;
 }
 .newsletter .fullname-box {
     display: flex;
-}
-
-.newsletter .fullname-box div input{
-    
 }
 
 .newsletter .fullname-box div:first-child {

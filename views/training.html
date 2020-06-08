@@ -15,7 +15,7 @@
 
     <div class="category-title">
         <div>
-            <h2>For Dogs</h2> <i class="fas fa-angle-down" onclick="openCategory('forDogs', event)"></i>
+            <h2>For Dogs</h2> <i class="fas fa-angle-down" onclick="openCategory(forDogs, event)"></i>
         </div>
         <hr>
     </div>
@@ -25,7 +25,11 @@
 
         <div class="card">
             <a href="#training-vra">
-                <img src="/assets/img/medium/training/cat_train-vra.jpg" alt="Category image for training in Vra">
+                <picture>
+                    <source media="(min-width:576px)" srcset="/assets/img/medium/training/cat_train-vra.jpg">
+                    <img src="/assets/img/small/training/cat_train-vra.jpg" alt="Category image for training in Vra">
+                </picture>
+
                 <div class="content">
                     <h4>Training in Vrå</h4>
                     <p>Short description of this course, short description of this course,short description of this
@@ -36,8 +40,10 @@
 
         <div class="card">
             <a href="#training-hirtshals">
-                <img src="/assets/img/medium/training/cat_train-hirtshals.jpg"
-                    alt="Category image for training in Hirtshals">
+                <picture>
+                    <source media="(min-width:576px)" srcset="/assets/img/medium/training/cat_train-hirtshals.jpg">
+                        <img src="/assets/img/small/training/cat_train-hirtshals.jpg" alt="Category image for training in Hirtshals">                       
+                    </picture>
                 <div class="content">
                     <h4>Training in Hirtshals</h4>
                     <p>Short description of this course, short description of this course,short description of this
@@ -79,7 +85,7 @@
     </div>
     <div class="category-title">
         <div>
-            <h2>For Horses</h2> <i class="fas fa-angle-down" onclick="openCategory('forHorses', event)"></i>
+            <h2>For Horses</h2> <i class="fas fa-angle-down" onclick="openCategory(forHorses, event)"></i>
         </div>
         <hr>
     </div>
@@ -113,7 +119,9 @@
 
     </div>
     <div class="category-title open">
-        <div><h2>Nutritions</h2> <i class="fas fa-angle-down" onclick="openCategory('nutrition', event)"></i></div>
+        <div>
+            <h2>Nutritions</h2> <i class="fas fa-angle-down" onclick="openCategory(nutrition, event)"></i>
+        </div>
         <hr>
     </div>
 

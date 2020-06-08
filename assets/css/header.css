@@ -13,13 +13,14 @@ header span {
     font-weight: var(--text-bold);
 }
 
-.header-home{
+.header-home {
     background-image: url(/assets/img/big/home/home-page-hero.jpeg);
     height: 100vh;
     display: flex;
     position: relative;
 }
-.header-home .scroll-sign{
+
+.header-home .scroll-sign {
     position: absolute;
     z-index: 50;
     left: 50%;
@@ -29,10 +30,10 @@ header span {
     bottom: 0;
     transform: translate(-50%, 50%);
 
-    
+
 }
 
-.header-home .scroll-sign i{
+.header-home .scroll-sign i {
     position: relative;
     animation: scrollDown 1s infinite;
     font-size: 1.5rem;
@@ -113,7 +114,7 @@ header span {
     background-image: url(/assets/img/big/nutrition-therapy/nutrition-therapy-header.png);
 }
 
-.header-privacy-policy{
+.header-privacy-policy {
     background-image: url(/assets/img/big/privacy_policy/privacy-policy.png);
 }
 
@@ -168,6 +169,15 @@ header span {
     header {
         height: 60vh;
         padding-bottom: 0;
+    }
+
+
+    .title-box h1 {
+        font-size: 2rem;
+    }
+
+    .title-box h3 {
+        font-size: 1.2rem;
     }
 
     .header-about-us {

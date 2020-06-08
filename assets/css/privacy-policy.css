@@ -8,7 +8,6 @@
   .sub-title-txt {
     font-family: var(--text-primary);
     color: var(--heading-color);
-    font-size: 4vh;
     margin-top: var(--margin-h-medium);
     margin-bottom: var(--margin-h-medium);
   }
@@ -31,7 +30,7 @@
   color: var(--heading-color);
   text-transform: capitalize;
   margin-bottom: var(--margin-h-medium);
-  font-size: 1.25vw;
+  font-size: 2rem;;
 }
 
 .privacy-txt p{
