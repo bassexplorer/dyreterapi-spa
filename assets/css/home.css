@@ -1,0 +1,301 @@
+.first-section h2,
+.about-section h2,
+.facilities h2,
+.happy-clients h2 {
+    text-align: center;
+    margin-top: calc(2 * var(--margin-h-big));
+    margin-bottom: var(--margin-h-big);
+    font-weight: var(--text-bold);
+    color: var(--heading-color2);
+    position: relative;
+}
+
+.first-section h2::after,
+.about-section h2::after,
+.facilities h2::after,
+.happy-clients h2::after {
+    content: '';
+    display: flex;
+    border-top: 2px solid black;
+    margin-top: 5px;
+    width: 5rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.first-section .cards-container,
+.facilities .cards-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.first-section .cards-container .card,
+.facilities .cards-container .our-facilities {
+    display: flex;
+    width: 33%;
+    pointer-events: none;
+    margin: 0;
+    margin-right: var(--small-gap);
+    overflow: hidden;
+}
+
+.first-section .cards-container .card:last-child {
+    margin: 0;
+}
+
+.first-section .category-title {
+    margin: 0 var(--margin-w-medium);
+}
+
+.first-section .category-title div i {
+    font-size: 2rem;
+    display: block;
+    color: black;
+    transform: none;
+    transition: all .5s ease-in-out;
+}
+
+
+.first-section .cards-container .card .content p {
+    max-height: 100%;
+    color: var(--text-on-dark);
+    font-size: 1.5rem;
+
+}
+
+.first-section .cards-container .card:hover .content p {
+    font-size: 1.5rem;
+}
+
+.first-section .cards-container .card .content h3 {
+    font-weight: bolder;
+}
+
+.first-section .cards-container .card .content {
+    bottom: 0;
+
+
+}
+
+.first-section .cards-container .card:hover img {
+    transform: none;
+}
+
+.facilities .cards-container .our-facilities {
+    flex-direction: column;
+}
+
+.facilities .cards-container .our-facilities img{
+    width: 100%;
+    height: auto;
+}
+
+.facilities .cards-container .our-facilities div {
+    padding: var(--margin-w-medium);
+}
+
+.facilities .cards-container .our-facilities h4 {
+    color: var(--heading-color2);
+}
+
+.facilities  {
+    margin-bottom: 5rem;
+}
+
+
+
+/* The underline hover style */
+
+.first-section .card a.see-more,
+.who-we-are a.see-more {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 16px 0;
+    text-decoration: none;
+    position: relative;
+    color: var(--text-on-dark);
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.3rem;
+    pointer-events: fill;
+}
+
+.first-section a.see-more:hover::after,
+.who-we-are a.see-more:hover::after {
+    content: '';
+    display: flex;
+    width: 100%;
+    height: 2px;
+    color: var(--text-on-dark);
+    transition: ease-in-out .5s;
+}
+
+.first-section .see-more::after,
+.who-we-are a.see-more::after {
+    content: '';
+    display: block;
+    width: 1rem;
+    height: 2px;
+    background-color: var(--heading-color);
+    transition: ease-in-out .5s;
+}
+
+
+.who-we-are {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: calc(2*var(--margin-h-big));
+    height: 60vh;
+    background-image: url(../img/big/about/team.jpg);
+    background-size: cover;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.about-heading {
+    text-align: center;
+    margin-top: calc(3 * var(--margin-h-big));
+    margin-bottom: var(--margin-h-big);
+}
+
+.who-we-are a {
+    color: var(--text-on-dark);
+    font-size: 1.2vw;
+}
+
+
+.happy-clients .client {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.happy-clients img {
+    width: 100%;
+    height: auto;
+    object-position: center;
+
+}
+
+.client-card .name {
+    color: var(--heading-color2);
+    font-weight: var(--text-normal);
+    font-size: var(--h4);
+
+}
+
+.client-card .name::before,
+.client-card .name::after {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid var(--heading-color2);
+    width: 2rem;
+    margin: 0 1rem;
+    transform: translateY(-.3rem);
+}
+
+
+.happy-clients {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.testimonial-container {
+    display: flex;
+}
+
+.happy-clients h2 {
+    margin-bottom: var(--margin-h-big);
+}
+
+.client-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    width: 33.33%;
+    background-color: var(--main-bg-color);
+
+}
+
+.client-card .comment {
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    font-style: italic;
+    text-align: center;
+    margin: 5vh 5vh 10vh 5vh;
+    font-size: 1.5rem;
+    font-weight: var(--text-thin);
+}
+
+.client-card .comment::before,
+.client-card .comment::after {
+    content: " \201c";
+    color: var(--heading-color2);
+    font-size: 2rem;
+}
+
+.client-card .comment::after {
+    content: " \201d";
+}
+
+
+.newsletter {
+    display: flex;
+    background-color: var(--section-darker-bg-color);
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+}
+
+.newsletter .home-form {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+}
+
+.newsletter .accept-wrapper div{
+    display: flex;
+    align-items: baseline;
+}
+
+.newsletter .accept-wrapper div input{
+   width: auto;
+    margin-right: 5px;
+}
+
+.newsletter .accept-wrapper p {
+    margin: 1rem 0;
+    font-size: .8rem;
+}
+
+.newsletter input {
+    margin: 1rem 0;
+    width: 100%;
+}
+.newsletter .fullname-box {
+    display: flex;
+}
+
+.newsletter .fullname-box div input{
+    
+}
+
+.newsletter .fullname-box div:first-child {
+    margin-right: 10px;
+}
+
+.newsletter span{
+    font-weight: var(--text-bold);
+    color: var(--heading-color2);
+}

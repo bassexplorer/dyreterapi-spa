@@ -1,6 +1,6 @@
 header {
     height: 60vh;
-    z-index: -5;
+    z-index: 1;
     background-position: top center;
     background-size: cover;
     display: flex;
@@ -9,12 +9,48 @@ header {
 }
 
 header span {
-    color: var(--heading-color);
+    color: #FA061E;
+    font-weight: var(--text-bold);
 }
 
-header span {
-    color: var(--heading-color);
-    font-weight: var(--text-bold);
+.header-home{
+    background-image: url(/assets/img/big/home/home-page-hero.jpeg);
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+.header-home .scroll-sign{
+    position: absolute;
+    z-index: 50;
+    left: 50%;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+
+    
+}
+
+.header-home .scroll-sign i{
+    position: relative;
+    animation: scrollDown 1s infinite;
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+@keyframes scrollDown {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: -5px;
+    }
+
+    100% {
+        bottom: 0;
+    }
 }
 
 .header-about-us {
@@ -75,6 +111,10 @@ header span {
 
 .header-nutrition-therapy {
     background-image: url(/assets/img/big/nutrition-therapy/nutrition-therapy-header.png);
+}
+
+.header-privacy-policy{
+    background-image: url(/assets/img/big/privacy_policy/privacy-policy.png);
 }
 
 .header-404-page {
