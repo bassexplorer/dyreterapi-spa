@@ -297,7 +297,7 @@ button {
 
 .staff-desc p {
     font-size: 1.4rem;
-    
+
 }
 
 
@@ -340,15 +340,100 @@ button {
 
 
 /* Even larger devices (desktops, 1200px and up) */
-@media (max-width: 1200px) {
-    
-}
+@media (max-width: 1200px) {}
 
 /* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+
+    .grey .grey-wrapper h3 {
+        font-size: 22px;
+        margin: 0 8px;
+    }
+
+    .grey .grey-wrapper p {
+
+        font-size: 21px;
+        margin-bottom: 20px;
+        margin-top: 45px;
+        margin-left: 5px;
+    }
+.course {
+    margin: 41px;
+}
+
+.course p {
+    font-size: 20px;
+}
+
+.practicalities-txt h3{
+    font-size: 22px;
+}
+
+.practicalities-txt p {
+    font-size: 21px;
+}
+.practicalities-txt .list li {
+    font-size: 20px;
+
+}
+
+
+
+}
 
 /* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+
+
+    .map-practical {
+        display: none;
+    }
+
+    .title-box h3 {
+        font-size: 20px;
+    }
+    .course {
+        margin: 20px 16px;
+    }
+
+    .staff-section .staff-flex-container {
+        display: block;
+    }
+
+    .staff-section .staff-flex-container .round-img {
+        margin-left: 180px;
+ 
+    }
+
+    .staff-section .staff-flex-container h2 {
+        font-size: 26px;
+    }
+}
+}
 
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+
+    .course {
+
+        margin: 13px 1px;
+    }
+
+    .course p {
+        font-size: 17px;
+    }
+
+    .staff-section .staff-flex-container {
+        display: contents;
+    }
+
+    .staff-section .staff-flex-container .round-img {
+        margin-left: 130px;
+ 
+    }
+
+
+    .staff-section .staff-flex-container h2 {
+        font-size: 26px;
+    }
+}
