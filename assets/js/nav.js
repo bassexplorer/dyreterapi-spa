@@ -67,3 +67,9 @@ function openBurgerMenu(closeit) {
         burgerScreen.classList.remove('active');
     }
 }
+
+
+function openCategory(element, event){
+    element.classList.toggle('open');
+    event.target.classList.toggle('open');
+}
