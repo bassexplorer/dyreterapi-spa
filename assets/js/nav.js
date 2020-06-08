@@ -30,15 +30,16 @@ window.addEventListener('scroll', () => {
 
 
 // Scroll into view function that scroll an element into view
-function scrollToElement(element) {
+function scrollToElement(element, page) {
+
+    if (!element) {
+        element = 'HEADER';
+    }
+    
     setTimeout(() => {
 
-        if (!element) {
-            element = 'HEADER';
-        }
-
         let elementToScroll = document.querySelector(element);
-        console.log(elementToScroll)
+
         elementToScroll.scrollIntoView({
             behavior: "smooth",
             block: "center",
@@ -52,24 +53,24 @@ function openBurgerMenu(closeit) {
     const burgerScreen = document.getElementById('burgerScreen');
     const burgerOverlay = document.getElementsByClassName('overlay')[0];
 
-    
+
     burgerOverlay.style.display = 'block';
     burgerScreen.classList.toggle('active');
-    
-    burgerOverlay.addEventListener('click', closeCanvas = function(){
+
+    burgerOverlay.addEventListener('click', closeCanvas = function () {
         burgerScreen.classList.remove('active');
         burgerOverlay.style.display = 'none';
     });
-    
-    
-    if(closeit){
+
+
+    if (closeit) {
         burgerOverlay.style.display = 'none';
         burgerScreen.classList.remove('active');
     }
 }
 
 
-function openCategory(element, event){
+function openCategory(element, event) {
     element.classList.toggle('open');
     event.target.classList.toggle('open');
 }

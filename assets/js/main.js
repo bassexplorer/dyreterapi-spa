@@ -1,5 +1,5 @@
 // This file is the main engine of the SPA site that handels the page changes.
-
+// The SPA Engine made by Mark Bence Kiss 2020.
 const viewUrl = 'views/'; // source where the html files are located
 const rootDiv = document.getElementById('appRoot'); // Main div that containts the site
 let firstLoad = true;
@@ -52,12 +52,12 @@ const pages = [{
         rootPage: false
     },    
     {
-        name: 'education-courses',
+        name: 'education-and-courses',
         title: 'Education & Courses',
         description: 'This is where you find out about our courses and education',
         keywords: 'courses, education, dogs, cats, horses',
         image: 'assets/img/some.jpg', 
-        author: 'Subeh',
+        author: 'Ben',
         rootPage: false
     },
     {

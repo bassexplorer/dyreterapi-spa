@@ -8,3 +8,18 @@ The SPA engine feature include.
 - Basic search handeling.
 - Dinamically load JS files from file.
 - Give a 404 page if a page not exist.
+
+Pages finished.
+[x]Contact us
+[x]Practical Info
+[x]Privacy Policy
+[x]Treatment & Terapy (Category Page)
+[x]Training (Category Page)
+[x]Nutrition Therapy
+[x]Feed Consulting
+[x]Water Treadmills For Dogs
+[x]Physiotherapeutic Training Dogs
+[x]Physiotherapeutic Training Horses
+
+
+

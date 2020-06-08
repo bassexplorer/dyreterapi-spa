@@ -224,6 +224,11 @@ nav.nav-top {
     text-align: left;
 }
 
+.main-nav .dropdown-category li {
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
 .main-nav .category-title {
     color: var(--heading-color2);
     font-weight: var(--text-bold);
@@ -438,6 +443,12 @@ nav.nav-top {
 
     nav .burger-icon {
         display: flex;
+    }
+
+    .nav-top .logo {
+        height: 3rem;
+        width: auto;
+        margin: 1rem 0;
     }
 }
 

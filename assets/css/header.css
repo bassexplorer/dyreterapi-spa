@@ -66,8 +66,8 @@ header span {
     background-image: url(/assets/img/big/training-vra/training-vra-header.jpg);
 }
 
-.header-education-courses {
-    background-image: url(/assets/img/big/education-courses/hero-education.jpg);
+.header-education-and-courses {
+    background-image: url(/assets/img/big/education-and-courses/education-and-courses-header.jpg);
 }
 
 .header-horse-behavior-and-teaching-psychology {
@@ -145,10 +145,18 @@ header span {
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+    .header-about-us {
+        height: 50vh;
+    }
+}
 
 /* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+    .header-about-us {
+        height: 40vh;
+    }
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
@@ -158,6 +166,10 @@ header span {
 
     .title-box {
         width: 100%;
+    }
+
+    .header-about-us {
+        height: 30vh;
     }
 
 
@@ -170,7 +182,9 @@ header span {
         height: 60vh;
         padding-bottom: 0;
     }
-
+    .title-box {
+        padding: 0 2rem;
+    }
 
     .title-box h1 {
         font-size: 2rem;
@@ -178,6 +192,10 @@ header span {
 
     .title-box h3 {
         font-size: 1.2rem;
+    }
+    
+    .header-home .title-box {
+        margin-bottom: 4rem;
     }
 
     .header-about-us {
@@ -228,5 +246,9 @@ header span {
 
     .header-nutrition-therapy {
         background-image: url(/assets/img/small/nutrition-therapy/nutrition-therapy-header.png);
+    }
+
+    .header-education-and-courses {
+        background-image: url(/assets/img/small/education-and-courses/education-and-courses-header.jpg);
     }
 }

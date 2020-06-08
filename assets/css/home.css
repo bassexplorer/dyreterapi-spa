@@ -36,7 +36,6 @@
     width: 33%;
     pointer-events: none;
     margin: 0;
-    margin-right: var(--small-gap);
     overflow: hidden;
 }
 
@@ -86,7 +85,7 @@
     flex-direction: column;
 }
 
-.facilities .cards-container .our-facilities img{
+.facilities .cards-container .our-facilities img {
     width: 100%;
     height: auto;
 }
@@ -99,7 +98,7 @@
     color: var(--heading-color2);
 }
 
-.facilities  {
+.facilities {
     margin-bottom: 5rem;
 }
 
@@ -266,13 +265,13 @@
     width: 25rem;
 }
 
-.newsletter .accept-wrapper div{
+.newsletter .accept-wrapper div {
     display: flex;
     align-items: baseline;
 }
 
-.newsletter .accept-wrapper div input{
-   width: auto;
+.newsletter .accept-wrapper div input {
+    width: auto;
     margin-right: 5px;
 }
 
@@ -280,14 +279,17 @@
     margin: 1rem 0;
     font-size: .8rem;
 }
+
 .newsletter .accept-wrapper label {
     font-weight: var(--text-bold);
     font-size: .9rem;
 }
+
 .newsletter input {
     margin: 1rem 0;
     width: 100%;
 }
+
 .newsletter .fullname-box {
     display: flex;
 }
@@ -296,7 +298,106 @@
     margin-right: 10px;
 }
 
-.newsletter span{
+.newsletter span {
     font-weight: var(--text-bold);
     color: var(--heading-color2);
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+    .client-card .comment {
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+        font-style: italic;
+        text-align: center;
+        margin: 2vh 0 5vh 0;
+        font-size: 1.2rem;
+
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .who-we-are {
+
+        padding-bottom: 0;
+
+    }
+
+    .client-card .name {
+        font-size: 1.2rem;
+        margin: 0 -2rem;
+    }
+
+    .client-card .name::before,
+    .client-card .name::after {
+        display: inline-block;
+        content: "";
+        border-top: 1px solid var(--heading-color2);
+        width: 1rem;
+        margin: 0 .5rem;
+        transform: translateY(-.3rem);
+    }
+
+
+
+    .first-section .cards-container,
+    .facilities .cards-container {
+        max-height: max-content;
+    }
+
+    .first-section .cards-container {
+        width: 100%;
+    }
+
+    .first-section .cards-container .card {
+        display: flex;
+        width: 100%;
+        pointer-events: none;
+        height: 30vh;
+    }
+
+    .first-section .cards-container .card img {
+        object-fit: cover;
+    }
+
+    .first-section .cards-container .card .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+
+
+
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .who-we-are {
+        height: 50vh;
+    }
+
+    .testimonial-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-section .cards-container .card {
+        display: flex;
+        width: 100%;
+        pointer-events: none;
+        height: auto;
+    }
+
+    .client-card{
+        width: 100% ;
+       
+    }
+
 }
