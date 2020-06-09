@@ -17,7 +17,7 @@
 @import url(privacy-policy.css);
 
 
-@import url(training-vra.css);
+@import url(training-cities.css);
 @import url(category-pages.css);
 
 @import url(practical-info.css);
@@ -25,6 +25,9 @@
 
 @import url(feed-consulting.css);
 @import url(therapy-pages.css);
+
+@import url(shop-home.css);
+
 
 #appRoot{
     display: flex;

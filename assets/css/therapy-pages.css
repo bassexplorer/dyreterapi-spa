@@ -84,6 +84,58 @@
       line-height: 2.5;
   }
 
+  .dropdown-content-box {
+      display: inline-flex;
+      width: 70%;
+      justify-content: space-between;
+  }
+  .dropdown-content-box i {
+      font-size: 2rem;
+  }
+  .dropdown-content-text {
+    max-height: 0;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    width: 70%;
+    margin-left: calc(4rem + 40px);
+  }
+
+  .dropdown-content-box h4{
+    font-weight: var(--text-bold);
+    color: black;
+    font-size: var(--h3);
+  }
+
+  .dropdown-content-text.open {
+    max-height: 500vh;
+    transition: all 0.5s ease-in-out;
+  }
+  .dropdown-content-box i.open {
+    transform: scale(-1, -1);
+    transition: all 0.5s ease-in-out;
+    }
+    .quote-img-text {
+        display: flex;
+        width: 70%;
+        margin: 3rem;
+    }
+    .quote-img-text div {
+        padding: 2rem;
+    }
+    .quote-img-text img {
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    .quote-img-text p {
+        font-size: 1.4rem;
+        line-height: 2;
+    }
+    .quote-img-text a {
+        color: black;
+    }
+  
 
 
   /*Even larger devices*/
@@ -93,7 +145,14 @@
     }
    }
 /* Extra large devices (large desktops, 1200px and up) */
-  @media (max-width: 1200px) { }
+  @media (max-width: 1200px) { 
+    .quote-img-text {
+        width: 80%;
+    }
+    .quote-img-text div {
+        padding: 0.5rem;
+    }
+   }
 
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) { }
@@ -109,6 +168,11 @@
     }
     .cons-title {
         font-size: 1.9rem;
+    }
+    .quote-img-text {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
  }
 
@@ -131,5 +195,9 @@
     }
     .therapy-prices-container {
         margin: 0 1rem;
+    }
+    .quote-img-text {
+        margin: 0.5rem;
+        width: 100%;
     }
  }

@@ -97,12 +97,12 @@ const pages = [{
         rootPage: false
     },
     {
-        name: 'practical-info',
-        title: 'Practical Info| Center for Dyreterapi',
-        description: 'Here you can find a lot of information about our training activities and other services',
-        keywords: 'training,activities,services,categories,information,dog,horses,nutrition',
+        name: 'shop',
+        title: 'Shop | Center for Dyreterapi',
+        description: 'Here you can order from our webshop.',
+        keywords: 'training, courses, books,articles, posters',
         image: 'assets/img/some.jpg',
-        author: 'Zsofia',
+        author: 'Ben',
         rootPage: false
     },
     {

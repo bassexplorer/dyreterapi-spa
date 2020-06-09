@@ -1,3 +1,10 @@
+// Carousel javascript.
+
+
+
+
+
+// Contact form function that handls the input 
 function subscribeMsg(hide) {
     let firstName = document.getElementById('fname').value;
     let lastName = document.getElementById('lname').value;

@@ -62,6 +62,10 @@ header span {
     background-image: url(/assets/img/big/practical_info/practical_hero.png);
 }
 
+.header-shop {
+    background-image: url(/assets/img/big/books-and-sales/books-and-sales-header.jpg);
+}
+
 .header-training-vra {
     background-image: url(/assets/img/big/training-vra/training-vra-header.jpg);
 }
@@ -250,5 +254,9 @@ header span {
 
     .header-education-and-courses {
         background-image: url(/assets/img/small/education-and-courses/education-and-courses-header.jpg);
+    }
+
+    .header-shop {
+        background-image: url(/assets/img/small/shop/dog-with-ball-in-mouth-jumping-over-a-fallen-tree-trunk-3013467.jpg);
     }
 }
