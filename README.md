@@ -10,16 +10,16 @@ The SPA engine feature include.
 - Give a 404 page if a page not exist.
 
 Pages finished.
-[x]Contact us
-[x]Practical Info
-[x]Privacy Policy
-[x]Treatment & Terapy (Category Page)
-[x]Training (Category Page)
-[x]Nutrition Therapy
-[x]Feed Consulting
-[x]Water Treadmills For Dogs
-[x]Physiotherapeutic Training Dogs
-[x]Physiotherapeutic Training Horses
+- Contact us
+- Practical Info
+- Privacy Policy
+- Treatment & Terapy (Category Page)
+- Training (Category Page)
+- Nutrition Therapy
+- Feed Consulting
+- Water Treadmills For Dogs
+- Physiotherapeutic Training Dogs
+- Physiotherapeutic Training Horses
 
 
 
