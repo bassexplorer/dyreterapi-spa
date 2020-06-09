@@ -1,4 +1,7 @@
 // Carousel javascript.
+const facilitiesCarousel = document.getElementById('facilitiesCarousel');
+const facilitiesItems = facilitiesCarousel.getElementsByClassName('our-facilities');
+
 
 
 

@@ -20,7 +20,8 @@ textarea {
 
 .container button,
 .contact-popup div a,
-.home-form button {
+.home-form button,
+.quantity-container button {
     background-color: var(--button-gold);
     color: white;
     padding: 12px 20px;
@@ -32,7 +33,8 @@ textarea {
 
 .container button:hover,
 .contact-popup div a:hover,
-.home-form button:hover {
+.home-form button:hover,
+.quantity-container button:hover {
     background-color: var(--button-gold-hover);
 }
 

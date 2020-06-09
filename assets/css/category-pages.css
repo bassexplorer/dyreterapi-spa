@@ -150,7 +150,7 @@
     }
 
     .cards-container.open {
-        max-height: 300vh;
+        max-height: 500vh;
         transition: all .5s ease-in-out;
     }
 

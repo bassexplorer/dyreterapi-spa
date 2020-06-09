@@ -7,8 +7,8 @@
 </header>
 
 <ul class="breadcrumbs">
-    <li><a href=#home>home</a></li>
-    <li>Privacy policy</li>
+    <li><a href=#home>Home</a></li>
+    <li>Books & Sales</li>
 </ul>
 
 
@@ -22,60 +22,87 @@
 </nav>
 
 <div class="shop-page">
-    <div class="category-title">
-        <h2>Books</h2> 
-        <hr>
+
+    <div id="shopContainer">
+
     </div>
 
-    <div class="cards-container" id="nutrition">
-
-        <div class="card">
-            <a href="#nutrition-therapy">
-                <picture>
-                    <source media="(min-width:576px)" srcset="/assets/img/medium/training/cat_nutrition-therapy.jpg">
-                    <img src="/assets/img/small/training/cat_nutrition-therapy.jpg" alt="Category image for nutrition therapy.">
-                </picture>
-                <div class="content">
-                    <h4>Nutrition Therapy</h4>
-                    <p>Short description of this course, short description of this course,short description of this
-                        course
-                    </p>
-                </div>
-            </a>
+    <div class="related-products">
+        <div class="category-title">
+            <h2>Products</h2>
+            <hr>
         </div>
 
-        <div class="card">
-            <a href="#feed-consulting">
-                <picture>
-                    <source media="(min-width:576px)" srcset="/assets/img/medium/training/cat_feed-con.jpg">
-                    <img src="/assets/img/small/training/cat_feed-con.jpg" alt="Category image for feed consulting.">
-                </picture>
-                <div class="content">
-                    <h4>Feed Consulting</h4>
-                    <p>Short description of this course, short description of this course,short description of this
-                        course
-                    </p>
-                </div>
-            </a>
-        </div>
+        <div class="cards-container">
 
+            <div class="card">
+                <a onclick="renderShopItem('throught-the-dogs-eyes')">
+                    <img src="assets/img/medium/books-and-sales/products/books/book-1.jpg"
+                        alt="Cover image of the book">
+                    <div class="content">
+                        <h4>Through the dog's eyes</h4>
+                        <p> <span class="original-price">DKK 249.00</span>
+                            <br>
+                            <span class="sale-price">DKK 210.00</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="card">
+                <a onclick="renderShopItem('throught-the-dogs-eyes')">
+                    <img src="assets/img/medium/books-and-sales/products/books/book-1.jpg"
+                        alt="Cover image of the book">
+                    <div class="content">
+                        <h4>Through the dog's eyes</h4>
+                        <p> <span class="original-price">DKK 249.00</span>
+                            <br>
+                            <span class="sale-price">DKK 210.00</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a onclick="renderShopItem('throught-the-dogs-eyes')">
+                    <img src="assets/img/medium/books-and-sales/products/books/book-1.jpg"
+                        alt="Cover image of the book">
+                    <div class="content">
+                        <h4>Through the dog's eyes</h4>
+                        <p> <span class="original-price">DKK 249.00</span>
+                            <br>
+                            <span class="sale-price">DKK 210.00</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 
+
 <div class="shop-info">
-     <div class="basic">
-         <hr>
+    <div class="basic">
+        <hr>
         <ul>
             <li><i class="far fa-clock"></i>We ship within 3 business days</li>
             <li><i class="fas fa-box-open"></i>Free delivery over 1000,-</li>
             <li><i class="fas fa-desktop"></i>14 days returned </li>
         </ul>
-        <hr> 
-     </div>
+        <hr>
+    </div>
 
-     <div class="payment-cards">
-        <img src="/assets/img/small/shop/master-card.jpg" alt="Master card icon">
-        <img src="/assets/img/small/shop/visa-card.jpg" alt="Visa card icon">
+    <div class="payment-cards">
+        <img src="assets/img/small/shop/master-card.jpg" alt="Master card icon">
+        <img src="assets/img/small/shop/visa-card.jpg" alt="Visa card icon">
 
-     </div>
+    </div>
+</div>
+
+<div class="contact-popup" onclick="sorryMsg(true)">
+    <div>
+        <h1>We're sorry...</h1>
+        <p> The shop is currently unavailable. <br>
+            Please get back later.</p>
+        <a onclick="sorryMsg(true)"> <i class="fas fa-horse"></i> Okay! <i class="fas fa-dog"></i></a>
+    </div>
 </div>

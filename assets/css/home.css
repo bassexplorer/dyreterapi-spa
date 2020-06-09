@@ -303,6 +303,43 @@
     color: var(--heading-color2);
 }
 
+#facilitiesCarousel{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+
+#facilitiesCarousel .our-facilities{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 33%;
+}
+
+#facilitiesCarousel i{
+    font-size: 3rem;
+    color: var(--dark-opacity-box);
+    cursor: pointer;
+}
+#facilitiesCarousel i:hover{
+    font-size: 3rem;
+    color: black;
+}
+#facilitiesCarousel .fa-chevron-circle-right{
+    position: absolute;
+    top: 40%;
+    left: 100%;
+    transform: translateX( -100%);
+}
+
+#facilitiesCarousel .fa-chevron-circle-left{
+    position: absolute;
+    top: 40%;
+}
+
 /* Extra large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
     .client-card .comment {
