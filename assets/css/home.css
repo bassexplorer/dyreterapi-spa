@@ -36,7 +36,7 @@
     width: 33%;
     pointer-events: none;
     margin: 0;
-    overflow: hidden;
+    
 }
 
 .first-section .cards-container .card:last-child {
@@ -98,8 +98,15 @@
     color: var(--heading-color2);
 }
 
-.facilities {
+.carousel-container {
     margin-bottom: 5rem;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-container .cards-container {
+   
 }
 
 
@@ -306,38 +313,68 @@
 #facilitiesCarousel{
     display: flex;
     flex-direction: row;
-    overflow: hidden;
     width: 100%;
     position: relative;
+    flex-wrap: nowrap;
+}
+
+#facilitiesCarousel.animation{
+  transition: transform 0.4s ease-in-out;
+ 
 }
 
 
 #facilitiesCarousel .our-facilities{
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     width: 33%;
+    flex: 0 0 33.333%;
+    padding:0 .2rem;
 }
 
-#facilitiesCarousel i{
+
+.carousel-container i{
     font-size: 3rem;
-    color: var(--dark-opacity-box);
+    color: var(--light-opacity-box);
     cursor: pointer;
+    z-index: 4;
 }
-#facilitiesCarousel i:hover{
+.carousel-container i:hover{
     font-size: 3rem;
     color: black;
 }
-#facilitiesCarousel .fa-chevron-circle-right{
+.carousel-container .fa-chevron-circle-right{
     position: absolute;
     top: 40%;
-    left: 100%;
-    transform: translateX( -100%);
+    left: 99%;
+    transform: translateX(-100%);
+    display: flex;
+    margin-right: -10px;
 }
 
-#facilitiesCarousel .fa-chevron-circle-left{
+.carousel-container .fa-chevron-circle-left{
     position: absolute;
     top: 40%;
+    left: 1%;
+}
+
+.summary-text h3{
+    font-weight: lighter;
+    font-size: 1.3rem;
+    width: 60rem;
+    text-align: center;
+}
+
+.summary-text{
+    display: flex;
+    justify-content: center;
+}
+
+.summary-text h3::before,
+.summary-text h3::after {
+    content: " \201c";
+    color: var(--heading-color2);
+    font-size: 2rem;
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -409,7 +446,9 @@
     }
 
 
-
+    #facilitiesCarousel .our-facilities{
+        flex: 0 0 50%;
+    }
 
 
 }

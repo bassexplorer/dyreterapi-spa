@@ -13,7 +13,7 @@
      <li>Home</li>
  </ul>
 
- <div class="summary">
+ <div class="summary-text">
      <h3>
          The combination of services we offer makes our company unique in the whole of Scandinavia.
          We, as the only people in Denmark, are internationally approved to teach the subjects we are dealing with.
@@ -31,7 +31,7 @@
                  <h3>TREATMENT & THERAPY</h3>
                  <p>We offer both for dogs and horses Behavior Therapy, Physiurgical therapy and Bach's flower remedies
                      for animals</p>
-                 <a class="see-more" href="#treatment-and-therapy">Learn more</a>
+                 <a class="see-more" onclick="scrollToElement()" href="#treatment-and-therapy">Learn more</a>
              </div>
 
          </div>
@@ -40,7 +40,7 @@
              <div class="content">
                  <h3>EDUCATION & COURSES</h3>
                  <p>Here you can find a wide range <br> of options that our team has at your disposal </p>
-                 <a class="see-more" href="#treatment-and-therapy">Learn more</a>
+                 <a class="see-more" onclick="scrollToElement()" href="#education-and-courses">Learn more</a>
              </div>
 
          </div>
@@ -50,7 +50,7 @@
              <div class="content">
                  <h3>TRAINING</h3>
                  <p>Bring and give your pet the best experiencend <br>and we guarantee you will not regret it</p>
-                 <a class="see-more" href="#treatment-and-therapy">Learn more</a>
+                 <a class="see-more" onclick="scrollToElement()" href="#training">Learn more</a>
              </div>
 
          </div>
@@ -66,7 +66,7 @@
              <h3> Our goal is to optimize the lives of our animals and thus achieve<br> as much animal welfare as
                  possible
                  in each individual case</h3>
-             <a class="see-more" href="#about">See more</a>
+             <a class="see-more" href="#about" onclick="scrollToElement()">See more</a>
          </div>
      </div>
 
@@ -106,10 +106,40 @@
 
  <section class="facilities">
      <h2>Our facilities</h2>
+     
+     <div class="carousel-container">
+        <i class="fas fa-chevron-circle-left" onclick="prevSlide()"></i>
+        <i class="fas fa-chevron-circle-right" onclick="nextSlide()"></i>
+
      <div class="cards-container" id="facilitiesCarousel">
-         <i class="fas fa-chevron-circle-left"></i>
-         <i class="fas fa-chevron-circle-right"></i>
-         <div class="our-facilities">
+
+        <div class="our-facilities">
+            <img src="assets/img/medium/home/the-office.jpg" alt="Picture small class">
+            <div>
+                <h4>The office</h4>
+                <p>In the office we do most of our administrative work and this is often where we sit when you catch us on the phone.</p>
+            </div>
+        </div>
+        
+        <div class="our-facilities" id="resetStart">
+            <img src="assets/img/medium/home/the-hall.jpg" alt="Picture small class">
+            <div>
+                <h4>The Hall (CLONE FIRST)</h4>
+                <p>'Here is our small teaching room as well as the dog consultation with treadmills</p>
+            </div>
+        </div>
+
+        <div class="our-facilities" >
+            <img src="assets/img/medium/home/kringelhojvej12.jpg" alt="Picture small class">
+            <div>
+                <h4>Kringelhøjvej 12 </h4>
+                <p>'Here is our small teaching room as well as the dog consultation with treadmills</p>
+            </div>
+        </div>
+
+<!--  NORMAL CAROUSEL START -->
+
+         <div class="our-facilities" >
              <img src="assets/img/medium/home/small-classroom.jpg" alt="Picture small class">
              <div>
                  <h4>The small classroom </h4>
@@ -119,31 +149,81 @@
          </div>
 
          <div class="our-facilities">
-             <img src="assets/img/medium/home/the-hall.jpg" alt="Picture small class">
+             <img src="assets/img/medium/home/big-classroom.jpg" alt="Picture small class">
              <div>
                  <h4>Big Classroom </h4>
-                 <p>'The largest of our classrooms, where our small shop is also located.</p>
+                 <p>The largest of our classrooms, where our small shop is also located.</p>
              </div>
          </div>
 
          <div class="our-facilities">
-             <img src="assets/img/medium/home/big-classroom.jpg" alt="Picture small class">
+             <img src="assets/img/medium/home/kringelhojvej11.jpg" alt="Picture small class">
              <div>
                  <h4> Kringelhøjvej 11a </h4>
-                 <p>'Here is our small teaching room as well as the dog consultation with treadmills</p>
+                 <p>Here is our small teaching room as well as the dog consultation with treadmills.</p>
              </div>
          </div>
 
          <div class="our-facilities">
-             <img src="assets/img/medium/home/big-classroom.jpg" alt="Picture small class">
+             <img src="assets/img/medium/home/the-office.jpg" alt="Picture small class">
              <div>
-                 <h4> Kringelhøjvej 11a </h4>
-                 <p>'Here is our small teaching room as well as the dog consultation with treadmills</p>
+                 <h4>The office</h4>
+                 <p>In the office we do most of our administrative work and this is often where we sit when you catch us on the phone.</p>
              </div>
          </div>
+
+         <div class="our-facilities">
+            <img src="assets/img/medium/home/the-hall.jpg" alt="Picture small class">
+            <div>
+                <h4>The Hall</h4>
+                <p>'Here is our small teaching room as well as the dog consultation with treadmills</p>
+            </div>
+        </div>
+
+        <div class="our-facilities" >
+            <img src="assets/img/medium/home/kringelhojvej12.jpg" alt="Picture small class">
+            <div>
+                <h4>Kringelhøjvej 12 (CLONE FIRST)</h4>
+                <p>'Here is our small teaching room as well as the dog consultation with treadmills</p>
+            </div>
+        </div>
+
+
+        <!-- END DUPLICATE  -->
+        <div class="our-facilities" id="resetEnd" >
+            <img src="assets/img/medium/home/small-classroom.jpg" alt="Picture small class">
+            <div>
+                <h4>The small classroom </h4>
+                <p>Our small classroom is located in the house on Kringelhøjvej 11a - right next to our training hall
+                </p>
+            </div>
+        </div>
+
+        <div class="our-facilities" >
+            <img src="assets/img/medium/home/big-classroom.jpg" alt="Picture small class">
+            <div>
+                <h4>Big Classroom </h4>
+                <p>The largest of our classrooms, where our small shop is also located.</p>
+            </div>
+        </div>
+
+        <div class="our-facilities">
+            <img src="assets/img/medium/home/kringelhojvej11.jpg" alt="Picture small class">
+            <div>
+                <h4> Kringelhøjvej 11a </h4>
+                <p>Here is our small teaching room as well as the dog consultation with treadmills.</p>
+            </div>
+        </div>
+
+        
+
+        
 
 
      </div>
+
+    </div>
+
  </section>
 
 

@@ -85,7 +85,9 @@ header span {
 .header-contact {
     background-image: url(../img/big/contact/contact-us-header.jpg);
 }
-
+.header-bachs-flower-remedies {
+    background-image: url(../img/big/bach-flower-remedies/bach-flower-remedies-header.jpg);
+}
 .header-treatment-and-therapy {
     background-image: url(../img/big/treatment-and-therapy/treatment-and-therapy-header.jpg);
 }
@@ -258,5 +260,8 @@ header span {
 
     .header-shop {
         background-image: url(../img/small/shop/dog-with-ball-in-mouth-jumping-over-a-fallen-tree-trunk-3013467.jpg);
+    }
+    .header-bachs-flower-remedies {
+        background-image: url(../img/small/bach-flower-remedies/bach-flower-remedies-header.jpg);
     }
 }

@@ -1,16 +1,29 @@
 // It is the script file for the navigation.
+
+// find the navbar element
 const navBox = document.getElementsByClassName('nav-container')[0];
+// Find the element that has the active class by default.
 let previousPage = document.getElementsByClassName("active");
 
-window.addEventListener('hashchange', () => {
+// if  a hash change happen in the url run the active page check
+window.addEventListener('hashchange', activePageCheck);
+// if a refresh happens run again to keep the class in the right place
+window.onload = activePageCheck();
+
+// This function  gets the hash from the url that helps to find the active element
+// that we find via attributum and add the active class to it and remove from the other ones
+function activePageCheck() {
 
     const currentPage = window.location.hash.substr(1);
     const activeNavItem = navBox.querySelector(`[href="#${currentPage}"]`);
     previousPage[0].classList.toggle("active");
     activeNavItem.classList.toggle("active");
-});
 
+    
+}
 
+// this change the navbar color to white 
+//from transparent and show the back to top button
 window.addEventListener('scroll', () => {
     let distanceFromTop = window.pageYOffset
     const navigation = document.getElementsByClassName('nav-top')[0];
@@ -48,6 +61,8 @@ function scrollToElement(element, page) {
     }, 100);
 }
 
+
+// Open burger menu function that open and close it.
 function openBurgerMenu(closeit) {
 
     const burgerScreen = document.getElementById('burgerScreen');

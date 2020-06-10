@@ -57,10 +57,17 @@
 }
 .shop-page .original-price{   
     text-decoration: line-through;
-
+}
+.shop-page .original-price.just{   
+    text-decoration: none;
 }
 .shop-page .product-desc p {
     margin-top: 1rem;
+    
+}
+
+.shop-page .product-desc {
+   
     max-width: 25rem;
 }
 
@@ -70,6 +77,10 @@
 
 .related-products .card {
     width: 15rem;
+}
+
+.related-products .card .content h4{
+    font-size: 1.1rem;
 }
 
 .shop-page .product-desc .author {
@@ -191,4 +202,40 @@
 
 .shop-info .payment-cards img {
     margin: 1rem 5px;
+}
+
+
+
+@media (max-width: 768px) {
+    .related-products .card {
+        width: 50%;
+    }
+
+
+    .related-products .cards-container {
+        max-height: 1000vh;
+    }
+}
+
+@media (max-width: 576px) {
+    
+    .related-products .card {
+        width: 100%;
+    }
+    .related-products  .cards-container .card img {
+        width: inherit;
+    }
+    .shop-nav ul {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .shop-info .basic ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #shopContainer {
+    flex-direction: column;
+    }
 }
