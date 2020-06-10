@@ -46,7 +46,7 @@ function renderBreadcrumbs(pageName) {
     breadCrumbs.appendChild(newItem);
 }
 
-function renderShopCategory(CurrentCategoryName) {
+function renderShopCategory(CurrentCategoryName,event) {
     const itemContainer = document.getElementById('shopContainer').innerHTML = '';
     const shopContainer = document.getElementById('shopCategoryBox');
     const breadCrumbs = document.getElementsByClassName('breadcrumbs');
@@ -93,6 +93,8 @@ function renderShopCategory(CurrentCategoryName) {
         .catch(err => {
             console.error('Something went wrong.');
         });
+
+        renderTitleOfCategory(event);
 }
 
 
@@ -106,54 +108,118 @@ function sorryMsg(hide) {
 }
 
 
-window.addEventListener('hashchange', () => {
-    const shopCategoryTitle = document.getElementById('categoryTitle');
+// function renderShopPage(categoryName,categoryTitle) {
 
-    async function FunctionAll() {
+//     if (!window.location.hash.includes('#shop')) {
+//         async function Function1() {
+//             await renderActivePage('shop');
+//             await renderShopCategory(categoryName);
+//             await renderTitleOfCategory(categoryTitle)
+//         }
+//         Function1();
+//     }else{
+//         async function Function2() {
+//             await renderShopCategory(categoryName);
+//             await renderTitleOfCategory(categoryTitle)
+//         }
+//         Function2();
+//     }
 
-    if (window.location.hash == '#shop-books') {
+// }
 
-            await renderActivePage('shop');
-            await renderShopCategory('book');
-        }
-     //   shopCategoryTitle.innerText = 'Books';
 
-    } 
+function renderShopPage(categoryName,event){
+
     
-    // else if (window.location.hash == '#shop-training-articles') {
+    fetch(`views/shop.html`)
 
-    //     if (!window.location.hash.includes("shop")) {
-    //         renderActivePage('shop');
-    //     }
-    //     window.onload = renderShopCategory('training-articles')
-    //     shopCategoryTitle.innerText = 'Training Articles';
+        .then((response) => {
+            return response.text();
+        })
+        .then((html) => {
+            // if it is the first time loading it creates a main tag with an ID, so it can be modified later.
+            let mainTag = document.getElementById('mainTag');
 
-    // } else if (window.location.hash == '#shop-activity-toys') {
+            if (mainTag == null) {
+                mainTag = document.createElement('main');
+                mainTag.id = 'mainTag';
+                rootDiv.appendChild(mainTag);
+            }
+            // if the main tag is existing render the page.
+            mainTag.innerHTML = html;
+        }).then(()=>{
+            renderShopCategory(categoryName,event);
+        })
+}
 
-    //     if (!window.location.hash.includes("shop")) {
-    //         renderActivePage('shop');
-    //     }
-    //     window.onload = renderShopCategory('toys')
-    //     shopCategoryTitle.innerText = 'Activity Toys';
 
-    // } else if (window.location.hash == '#shop-courses') {
 
-    //     if (!window.location.hash.includes("shop")) {
-    //         renderActivePage('shop');
-    //     }
-    //     window.onload = renderShopCategory('courses')
-    //     shopCategoryTitle.innerText = 'Courses';
+//     if (!window.location.hash.includes('shop-')) {
+//         async function FunctionAll() {
+//             await renderActivePage('shop');
+//             await renderShopCategory('book');
+//             await renderTitleOfCategory('Books')
+//         }
+//         FunctionAll();
+//     }
 
-    // } else if (window.location.hash == '#shop-anatomy-models-and-posters') {
+//     else if (window.location.hash == '#shop-books') {
 
-    //     if (!window.location.hash.includes("shop")) {
-    //         renderActivePage('shop');
-    //     }
-    //     window.onload = renderShopCategory('models-and-posters')
-    //     shopCategoryTitle.innerText = 'Anatomy Models & Posters';
+//         async function FunctionAll() {
+//             await renderShopCategory('book');
+//             await renderTitleOfCategory('Books')
+//         }
+//         FunctionAll();
 
-    // } else {
 
-    // }
+//     } else if (window.location.hash == '#shop-training-articles') {
 
-});
+//         async function FunctionAll() {
+         
+//             await renderShopCategory('training-articles');
+//             await renderTitleOfCategory('Training Articles')
+//         }
+//         FunctionAll();
+
+
+//     } else if (window.location.hash == '#shop-activity-toys') {
+
+//         async function FunctionAll() {
+           
+//             await renderShopCategory('toys');
+//             await renderTitleOfCategory('Activity Toys')
+//         }
+//         FunctionAll();
+
+//     } else if (window.location.hash == '#shop-courses') {
+
+//         async function FunctionAll() {
+          
+//             await renderShopCategory('courses');
+//             await renderTitleOfCategory('Courses')
+//         }
+//         FunctionAll();
+
+
+//     } else if (window.location.hash == '#shop-anatomy-models-and-posters') {
+
+//         async function FunctionAll() {
+            
+//             await renderShopCategory('models-and-posters');
+//             await renderTitleOfCategory('Anatomy Models & Posters')
+//         }
+//         FunctionAll();
+
+//     } else {
+//         console.log('some eror accured, sorry. :( ')
+//     }
+
+
+
+
+// });
+
+function renderTitleOfCategory(event) {
+    const shopCategoryTitle = document.getElementById('categoryTitle');
+    shopCategoryTitle.innerText = event.target.innerText;
+}
