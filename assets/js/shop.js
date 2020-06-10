@@ -1,5 +1,6 @@
 function renderShopItem(itemName) {
     const shopContainer = document.getElementById('shopContainer');
+    shopContainer.style.margin = '5rem 0';
     let kacsa = '';
     fetch(`assets/js/items.json`)
         .then(response => response.json())
@@ -46,6 +47,7 @@ function renderShopCategory(CurrentCategoryName,event) {
     shopContainer.innerHTML = '';
     let kacsa = '';
 
+   
 
     fetch(`assets/js/items.json`)
         .then(response => response.json())
@@ -99,26 +101,6 @@ function sorryMsg(hide) {
     if (hide) document.getElementsByClassName('contact-popup')[0].classList.remove('show');
 
 }
-
-
-// function renderShopPage(categoryName,categoryTitle) {
-
-//     if (!window.location.hash.includes('#shop')) {
-//         async function Function1() {
-//             await renderActivePage('shop');
-//             await renderShopCategory(categoryName);
-//             await renderTitleOfCategory(categoryTitle)
-//         }
-//         Function1();
-//     }else{
-//         async function Function2() {
-//             await renderShopCategory(categoryName);
-//             await renderTitleOfCategory(categoryTitle)
-//         }
-//         Function2();
-//     }
-
-// }
 
 
 function renderShopPage(categoryName,event){
