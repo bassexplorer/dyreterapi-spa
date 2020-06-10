@@ -88,6 +88,15 @@ const pages = [{
         rootPage: false
     },
     {
+        name: 'training-hirtshals',
+        title: 'Training in Hirtshals | Center for Dyreterapi',
+        description: 'Training in Hirtshals for you and your beloved dog.',
+        keywords: 'training, dog, puppy, healhty, fitness, hirtshals',
+        image: 'assets/img/some.jpg',
+        author: 'Ben',
+        rootPage: false
+    },
+    {
         name: 'training',
         title: 'Training | Center for Dyreterapi',
         description: 'Here you can find a lot of information about our training activities and other services',

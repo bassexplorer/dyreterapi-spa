@@ -1,2 +1,12 @@
-
-
+.horse-behavior#plan-1 {
+  background-image: url(/assets/img/big/education-and-courses/horse-theoretical-behavior-course.jpg);
+}
+.horse-behavior#plan-2 {
+  background-image: url(/assets/img/big/education-and-courses/horse-behavioral-biology.jpg);
+}
+#horse-behavior-theoretical {
+  display: block;
+}
+#horse-behavior-practical {
+  display: block;
+}

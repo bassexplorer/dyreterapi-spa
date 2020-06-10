@@ -70,12 +70,16 @@ header span {
     background-image: url(../img/big/training-vra/training-vra-header.jpg);
 }
 
+.header-training-hirtshals {
+    background-image: url(../img/big/training-hirtshals/training-hirtshals-header.jpg);
+}
+
 .header-education-and-courses {
     background-image: url(../img/big/education-and-courses/education-and-courses-header.jpg);
 }
 
-.header-horse-behavior-and-teaching-psychology {
-    background-image: url(../img/big/education-courses/horse-behavior-and-teaching-phycology.jpg);
+.header-horse-behavior-and-learning-psychology {
+    background-image: url(../img/big/education-and-courses/horse-behavior-and-teaching-phycology.jpg);
 }
 
 .header-training {
@@ -263,5 +267,13 @@ header span {
     }
     .header-bachs-flower-remedies {
         background-image: url(../img/small/bach-flower-remedies/bach-flower-remedies-header.jpg);
+    }
+
+    .header-training-hirtshals {
+        background-image: url(../img/small/training-hirtshals/training-hirtshals-header.jpg);
+    }
+
+    .header-horse-behavior-and-learning-psychology {
+        background-image: url(../img/small/education-and-courses/horse-behavior-and-teaching-phycology-header.jpg);
     }
 }
