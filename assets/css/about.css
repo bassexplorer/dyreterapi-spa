@@ -78,7 +78,7 @@
 
 
 
-#readMoreBtn {
+.about-txt a.read_more_inner_link {
     color: var(--button-gold);
     text-transform: uppercase;
 

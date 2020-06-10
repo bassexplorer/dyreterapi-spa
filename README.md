@@ -32,7 +32,8 @@ Pages finished.
 - Therapy for Dogs
 - Horse Behavior and Learning Psychology
 - Bach's Flower Remedies
-- 
 
+
+All Pages are validated.
 
 
