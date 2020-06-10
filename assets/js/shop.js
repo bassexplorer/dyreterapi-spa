@@ -15,7 +15,7 @@ function renderShopItem(itemName) {
 
 
             let pageTemplate = `<div class="product-img">
-        <img src="/assets/img/big/books-and-sales/products/${currentItem.imgUrl}.jpg" alt="Cover image of the ${currentItem.itemTitle}item">
+        <img src="assets/img/big/books-and-sales/products/${currentItem.imgUrl}.jpg" alt="Cover image of the ${currentItem.itemTitle}item">
         </div>
         <div class="product-desc">
         <h3>${currentItem.itemTitle}</h3>
@@ -105,7 +105,7 @@ function sorryMsg(hide) {
 
 function renderShopPage(categoryName,event){
 
-    fetch(`/views/shop.html`)
+    fetch(`views/shop.html`)
 
         .then((response) => {
             return response.text();
