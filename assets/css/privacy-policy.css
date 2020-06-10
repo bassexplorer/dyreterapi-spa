@@ -25,6 +25,10 @@
   flex-direction: column;
 }
 
+.privacy-txt p{
+ color: black  !important;
+}
+
 .privacy-txt h3{
   font-family: var(--text-secondary);
   color: var(--heading-color);

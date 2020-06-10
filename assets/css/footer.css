@@ -141,6 +141,16 @@ footer {
   font-weight: var(--text-thin);
 }
 
+.footer-contact .row div a{
+ color: white;
+ text-decoration: none;
+ font-weight: lighter;
+}
+
+.footer-contact .row div a:hover{
+  color: white;
+  text-decoration: underline;
+ }
 
 .footer-contact p {
   margin: 0;

@@ -71,8 +71,9 @@
 
 .about-txt p {
     font-family: var(--text-secondary);
-    color: var(--text-gray);
+    color: black;
     line-height: 2;
+    font-size: 1.1rem;
 }
 
 
@@ -96,7 +97,7 @@
     height: auto;
     max-height: 400px;
     display: contents;
-    color: var(--text-gray);
+    color: black;
     transition: all .3s ease-in-out;
 }
 

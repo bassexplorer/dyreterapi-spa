@@ -4,7 +4,7 @@ const facilitiesItems = facilitiesCarousel.getElementsByClassName('our-facilitie
 let counter = 3;
 const size = facilitiesItems[0].clientWidth;
 
-facilitiesCarousel.style.transform = 'translateX(' + (-size * counter)+ 'px)';
+facilitiesCarousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 // Right arrow run this function and change the slides
 function nextSlide() {
@@ -22,22 +22,21 @@ function prevSlide() {
 };
 
 facilitiesCarousel.addEventListener('transitionend', () => {
-    if (facilitiesItems[counter].id === 'resetStart') {
-        facilitiesCarousel.classList.remove('animation');
 
+    // If the carousel reach the start clone picture it jump back to the end
+    if (facilitiesItems[counter].id === 'resetStart') {
+
+        facilitiesCarousel.classList.remove('animation');
         counter = facilitiesItems.length - 5;
         facilitiesCarousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
-       
-
     }
 
+    // If the carousel reach the end clone picture it jump back to the start of the carousel
     if (facilitiesItems[counter].id === 'resetEnd') {
+        // remove the animation from the element
         facilitiesCarousel.classList.remove('animation');
-
         counter = facilitiesItems.length - counter;
         facilitiesCarousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
-      
-
     }
 });
 

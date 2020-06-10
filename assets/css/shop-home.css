@@ -2,12 +2,13 @@
     display: flex;
     list-style-type: none;
     padding: 0 var(--margin-w-big);
+    background-color: var(--section-darker-bg-color);
 }
 
 .shop-nav ul li {
-    margin: 0 1rem;
+    margin: .5rem 2rem;
     margin-left: 0;
-    margin-bottom: 3rem;
+    
 }
 
 .shop-nav ul li a {

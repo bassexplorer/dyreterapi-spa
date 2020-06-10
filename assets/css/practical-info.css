@@ -40,11 +40,17 @@
   font-size: 2rem;
 }
 
-.grey-wrapper p {
+.grey-wrapper p,
+.white-wrapper p,
+.practicalities-txt p {
   font-family: var(--text-secondary);
-  color: var(--text-gray);
-  margin-bottom: var(--margin-h-big);
-  line-height: 4vh;
+  color: black;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+.practicalities-txt p{
+  line-height: 2;
 }
 
 .map-practical iframe {
@@ -85,13 +91,6 @@
   font-size: 2rem;
 }
 
-.white-wrapper p {
-  font-family: var(--text-secondary);
-  color: var(--text-gray);
-  margin-bottom: var(--margin-h-big);
-  line-height: 4vh;
-}
-
 .practicalities-wrapper {
   background-color: var(--section-bg-color);
   display: flex;
@@ -114,13 +113,6 @@
   text-transform: capitalize;
   margin-bottom: var(--margin-h-medium);
   font-size: 2rem;
-}
-
-.practicalities-txt p {
-  font-family: var(--text-secondary);
-  color: var(--text-gray);
-  margin-bottom: var(--margin-h-big);
-  line-height: 4vh;
 }
 
 .map-practical {

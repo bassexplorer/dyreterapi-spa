@@ -241,9 +241,13 @@
     margin-bottom: 10vh;
     font-style: italic;
     text-align: center;
-    margin: 5vh 5vh 10vh 5vh;
+    margin: 5vh 5vh auto 5vh;
     font-size: 1.5rem;
     font-weight: var(--text-thin);
+}
+
+.client-card .name{
+    margin-top: 5rem;
 }
 
 .client-card .comment::before,
@@ -332,6 +336,9 @@
     padding:0 .2rem;
 }
 
+.carousel-container .our-facilities div p{
+    margin-top: .5rem;
+}
 
 .carousel-container i{
     font-size: 3rem;
@@ -377,16 +384,20 @@
     font-size: 2rem;
 }
 
+.home-form .title{
+    margin-bottom: 1rem;
+}
+
 /* Extra large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
     .client-card .comment {
         margin-top: 5vh;
         margin-bottom: 10vh;
-        font-style: italic;
-        text-align: center;
-        margin: 2vh 0 5vh 0;
+        margin: 2vh 0 auto 0;
         font-size: 1.2rem;
-
+    }
+    .client-card .name{
+        margin-top: 5rem;
     }
 
 }
