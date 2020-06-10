@@ -135,3 +135,10 @@ function renderTitleOfCategory(event) {
 }
 
 
+function renderBreadcrumbs(itemToAdd){
+
+    const breadCrumbsContainer = document.getElementsByClassName('breadcrumbs')[0];
+
+    breadCrumbsContainer.innerHTML
+    console.log(breadCrumbsContainer);
+}
