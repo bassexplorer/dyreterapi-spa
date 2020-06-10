@@ -33,8 +33,6 @@ function renderShopItem(itemName) {
             shopContainer.innerHTML = pageTemplate;
             document.title = currentItem.title;
 
-            renderBreadcrumbs(currentItem.title);
-
         }).catch(err => {
             console.error('Something went wrong.');
         });
@@ -132,13 +130,4 @@ function renderTitleOfCategory(event) {
     shopCategoryTitle.innerText = event.target.innerText;
 
     
-}
-
-
-function renderBreadcrumbs(itemToAdd){
-
-    const breadCrumbsContainer = document.getElementsByClassName('breadcrumbs')[0];
-
-    breadCrumbsContainer.innerHTML
-    console.log(breadCrumbsContainer);
 }
