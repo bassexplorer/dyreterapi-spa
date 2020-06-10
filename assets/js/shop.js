@@ -2,7 +2,7 @@ function renderShopItem(itemName) {
     const shopContainer = document.getElementById('shopContainer');
     shopContainer.style.margin = '5rem 0';
     let kacsa = '';
-    fetch(`assets/js/items.json`)
+    fetch(`assets/js/items.js`)
         .then(response => response.json())
         .then((inventory) => {
             let currentItem = inventory.find(item => item.itemName === itemName);
@@ -49,7 +49,7 @@ function renderShopCategory(CurrentCategoryName,event) {
 
    
 
-    fetch(`assets/js/items.json`)
+    fetch(`assets/js/items.js`)
         .then(response => response.json())
         .then((inventory) => {
 
@@ -105,7 +105,7 @@ function sorryMsg(hide) {
 
 function renderShopPage(categoryName,event){
 
-    fetch(`views/shop.html`)
+    fetch(`/views/shop.html`)
 
         .then((response) => {
             return response.text();
