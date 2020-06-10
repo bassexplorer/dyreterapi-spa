@@ -149,12 +149,7 @@ function renderTitleOfCategory(event) {
     const shopCategoryTitle = document.getElementById('categoryTitle');
     shopCategoryTitle.innerText = event.target.innerText;
 
-    renderBreadcrumbs(event.target.innerText);
+    
 }
 
-function renderBreadcrumbs(pageName) {
-    const breadCrumbs = document.getElementsByClassName('breadcrumbs');
-    let newItem = document.createElement("li");
-    newItem.innerText = pageName;
-    breadCrumbs.appendChild(newItem);
-}
+

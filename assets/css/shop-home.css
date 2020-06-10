@@ -93,9 +93,11 @@
     display: flex;
     flex-direction: column;
 }
-#shopContainer{
+
+#shopContainer {
     display: flex;
     justify-content: center;
+    margin: 5rem 0;
 }
 
 #shopContainer .product-img{
@@ -238,5 +240,15 @@
 
     #shopContainer {
     flex-direction: column;
+    }
+
+    #shopContainer .product-img {
+         margin: 0 ; 
+    }
+
+    .summary-text {
+        display: flex;
+        justify-content: center;
+        margin: 0 1rem;
     }
 }
