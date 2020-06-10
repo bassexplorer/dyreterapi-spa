@@ -106,14 +106,54 @@ function sorryMsg(hide) {
 }
 
 
-window.addEventListener('hashchange',()=>{
-    if(window.location.hash  == '#shop-books'){
-        renderShopCategory('book')
-    }else if(window.location.hash == '#shop-training-articles'){
-        renderShopCategory('training-articles')
-    }else if(window.location.hash == '#shop-activity-toys'){
-        renderShopCategory('toys')
-    }else{
-        renderShopCategory('courses')
-    }
+window.addEventListener('hashchange', () => {
+    const shopCategoryTitle = document.getElementById('categoryTitle');
+
+    async function FunctionAll() {
+
+    if (window.location.hash == '#shop-books') {
+
+            await renderActivePage('shop');
+            await renderShopCategory('book');
+        }
+     //   shopCategoryTitle.innerText = 'Books';
+
+    } 
+    
+    // else if (window.location.hash == '#shop-training-articles') {
+
+    //     if (!window.location.hash.includes("shop")) {
+    //         renderActivePage('shop');
+    //     }
+    //     window.onload = renderShopCategory('training-articles')
+    //     shopCategoryTitle.innerText = 'Training Articles';
+
+    // } else if (window.location.hash == '#shop-activity-toys') {
+
+    //     if (!window.location.hash.includes("shop")) {
+    //         renderActivePage('shop');
+    //     }
+    //     window.onload = renderShopCategory('toys')
+    //     shopCategoryTitle.innerText = 'Activity Toys';
+
+    // } else if (window.location.hash == '#shop-courses') {
+
+    //     if (!window.location.hash.includes("shop")) {
+    //         renderActivePage('shop');
+    //     }
+    //     window.onload = renderShopCategory('courses')
+    //     shopCategoryTitle.innerText = 'Courses';
+
+    // } else if (window.location.hash == '#shop-anatomy-models-and-posters') {
+
+    //     if (!window.location.hash.includes("shop")) {
+    //         renderActivePage('shop');
+    //     }
+    //     window.onload = renderShopCategory('models-and-posters')
+    //     shopCategoryTitle.innerText = 'Anatomy Models & Posters';
+
+    // } else {
+
+    // }
+
 });

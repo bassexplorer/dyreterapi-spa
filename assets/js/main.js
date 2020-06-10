@@ -292,6 +292,7 @@ function renderActivePage(partial) {
         .catch(err => {
             console.error('The page is not found.')
         });
+        
 
 };
 
