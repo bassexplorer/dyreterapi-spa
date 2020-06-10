@@ -16,6 +16,7 @@ function activePageCheck() {
 
     const currentPage = window.location.hash.substr(1);
     const activeNavItem = navBox.querySelector(`[href="#${currentPage}"]`);
+    if(!activeNavItem) {return}
     previousPage[0].classList.toggle("active");
     activeNavItem.classList.toggle("active");
 
