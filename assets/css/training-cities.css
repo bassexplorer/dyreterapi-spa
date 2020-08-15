@@ -1,0 +1,329 @@
+.training-address-flex {
+    display: flex;
+    padding: 3rem 0;
+    line-height: 2;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.training-address-text {
+    padding-right: 2rem;
+    min-width: 20rem;
+}
+
+.address-flex-item {
+    padding-top: 4rem;
+}
+
+.map-training-cities iframe {
+    width: 60vh;
+}
+
+.map-training-cities {
+    display: flex;
+    position: relative;
+}
+
+.map-training-cities::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    -webkit-filter: opacity(.3);
+            filter: opacity(.3);
+    z-index: 1;
+    transition: all 0.9s ease-in-out;
+}
+
+.map-training-cities:hover::before {
+    visibility: hidden;
+    background-color: transparent;
+    -webkit-filter: opacity(.3);
+            filter: opacity(.3);
+    z-index: 1;
+    transition: all 0.9s ease-in-out;
+}
+
+.map-training-cities {
+    background-size: cover;
+    height: 50vh;
+    position: relative;
+    margin: var(--margin-h-big) 0;
+}
+
+#plan-1 {
+    background-image: url(/assets/img/big/training-vra/puppy-training.jpg);
+    background-position: center;
+}
+
+#plan-2 {
+    background-image: url(/assets/img/big/training-vra/training-for-all.jpg);
+    margin-top: 3rem;
+    background-position: center;
+}
+.hirtshals#plan-1 {
+    background-image: url(/assets/img/big/training-hirtshals/puppies-team.jpg);
+    background-position: center;
+}
+.hirtshals#plan-2 {
+    background-image: url(/assets/img/big/training-hirtshals/training-for-all.jpg);
+    margin-top: 3rem;
+    background-position: center;
+}
+
+
+.training-plan-black-box {
+    background-color: var(--dark-opacity-box);
+    height: 540px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0 4rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.training-plan-text {
+
+    line-height: 2;
+}
+
+.training-plan-text h2 {
+    color: white;
+    font-size: var(--h1);
+}
+
+.training-plan-text hr {
+    background-color: white;
+    display: block;
+    border: 1rem;
+    height: 2px;
+    width: 5rem;
+    margin: var(--margin-h-medium) 0;
+}
+
+.training-plan-text p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+/*Grid areas list*/
+.plan-focus {
+    grid-area: focus;
+}
+
+.plan-schedule {
+    grid-area: schedule;
+}
+
+.plan-program {
+    grid-area: program;
+}
+
+.plan-sign-up {
+    grid-area: sign-up;
+}
+
+.training-plan-grid-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas:
+        "focus program"
+        "schedule program"
+        "sign-up sign-up";
+}
+
+.focus-heading-text {
+    line-height: 2;
+}
+
+.focus-heading-text h3 {
+    color: var(--heading-color2);
+}
+
+.focus-heading-text p {
+    font-size: 1.2rem;
+    padding: 2rem 0;
+}
+
+.plan-schedule h3 {
+    color: var(--heading-color2);
+}
+
+.plan-schedule>* {
+    margin: 1.5rem 0;
+}
+
+.schedule-text h3 {
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem;
+}
+
+.schedule-text p {
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.schedule-list ul {
+    -moz-columns: 2;
+         columns: 2;
+}
+
+.schedule-list ul li {
+    font-size: 1rem;
+    list-style-type: none;
+    padding: 0.2rem 0;
+}
+
+.schedule-list ul li::before {
+    content: '';
+    display: inline-flex;
+    height: 20px;
+    width: 20px;
+    align-items: center;
+    background-image: url('/assets/img/list-line.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.plan-program {
+    background-color: var(--section-darker-bg-color);
+    width: 60%;
+    margin: 0 auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
+.program-title {
+    text-align: center;
+    line-height: 1.5;
+    padding: 1.5rem;
+}
+
+.program-title h4 {
+    color: var(--heading-color2);
+    font-weight: bold;
+    font-size: var(--h4);
+}
+
+.appointment-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.appointment-container>* {
+    padding: 0.5rem 0;
+}
+
+.appointment-container h6 {
+    border-bottom: solid 4px var(--heading-color2);
+}
+
+.appointment-flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.appointment-flex-box>div {
+    padding: 1rem;
+    width: 30%;
+}
+
+.plan-sign-up button {
+    background-color: var(--button-gold);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.plan-sign-up button:hover {
+    background-color: var(--button-gold-hover);
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+
+    .training-address-flex {
+        flex-flow: wrap;
+    }
+    .plan-program {
+        width: 90%;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .map-training-cities iframe {
+        width: 100vw;
+    }
+
+    .training-plan-black-box {
+        width: auto;
+    }
+
+    .training-plan-grid-container {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-areas:
+            "focus focus"
+            "program program"
+            "schedule schedule"
+            "sign-up sign-up";
+    }
+    .plan-program {
+        width: 60%;
+    }
+    .hirtshals#plan-1 {
+        background-position: 70% 50%;
+    }
+    .hirtshals#plan-2 {
+        background-position: 80% 50%;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+    .training-cities {
+        margin: 0;
+        width: 100% !important;
+    }
+
+    .training-address-text,
+    .training-plan-grid-container {
+        padding: 0 1rem;
+    }
+
+    .plan-program {
+        background-color: var(--section-darker-bg-color);
+        width: 100%;
+        margin: 0 auto;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+    }
+
+    .training-plan-black-box {
+        
+        padding: 0 1rem;
+        
+    }
+    .training-plan-text {
+        line-height: 1.5;
+    }
+    .training-plan-text h2 {
+        font-size: 2.5rem;
+    }
+
+}

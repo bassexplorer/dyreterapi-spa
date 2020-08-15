@@ -1,0 +1,216 @@
+.category-page {
+    margin: 0 var(--margin-h-big);
+}
+
+.category-title {
+    color: var(--link-underline);
+    font-weight: var(--text-bold);
+    margin-top: var(--margin-h-big);
+}
+
+.category-title hr {
+    width: 5rem;
+    border-top: 2px solid var(--heading-color2);
+    margin-top: var(--small-gap);
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cards-container .card {
+    position: relative;
+    margin: 1rem;
+    display: flex;
+    overflow: hidden;
+}
+
+.cards-container .card img {
+    width: 100%;
+    height: auto;
+    border: none;
+    transition: all 1s ease-in-out;
+}
+
+.cards-container .card picture {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.cards-container .card:hover img {
+    transform: scale(1.1);
+    transition: all 2s ease-in-out;
+}
+
+.cards-container .card .content {
+    position: absolute;
+    background-color: var(--dark-opacity-box);
+    bottom: -1.5rem;
+    width: 100%;
+    color: var(--text-on-dark);
+    padding: var(--margin-h-small) var(--margin-w-medium);
+    animation-duration: 1s;
+}
+
+.cards-container .card:hover .content {
+    bottom: 0;
+    transition: all .3s ease-in-out;
+}
+
+.cards-container .card .content p {
+    margin: var(--margin-h-medium) 0;
+    font-size: larger;
+    max-height: 0;
+    font-weight: var(--text-thin);
+    color: transparent;
+    transition: all .3s ease-in-out;
+}
+
+.cards-container .card:hover .content p {
+    margin: var(--margin-h-medium) 0;
+    font-size: larger;
+    max-height: 400px;
+    color: var(--text-on-dark);
+    transition: all .3s ease-in-out;
+}
+
+.cards-container .card .content h4 {
+    font-size: var(--h2);
+    margin: var(--margin-h-medium) 0;
+    font-weight: var(--text-bold);
+}
+
+
+.cards-container .card a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+
+.warning {
+    margin: var(--margin-h-big) calc(5 * var(--margin-w-big));
+    font-size: larger;
+    line-height: 2;
+}
+
+.category-title div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category-title div i{
+    font-size: 2rem;
+    display: none;
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+    .cards-container {
+        justify-content: center;
+    }
+
+    .category-title {
+        margin: 0 var(--margin-h-big);
+    }
+
+    .category-page {
+        margin: 0;
+    }
+
+
+
+    .warning {
+        margin: var(--margin-h-big) var(--margin-w-big);
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    .warning {
+        margin: calc(2 * var(--margin-h-big));
+        font-size: larger;
+        line-height: 2;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+
+    .cards-container {
+        margin-top: 1rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+    }
+
+    .cards-container.open {
+        max-height: 500vh;
+        transition: all .5s ease-in-out;
+    }
+
+    /* .category-title.open {
+        margin: calc(2 * var(--margin-h-big)) 0 var(--margin-h-big);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+
+    .warning {
+        margin: var(--margin-h-big) var(--margin-w-medium);
+    }
+    .category-title {
+        margin: 0 var(--margin-w-medium);
+    }
+
+    .category-title div i{
+        font-size: 2rem;
+        display: block;
+        color: black;
+        transform: none;
+        transition: all .5s ease-in-out;
+    }
+
+    .category-title div i.open {
+        transform: scale(-1, -1);
+        transition: all .5s ease-in-out;
+    }
+
+    .cards-container .card {
+        width: calc( 45% - 1rem);
+    }
+
+    .cards-container .card .content p {
+        max-height: 100%;
+        color: var(--text-on-dark);
+    }
+
+    .cards-container .card .content {
+        bottom: 0;
+        height: 100%;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+    .category-page {
+        margin: 0;
+    }
+
+    .cards-container .card {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .cards-container .card img {
+        width: 100vw;
+    }
+
+   
+}

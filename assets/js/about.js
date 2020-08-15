@@ -1,8 +1,10 @@
+//Open and close function for the read moder.
 function readMore(element) {
-    var dots = document.getElementById("dots");
+    var dots = document.getElementById(`${element}Dots`);
     var moreText = document.getElementById(element);
-    var btnText = document.getElementById("readMoreBtn");
+    var btnText = document.getElementById(`${element}Btn`);
   
+    //if the doth is there that means the read more is closed
     if (dots.style.display === "none") {
       dots.style.display = "inline-flex";
       btnText.innerHTML = "Read more"; 

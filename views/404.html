@@ -1,12 +1,11 @@
-
 <header class="header-404-page">
 </header>
 
 <!-- https://icons8.com/icon/5LOTTg4kbk4F/dog-pooping -->
 <div class="page-404">
 
-    <img src="/assets/img/404.svg" alt="404 page not found">
-    <a href="#home"><i class="fas fa-angle-double-left"></i>  Go back home</a> 
+    <img src="assets/img/404.svg" alt="404 page not found">
+    <a href="#home"><i class="fas fa-angle-double-left"></i> Go back home</a>
 
 </div>
 
@@ -16,24 +15,46 @@
     .header-404-page {
         display: flex;
     }
-    .page-404{
+
+    .page-404 {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .page-404 img{
+
+    .page-404 img {
         width: 30vw;
     }
 
-    .page-404 a{
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: var(--text-on-bg);
+    .page-404 a {
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: var(--text-on-bg);
     }
 
-    .page-404 a:hover{
-    color: var(--heading-color2);
-    font-weight: bold;
+    .page-404 a:hover {
+        color: var(--heading-color2);
+        font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+        .header-404-page {
+            height: 10rem;
+        }
+
+        .page-404 img {
+            width: 50vw;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .header-404-page {
+            height: 10rem;
+        }
+
+        .page-404 img {
+            width: 80vw;
+        }
     }
 </style>

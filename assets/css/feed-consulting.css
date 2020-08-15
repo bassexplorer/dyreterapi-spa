@@ -221,7 +221,7 @@
         font-size: 2.5rem;
     }
     .list-container {
-        margin: 3rem 0;
+        margin: 3rem 1rem;
     }
     .content-wrapper p{
         font-size: 1.8rem;
@@ -233,7 +233,10 @@
         font-size: 2.3rem;
     }
     .list-container ul li {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
+    }
+    .list-container ul li::before {
+        margin: 0 0.5rem;
     }
     .consultation-offer-container article p{
         font-size: 1.8rem;

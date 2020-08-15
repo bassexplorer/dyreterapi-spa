@@ -1,0 +1,148 @@
+  .border-top {
+      border-top: solid 3px;
+  }
+  .heading-text {
+      line-height: 2.5;
+      width: 70%;
+      margin: var(--margin-h-big);
+  }
+  .heading-text p {
+      font-size: 1.4rem;
+      padding: 2rem 0;
+  }
+  .cons-title {
+      font-size: 1.8rem;
+      padding-top: 1rem;
+  }
+  .prices-flex-container {
+      display: flex;
+      justify-content: space-between;
+  }
+  .prices-flex-container p{
+    font-size: 1.5rem;
+}
+  .prices {
+      margin: 3rem 0;
+  }
+  .therapy-prices-container {
+      width: 60%;
+      line-height: 2.5;
+  }
+
+  .dropdown-content-box {
+      display: inline-flex;
+      width: 70%;
+      justify-content: space-between;
+  }
+  .dropdown-content-box i {
+      font-size: 2rem;
+  }
+  .dropdown-content-text {
+    max-height: 0;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    width: 70%;
+    margin-left: calc(4rem + 40px);
+  }
+
+  .dropdown-content-box h4{
+    font-weight: var(--text-bold);
+    color: black;
+    font-size: var(--h3);
+  }
+
+  .dropdown-content-text.open {
+    max-height: 500vh;
+    transition: all 0.5s ease-in-out;
+  }
+  .dropdown-content-box i.open {
+    transform: scale(-1, -1);
+    transition: all 0.5s ease-in-out;
+    }
+    .quote-img-text {
+        display: flex;
+        width: 70%;
+        margin: 3rem;
+    }
+    .quote-img-text div {
+        padding: 2rem;
+    }
+    .quote-img-text img {
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    .quote-img-text p {
+        font-size: 1.4rem;
+        line-height: 2;
+    }
+    .quote-img-text a {
+        color: black;
+    }
+  
+
+
+  /*Even larger devices*/
+  @media (max-width: 1300px) { 
+    .therapy-prices-container {
+        width: 90%;
+    }
+   }
+/* Extra large devices (large desktops, 1200px and up) */
+  @media (max-width: 1200px) { 
+    .quote-img-text {
+        width: 80%;
+    }
+    .quote-img-text div {
+        padding: 0.5rem;
+    }
+   }
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { }
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+    .prices-flex-container {
+        flex-direction: column;
+    }
+    .prices-flex-container p{
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+    .cons-title {
+        font-size: 1.9rem;
+    }
+    .quote-img-text {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .heading-text p {
+        padding: 2rem 0;
+    }
+    .heading-text {
+        margin: var(--margin-h-medium);
+        width: 100%;
+        line-height: 2;
+    }
+    .content-wrapper {
+        margin: 0;
+        width: 90%;
+    }
+    .cons-title {
+        margin: 0 1rem;
+    }
+    .therapy-prices-container {
+        margin: 0 1rem;
+    }
+    .quote-img-text {
+        margin: 0.5rem;
+        width: 100%;
+    }
+ }

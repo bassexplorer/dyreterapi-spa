@@ -30,15 +30,24 @@
         </div>
 
         <div class="column">
-            <form action="/action_page.php">
-                
-                <input type="text" id="fname" name="firstname" placeholder="Full name...">
             
-                <input type="text" id="lname" name="lastname" placeholder="E-mail">
+                
+                <input type="text" id="fname" name="fullname" placeholder="Full name...">
+            
+                <input type="text" id="email" name="e-mail" placeholder="E-mail">
             
                 <textarea id="subject" name="subject" placeholder="Your message..." style="height:200px"></textarea>
             
-                <input type="submit" value="Submit">
-              </form>
+
+                <button onclick="thankMsg()">Contact us</button>
+
+        </div>
+    </div>
+    
+    <div class="contact-popup" onclick="thankMsg(true)">
+        <div>
+            <h1>Thank you for reaching out!</h1>
+            <p> We will get back to you with an answer soon.</p>
+                <a onclick="thankMsg(true)">Ok</i></a>
         </div>
     </div>

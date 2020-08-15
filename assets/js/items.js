@@ -1,0 +1,267 @@
+[{
+    "itemName": "throught-the-dogs-eyes",
+    "title": "Through the dog's eyes | Center for Dyreterapi",
+    "itemTitle": "Through the dog's eyes",
+    "imgUrl": "books/book-1",
+    "description": "It's hard to be a dog in our world: Anything natural is considered either wrong or disgusting! The dog's natural behavior is often misunderstood, which can lead to what we call problem behavior. The author of Through the Dog's Eyes, Jean Donaldson, is called by many 'the most sensible voice in dog training', and all her training is based on understanding the dog's nature as well as positive reinforcement. In this book, which has won numerous awards in the home country of the United States as the best book on dog training, she explains why our dogs do, as they do,from an evolutionary point of view.",
+    "price": "DKK 249.00",
+    "salePrice": "DKK 210.00",
+    "author": "By Jean Donaldson / translated by Bettina Hvidemose",
+    "category": "book"
+
+},
+{
+    "itemName": "pilates-and-stretch-for-horses",
+    "title": "Pilates And Stretch For Horses | Center for Dyreterapi",
+    "itemTitle": "Pilates And Stretch For Horses",
+    "imgUrl": "books/book-2",
+    "description": "The horse is a popular hobby animal: it is wise, it is willing to carry its rider, and it is strong. But it is a fact that the horse is not by nature built to carry weight on its back. When we as riders get up on the horse, we unnaturally wear on the horse's locomotive, especially on its legs and its long back. Too many horses get limp and get hurt because they are used incorrectly. That is why, in recent years, increased attention has also been paid to the horse's health. Even ordinary hobby riders have realized that the horse is strong, but in order for their four-legged friend to meet the challenges it faces, it requires more than just feed, shelter and shelter. Horse masseurs in Denmark are busy, and they are expensive. But with the right knowledge, most riders can remedy much of the problems horses can have with muscles, tendons and joints.\"Pilates and Stretching Exercises for Horses\" is a detailed description of the entire horse's movement apparatus as well as instructions on how to relieve tension and stress in the horse's body. It is a book that will delight every conscious horse owner, both on hobby and competition level. The book also caters to equestrian professionals, such as horse masseurs and veterinarians.",
+    "price": "DKK 299.00",
+    "salePrice": "DKK 245.00",
+    "author": "By Gillian Higgins",
+    "category": "book"
+},
+{
+    "itemName": "trailer-reading",
+    "title": "Trailer Reading | Center for Dyreterapi",
+    "itemTitle": "Trailer Reading",
+    "imgUrl": "books/book-3",
+    "description": "\"Trailer Reading\" is an easy-to-understand book for all horse people who would like to learn how to load their horse without stress. The book is structured so that the first part theoretically reviews the background knowledge of the horse's nature and the mechanisms that control the horse's learning - all in relation to trailer reading. Then the book reviews several practical techniques for trailer reading. It all starts with learning theory and scientific, horse-friendly techniques. The book is on 92 pages, which is illustrated with color photos by Lars Schnoor Riisberg.",
+    "price": "DKK 189.00",
+    "salePrice": "DKK 125.00",
+    "author": "By Bettina Hvidemose",
+    "category": "book"
+},
+{
+    "itemName": "horse-massage",
+    "title": "Horse Massage | Center for Dyreterapi",
+    "itemTitle": "Horse Massage",
+    "imgUrl": "books/book-4",
+    "description": "\"Horse Massage\" is a book for all horse people who would like to learn some simple techniques to release tension on their horses. Our horses often work on a level similar to athletes. Therefore, there is nothing to say that horses need massage and physical therapy, just as many people have. Today we know that massage can increase the horse's well-being and well-being. In addition to this, most people find that the horse's performance in the riding is significantly improved by regular massage. Some cases require professional help, but often you can do a lot yourself - and it doesn't have to be difficult. This book will get you started!",
+    "price": "DKK 189.00",
+    "salePrice": "DKK 150.00",
+    "author": "By Bettina Hvidemose Pedersen",
+    "category": "book"
+},
+{
+    "itemName": "learning-psychology-for-horse-and-rider",
+    "title": "Learning Psychology For Horse And Rider | Center for Dyreterapi",
+    "itemTitle": "Learning Psychology For Horse And Rider",
+    "imgUrl": "books/book-5",
+    "description": "Horse and rider learning psychology gives you a thorough introduction to the use of learning psychological theories as a tool in the training of horses. The book is aimed at anyone who wants to acquire more knowledge, improve understanding of their horse's reactions or solve everyday problems with the horse.<br> The book includes: <br> - Behavioral biology and background knowledge  <br>  - Learning psychology  <br>  - Review of different training methods  <br>  - Ideas for collaborative exercises from the ground up  <br>  - Examples of cases with problem behavior   <br> Learning psychological theories have been used for many years as background knowledge for training dogs, as well as a number of captive wild animals, such as various marine mammals. <br>By transferring these theories to the training of horses, we gain a greater understanding of why the horses respond as they do and what we can do to shape their behavior according to our wishes and goals. ",
+    "price": "DKK 200.00",
+    "salePrice": "DKK 150.00",
+    "author": "By Bettina Hvidemose",
+    "category": "book"
+},
+{
+    "itemName": "dogs-understanding",
+    "title": "Dogs Understanding | Center for Dyreterapi",
+    "itemTitle": "Dogs Understanding",
+    "imgUrl": "books/book-6",
+    "description": "Dog understanding is aimed at anyone who wants to get off to a good start with his new dog, or just wants to have a deeper understanding of the theory behind effective and dog-friendly training and education. Therefore, this book is something for anyone interested in dogs! <br> The book includes, among other things:<br> - Behavior and background knowledge <br>- Learning Theory <br>- Getting the puppy in the house <br>- General puppies problems <br>- Basic training <br>- About behavioral and training problems <br>The book thus deals with both the theoretical and practical background for a good collaboration with your dog.",
+    "price": "DKK 200.00",
+    "salePrice": "DKK 150.00",
+    "author": "By Bettina Hvidemose",
+    "category": "book"
+},
+{
+    "itemName": "the-biomechanics-of-the-horse",
+    "title": "The Biomechanics Of The Horse | Center for Dyreterapi",
+    "itemTitle": "The Biomechanics Of The Horse",
+    "imgUrl": "books/book-7",
+    "description": "Riding on the horse's terms is gaining more and more among riders worldwide. How many riders used to train the horse on the basis of principles of control discipline and submission, the modern rider far more fully understands the horse's mind, behavior and, not least, physical ability and limitations. The horse's biomechanics is a bestseller in several countries, as it describes in text and pictures the horse's movement apparatus, so that the ordinary rider gets a rare insight into a knowledge that until now has only been veterinarians and professionals - all taken down to a level that fortunately does not require special knowledge. The book caters to the rider who wants to train his horse without risk of injury and breach of trust due to unreasonable demands on the animal's physique. The book is on 153 pages, which is richly illustrated with pictures of drawings that provide insight into the horse's anatomy. Bettina Hvidemose has been a professional consultant on the Danish translation.",
+    "price": "DKK 299.00",
+    "salePrice": "DKK 250.00",
+    "author": "By Gillian Higgins / translated by Bettina Hvidemose",
+    "category": "book"
+},
+{
+    "itemName": "dominance-and-leadership",
+    "title": "Dominance and Leadership | Center for Dyreterapi",
+    "itemTitle": "Dominance and Leadership",
+    "imgUrl": "books/book-8",
+    "description": "For many years, dog owners have been brought up to believe that \"leadership\" is the solution to all dog problems, and that any dog ​​problem is precisely due to \"lack of leadership\". But is this fact or superstition? Is the dog really looking to become the head of the family? Does it really have such an inherent urge to \"climb the ladder\" and dominate its owner? How valid are comparisons between wolves and dogs? And what is the alternative to leadership thinking?",
+    "price": "DKK 75.00",
+    "salePrice": "",
+    "author": "By Barry Eaton",
+    "category": "book"
+},
+{
+    "itemName": "anatomy-model-horse-skull-vertebral-column-and-pelvis",
+    "title": "Anatomy Model, Horse (Skull, Vertebral Column And Pelvis) | Center for Dyreterapi",
+    "itemTitle": "Anatomy Model, Horse (Skull, Vertebral Column And Pelvis)",
+    "imgUrl": "models-posters/model-1",
+    "description": "This 3D printed anatomy model includes skull, vertebral column (from atlas to sacrum) and pelvis.<br> The size of all the elements fits together. The skull is about 15 cm long.<br> The sacrum is fitted with a large, which can be passed through all the single vertebrae. <br> NOTE: As the model is printed and not molded, some minor and minor surface irregularities may occur",
+    "price": "DKK 695.00",
+    "salePrice": "",
+    "author": "",
+    "category": "models-and-posters"
+},
+{
+    "itemName": "horse-crane-3d-model",
+    "title": "Horse Crane, 3D Model | Center for Dyreterapi",
+    "itemTitle": "Horse Crane, 3D Model",
+    "imgUrl": "models-posters/model-2",
+    "description": "This 3D printed horse skull is approximately 19 cm. long and 7 cm wide. It acts as a detailed \"mini-version\" of a real horse skull. <br> The skull is scanned from a real skull and is thus not simply printed from a graphic drawing. <br>One part of the scapula is stuck medially to the left mandible. <br>The sutures are not visible on the model, but can be endorsed with waterproof tush or pencil. <br>Great study tool for those who are learning about the horse's skull or communicating about it! <br> NOTE: As the model is printed and not molded, some minor and minor surface irregularities may occur",
+    "price": "DKK 395.00",
+    "salePrice": "",
+    "author": "",
+    "category": "models-and-posters"
+},
+{
+    "itemName": "anatomy-posters-horse",
+    "title": "Anatomy Posters, Horse | Center for Dyreterapi",
+    "itemTitle": "Anatomy Posters, Horse",
+    "imgUrl": "models-posters/poster-1",
+    "description": "Set of 2x anatomy posters (horse) showing respectively. the horse's muscles and the horse's bones. <br> Only sold in complete sets. <br> The text is in German, Latin and English.",
+    "price": "DKK 450.00",
+    "salePrice": "",
+    "author": "",
+    "category": "models-and-posters"
+},
+{
+    "itemName": "anatomy-posters-dog",
+    "title": "Anatomy Posters, Dog | Center for Dyreterapi",
+    "itemTitle": "Anatomy Posters, Dog",
+    "imgUrl": "models-posters/poster-2",
+    "description": "Set of 3 anatomy posters from \"Nordic Dog Massage School\"<br>This set of 3 posters is one of the absolute best illustrations of the dog's movement equipment on the market. <br>All the illustrations have been reviewed and quality assured by a senior anatomy professor at NMBU Veterinary College, David Griffiths.<br>The posters are in A2 format and are only sold in complete sets. <br>Contains illustrations of skeletal, deep, middle and superficial muscle layers as well as cranial and caudal angles of the muscles.",
+    "price": "DKK 1250.00",
+    "salePrice": "",
+    "author": "",
+    "category": "models-and-posters"
+},
+{
+    "itemName": "soft-clicks-1-pcs",
+    "title": "Soft-Clicks 1 Pcs | Center for Dyreterapi",
+    "itemTitle": "Soft-Clicks 1 Pcs",
+    "imgUrl": "training-articles/clicker-1",
+    "description": "Red soft click with yellow button",
+    "price": "DKK 25.00",
+    "salePrice": "",
+    "author": "",
+    "category": "training-articles"
+},
+{
+    "itemName": "5-pack-clicks",
+    "title": "5-Pack Clicks | Center for Dyreterapi",
+    "itemTitle": "5-Pack Clicks",
+    "imgUrl": "training-articles/clicker-2",
+    "description": "Comes in assorted colors",
+    "price": "DKK 100.00",
+    "salePrice": "",
+    "author": "",
+    "category": "training-articles"
+},
+{
+    "itemName": "goodie-bag",
+    "title": "Goodie Bag | Center for Dyreterapi",
+    "itemTitle": "Goodie Bag",
+    "imgUrl": "training-articles/goodie-bag",
+    "description": "Delicious treat bag that can easily be opened and closed with click system. <br> Pocket outside with room for extra goodies or clicks, <br>With belly belt",
+    "price": "DKK 125.00",
+    "salePrice": "",
+    "author": "",
+    "category": "training-articles"
+},
+{
+    "itemName": "target-stick-for-dogs-and-cats",
+    "title": "Targetstick For Dogs And Cats | Center for Dyreterapi",
+    "itemTitle": "Targetstick For Dogs And Cats",
+    "imgUrl": "training-articles/target-stick",
+    "description": "Targetstick for dogs and cats <br>Wooden handle with associated telescopic pole. <br>The ball is similar to a table tennis ball in size.",
+    "price": "DKK 109.00",
+    "salePrice": "",
+    "author": "",
+    "category": "training-articles"
+},
+{
+    "itemName": "buster-fun-bone",
+    "title": "Buster Fun Bone | Center for Dyreterapi",
+    "itemTitle": "Buster Fun Bone",
+    "imgUrl": "toys/toy-1",
+    "description": "Goodies or feed are stored in the leg which has a hole at one end. The dog thus has to work to get the leg upright, to get all that delicious out. <br>Good activity and mental stimulation for your dog <br>Available in both green and blue <br>13 cm long",
+    "price": "DKK 65.00",
+    "salePrice": "",
+    "author": "",
+    "category": "toys"
+},
+{
+    "itemName": "dog-pyramid",
+    "title": "Dog pyramid | Center for Dyreterapi",
+    "itemTitle": "Dog pyramid",
+    "imgUrl": "toys/toy-2",
+    "description": "Activity toys for dogs <br>Candy or feed gets into the toy, which is heavy at the bottom. <br>Therefore, in order to get the feed out of the hole which is found at the top of the toy, it is necessary that the dog chooses the \"tumble\". <br>Fun play and mental activation for your dog.",
+    "price": "DKK 125.00",
+    "salePrice": "",
+    "author": "",
+    "category": "toys"
+},
+{
+    "itemName": "cat-behavior-and-problem-behavior",
+    "title": "Course: Cat Behavior And Problem Behavior | Center for Dyreterapi",
+    "itemTitle": "Course: Cat Behavior And Problem Behavior",
+    "imgUrl": "courses/cat-behavior",
+    "description": "Exciting weekend course about cats <br>Held on November 14-15, 2020 <br> The cat can have behavior-related problems as well as any other pet and domestic animal. It is becoming increasingly popular to keep cats and especially domestic cats can exhibit behavioral problems. During the course, we will review the cat's origins and closest relatives as a background to understand the cat's natural needs, behaviors and language that are also discussed. Next, we will go into depth with the various typical behavioral problems of cats, as well as talk about prevention and possible solutions when the problems have arisen. We will discuss the problem of keeping cats as domestic cats and why these often exhibit behavioral problems to a greater extent than domestic cats, and we will talk about how to prevent behavioral problems with the domestic cat. Furthermore, the course addresses the use of clicker training as an often very effective tool in the behavioral therapy of cats. <br>The course is aimed at animal behavior consultants or trainers who would like to learn more about cats, veterinary nurses, staff from animal shelters, pensions or the like. Individuals with a keen interest in cat behavior are also welcome on the course. <br>The course is held at: Center for Animal Therapy, Kringelhøjvej 12, 9850 Hirtshals. <br>Lecturer: Animal Behavior Consultant, Ayoe Hoff  <br>Price for the course NOK 1900, - <br>Course certificates are issued after participation.  <br>For more information, contact: bettina@dyreterapi.dk <br>Remember to select \"Pick up in stock\" when paying (so shipping is not charged for this item)",
+    "price": "DKK 1900.00",
+    "salePrice": "",
+    "author": "",
+    "category": "courses"
+},
+{
+    "itemName": "dog-training-for-all",
+    "title": "Dog Training For All | Center for Dyreterapi",
+    "itemTitle": "Dog Training For All: Mondays At 1 P.M. 18:00 - 19:00, Hirtshals",
+    "imgUrl": "courses/dog-training-all",
+    "description": "Instructor: Renée Søndergaard, Dog <br>Behavior Instructor Location: Center for Animal Therapy <br>On the team there is room for everyone who wants to go for training with their dog. We will, among other things, work with regular obedience exercises in various difficulty levels, task stations, agility, tricks and more. We also work with the exercises go nicely on a leash, call and the good contact. In addition, time will be set for individual problems, wishes and ideas. <br>We focus on the collaboration between dog and owner and the solution of training problems based on positive training principles. <br>Price DKK 695 - for the 6 meetings. <br>Participants are limited to max. 8 dogs.<br>We meet the following Mondays at. 18.00:<br>D. 25 May<br>D. 1 June<br>D. 8 June<br>D. 15 June<br>D. 22 June<br>D. 29 June - (Training in the town of Hirtshals <br>ATTENTION: WHEN PURCHASING PARTICIPATION IN DOG TRAINING TEAM, THE SHIPPING METHOD WILL BE SELECTED: \"COLLECTED IN STOCK\" AT CHECK OUT. THEREFORE NO FREIGHT TO BE PURCHASED AND CONFIRMATION IS PROVIDED BY PR. E-mail.",
+    "price": "DKK 695.00",
+    "salePrice": "",
+    "author": "",
+    "category": "courses"
+},
+{
+    "itemName": "morning-dog-training-for-everyone",
+    "title": "Morning Dog Training For Everyone | Center for Dyreterapi",
+    "itemTitle": "Morning Dog Training For Everyone: Wednesdays At 1 P.M. 10 - 11, Hirtshals",
+    "imgUrl": "courses/morning-dog-training",
+    "description": "Instructor: Renée Søndergaard, Dog<br>Behavior Instructor Location: Center for Animal Therapy, Kringelhøjvej 11A, 9850 Hirtshals<br>On the Morning Team, there is room for everyone who wants to have new, fun experiences with their dog and a slightly different activation than the daily walk. We will, among other things, work with obedience exercises, agility, tricks, problem solving (get on a leash, call in) and more. We emphasize the cooperation between dog and owner and the solution of training problems based on positive training principles.<br>The lesson will be a mixture of common exercises and time for individual problems, desires and ideas.<br>Price: DKK 495 - for a total of 4 meetings.<br>Participants are limited to max. 8 dogs.<br> We meet the following Wednesdays at. 10.00:<br>27 May<br>3 June<br>10 June<br>17 June (Training in the town of Hirtshals <br>ATTENTION: WHEN PURCHASING PARTICIPATION IN DOG TRAINING TEAM, THE SHIPPING METHOD WILL BE SELECTED: \"COLLECTED IN STOCK\" AT CHECK OUT. THEREFORE NO FREIGHT TO BE PURCHASED AND CONFIRMATION IS PROVIDED BY PR. E-mail.",
+    "price": "DKK 495.00",
+    "salePrice": "",
+    "author": "",
+    "category": "courses"
+},
+{
+    "itemName": "puppy-training-vra",
+    "title": "Puppy Training, Vrå | Center for Dyreterapi",
+    "itemTitle": "Puppy Training, Vrå",
+    "imgUrl": "courses/puppy-training-vra",
+    "description": "Instructor: Renée Søndergaard, Dog Behavior Instructor<br>Location: Vrå Højskole, Højskolevej 1, 9760 Vrå<br>The purpose of this team is to lay a good foundation for cooperation and understanding between dog and owner. We work, among other things. with the following:<br>· Contact<br>· Sit<br>· Tire<br>· Yes No<br>· Invitation<br>· Handling<br>· Space<br>· Walk nicely on a leash<br>· Socialization trip to the city<br>First meeting is theoretical (without dog). The following 6 times are practical.<br>Price: 750, - for a total of 7 meetings.<br>Participants are limited to max. 8 puppies per team.<br>We meet the following Tuesdays:<br>Theory: Tuesday, May 26 at 1 p.m. 17.00-18.00 without dog <br>Practical training at. 17.00-18.00 with dog: <br>On June 2 <br>June 9 <br>June 16th <br>June 23rd <br>June 30<br>July 7 (socialization trip to the city)<br>ATTENTION: WHEN PURCHASING PARTICIPATION IN DOG TRAINING TEAM, THE SHIPPING METHOD WILL BE SELECTED: \"COLLECTED IN STOCK\" AT CHECK OUT. THEREFORE NO FREIGHT TO BE PURCHASED AND CONFIRMATION IS PROVIDED BY PR. E-mail.",
+    "price": "DKK 750.00",
+    "salePrice": "",
+    "author": "",
+    "category": "courses"
+},
+{
+    "itemName": "training-for-everyone-vra",
+    "title": "Training For Everyone, Vra | Center for Dyreterapi",
+    "itemTitle": "Training For Everyone, Vra",
+    "imgUrl": "courses/vra-training",
+    "description": "Instructor: Renée Søndergaard, Dog Behavior Instructor <br>Location: Vrå Højskole, Højskolevej 1, 9760 Vrå<br>On the team there is room for everyone who wants to go for training with their dog. The focus will be on cooperation between dog and owner, obedience exercises and solving training problems based on positive training principles. We also work with the exercises go nicely on a leash, call and the good contact.<br>In addition, time will be set for individual problems, wishes and ideas.<br>Price: DKK 695 for a total of 6 meetings.<br>Participants are limited to max. 8 dogs per dog. team.<br>We meet the following Tuesdays at 18:00 <br>June 2 <br>June 9 <br>June 16 <br>June 23rd <br>June 30 <br>July 7 - (Completion with training in Vrå city)<br>ATTENTION: WHEN PURCHASING PARTICIPATION IN DOG TRAINING TEAM, THE SHIPPING METHOD WILL BE SELECTED: \"COLLECTED IN STOCK\" AT CHECK OUT. THEREFORE NO FREIGHT TO BE PURCHASED AND CONFIRMATION IS PROVIDED BY PR. E-mail.",
+    "price": "DKK 695.00",
+    "salePrice": "",
+    "author": "",
+    "category": "courses"
+},
+{
+    "itemName": "puppy-training-hirtshals",
+    "title": "Puppy Training, Hirtshals | Center for Dyreterapi",
+    "itemTitle": "Puppy Training, Hirtshals",
+    "imgUrl": "courses/puppy-training-hirtshals",
+    "description": "Wednesdays at 18.00 - 19.00 <br>Instructor: Renée Søndergaard, Dog Behavior Instructor<br>Location: Center for Animal Therapy, Kringelhøjvej 11A, 9850 Hirtshals<br>The purpose of this team is to lay a good foundation for cooperation and understanding between dog and owner. We work, among other things. with the following:<br>· Socialization / puppy play<br>· Contact <br>· Seat / deck<br>· Yes No<br>· Invitation<br>· Handling<br>· Space<br>· Walk nicely on a leash<br>· Socialization tour of the city<br>The first meeting is Wednesday, June 17, at. 18.00 where there is theory (without dog), the following 6 times are practical.<br>Price DKK: 750, - for the total of 7 meetings.<br>Participants are limited to max. 8 puppies per team.<br>Theory: Wednesday, June 17 at 1 p.m. 18.00-19.00 without dog <br>Practical training at. 18.00-19.00 with dog on Wednesdays: <br>June 24<br>July 1st<br>8th of July<br>(Note: no training on week 29 & 30)<br>July 29th<br>August 5th<br>August 12 (completion and socialization tour of the city <br>ATTENTION: WHEN PURCHASING PARTICIPATION IN DOG TRAINING TEAM, THE SHIPPING METHOD WILL BE SELECTED: \"COLLECTED IN STOCK\" AT CHECK OUT. THEREFORE NO FREIGHT TO BE PURCHASED AND CONFIRMATION IS PROVIDED BY PR. E-mail.",
+    "price": "DKK 750.00",
+    "salePrice": "",
+    "author": "",
+    "category": "courses"
+}
+]
+    

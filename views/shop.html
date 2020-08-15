@@ -1,0 +1,173 @@
+<header class="header-shop">
+    <div class="title-box">
+        <h1>Books & Sales</h1>
+        <h3> Here we have products for <span>you and your pet</span></h3>
+    </div>
+
+</header>
+
+<ul class="breadcrumbs">
+    <li><a href=#home>Home</a></li>
+    <li>Books & Sales</li>
+</ul>
+
+
+<nav class="shop-nav">
+    <ul>
+        <li><a href="#shop-books" onclick="renderShopPage('book',event)">Books</a></li>
+        <li><a href="#shop-training-articles" onclick="renderShopPage('training-articles', event)">Training Articles</a>
+        </li>
+        <li><a href="#shop-activity-toys" onclick="renderShopPage('toys',event)">Activity Toys</a></li>
+        <li><a href="#shop-anatomy-models-and-posters" onclick="renderShopPage('models-and-posters', event)">Anatomy Models & Posters</a></li>
+        <li><a href="#shop-courses" onclick="renderShopPage('courses', event)">Courses</a></li>
+    </ul>
+</nav>
+
+<div class="shop-page">
+
+    <div id="shopContainer">
+
+    </div>
+
+    <div class="related-products">
+        <div class="category-title">
+            <h2 id="categoryTitle">Products</h2>
+            <hr>
+        </div>
+
+        <div class="cards-container" id="shopCategoryBox">
+            <div class="card">
+                <a onclick="renderShopItem('throught-the-dogs-eyes')">
+                    <img src="assets/img/medium/books-and-sales/products/books/book-1.jpg"
+                        alt="Cover image of the product">
+                    <div class="content">
+                        <h4>Through the dog's eyes</h4>
+                        <p> <span class="original-price">DKK 249.00</span>
+                            <br>
+                            <span class="sale-price">DKK 210.00</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a onclick="renderShopItem('pilates-and-stretch-for-horses')">
+                    <img src="assets/img/medium/books-and-sales/products/books/book-2.jpg"
+                        alt="Cover image of the product">
+                    <div class="content">
+                        <h4>Pilates And Stretch For Horses</h4>
+                        <p> <span class="original-price">DKK 299.00</span>
+                            <br>
+                            <span class="sale-price">DKK 245.00</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a onclick="renderShopItem('trailer-reading')">
+                    <img src="assets/img/medium/books-and-sales/products/books/book-3.jpg"
+                        alt="Cover image of the product">
+                    <div class="content">
+                        <h4>Trailer Reading</h4>
+                        <p> <span class="original-price">DKK 189.00</span>
+                            <br>
+                            <span class="sale-price">DKK 125.00</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a onclick="renderShopItem('horse-massage')">
+                    <img src="assets/img/medium/books-and-sales/products/books/book-4.jpg"
+                        alt="Cover image of the product">
+                    <div class="content">
+                        <h4>Horse Massage</h4>
+                        <p> <span class="original-price">DKK 189.00</span>
+                            <br>
+                            <span class="sale-price">DKK 150.00</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a onclick="renderShopItem('learning-psychology-for-horse-and-rider')">
+                    <img src="assets/img/medium/books-and-sales/products/books/book-5.jpg"
+                        alt="Cover image of the product">
+                    <div class="content">
+                        <h4>Learning Psychology For Horse And Rider</h4>
+                        <p> <span class="original-price">DKK 200.00</span>
+                            <br>
+                            <span class="sale-price">DKK 150.00</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a onclick="renderShopItem('dogs-understanding')">
+                    <img src="assets/img/medium/books-and-sales/products/books/book-6.jpg"
+                        alt="Cover image of the product">
+                    <div class="content">
+                        <h4>Dogs Understanding</h4>
+                        <p> <span class="original-price">DKK 200.00</span>
+                            <br>
+                            <span class="sale-price">DKK 150.00</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a onclick="renderShopItem('the-biomechanics-of-the-horse')">
+                    <img src="assets/img/medium/books-and-sales/products/books/book-7.jpg"
+                        alt="Cover image of the product">
+                    <div class="content">
+                        <h4>The Biomechanics Of The Horse</h4>
+                        <p> <span class="original-price">DKK 299.00</span>
+                            <br>
+                            <span class="sale-price">DKK 250.00</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a onclick="renderShopItem('dominance-and-leadership')">
+                    <img src="assets/img/medium/books-and-sales/products/books/book-8.jpg"
+                        alt="Cover image of the product">
+                    <div class="content">
+                        <h4>Dominance and Leadership</h4>
+                        <p> <span class="original-price just">DKK 75.00</span>
+                            <br>
+                            <span class="sale-price"></span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="shop-info">
+    <div class="basic">
+        <hr>
+        <ul>
+            <li><i class="far fa-clock"></i>We ship within 3 business days</li>
+            <li><i class="fas fa-box-open"></i>Free delivery over 1000,-</li>
+            <li><i class="fas fa-desktop"></i>14 days returned </li>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="payment-cards">
+        <img src="assets/img/small/shop/master-card.jpg" alt="Master card icon">
+        <img src="assets/img/small/shop/visa-card.jpg" alt="Visa card icon">
+
+    </div>
+</div>
+
+<div class="contact-popup" onclick="sorryMsg(true)">
+    <div>
+        <h1>We're sorry...</h1>
+        <p> The shop is currently unavailable. <br>
+            Please come back later.</p>
+        <a onclick="sorryMsg(true)"> Ok </a>
+    </div>
+</div>
